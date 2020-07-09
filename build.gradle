@@ -1,0 +1,26 @@
+allprojects {
+    group = 'com.starriverdata'
+    version = '1.0.0-SNAPSHOT'
+    repositories {
+        mavenLocal()
+        maven { url "https://maven.aliyun.com/repository/jcenter" }
+    }
+}
+
+subprojects {
+    apply plugin: 'java'
+    apply plugin: 'idea'
+    sourceCompatibility = 1.8
+    targetCompatibility = 1.8
+    [compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
+    dependencies {
+        implementation 'org.slf4j:slf4j-api:1.7.30'
+        implementation 'com.google.guava:guava:28.2-jre'
+        implementation 'org.apache.commons:commons-lang3:3.10'
+        testImplementation 'junit:junit:4.13'
+    }
+}
+
+wrapper {
+    gradleVersion = '6.3'
+}

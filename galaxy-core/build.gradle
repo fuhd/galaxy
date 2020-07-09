@@ -1,0 +1,6 @@
+jar {
+    archiveBaseName = 'galaxy-core'
+}
+
+dependencies {
+}
