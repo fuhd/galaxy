@@ -1,3 +1,4 @@
 .idea
 .gradle
 galaxy-*/build
+galaxy-*/galaxy-*.iml
