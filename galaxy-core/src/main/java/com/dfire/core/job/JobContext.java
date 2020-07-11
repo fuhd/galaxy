@@ -47,6 +47,8 @@ public class JobContext {
 
     private final int runType;
 
+    //TODO: fuhd
+    @Builder.Default
     private Map<String, Object> data = new HashMap<>();
 
     private Integer preExitCode;
@@ -55,6 +57,8 @@ public class JobContext {
 
     private String workDir;
 
+    //TODO: fuhd
+    @Builder.Default
     private HierarchyProperties properties = new HierarchyProperties(new HashMap<>());
 
     private List<Map<String, String>> resources;

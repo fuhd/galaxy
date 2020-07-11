@@ -31,7 +31,8 @@ public class JwtUtils {
     static {
         try {
             algorithm = Algorithm.HMAC256(secret);
-        } catch (UnsupportedEncodingException e) {
+            //TODO:fuhd
+        } catch (IllegalArgumentException e) {
             ErrorLog.error("不支持的编码方式", e);
         }
     }

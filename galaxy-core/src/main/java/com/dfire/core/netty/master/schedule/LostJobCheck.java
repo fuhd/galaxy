@@ -16,7 +16,7 @@ import com.dfire.event.HeraJobLostEvent;
 import com.dfire.logs.ErrorLog;
 import com.dfire.logs.HeartLog;
 import com.dfire.logs.ScheduleLog;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 import java.util.*;
 import java.util.concurrent.TimeUnit;

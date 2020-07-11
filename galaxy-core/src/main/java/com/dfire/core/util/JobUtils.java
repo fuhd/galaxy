@@ -17,7 +17,7 @@ import com.dfire.core.job.*;
 import com.dfire.core.netty.worker.WorkContext;
 import com.dfire.logs.HeraLog;
 import com.google.common.collect.Lists;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 import java.util.ArrayList;
 import java.util.HashMap;

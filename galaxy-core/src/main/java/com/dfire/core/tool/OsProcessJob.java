@@ -5,7 +5,7 @@ import com.dfire.logs.ErrorLog;
 import com.dfire.protocol.RpcWorkInfo;
 import com.dfire.protocol.RpcWorkInfo.OSInfo;
 import com.dfire.protocol.RpcWorkInfo.ProcessMonitor;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 import java.io.IOException;
 import java.util.ArrayList;

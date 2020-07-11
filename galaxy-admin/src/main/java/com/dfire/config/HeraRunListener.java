@@ -54,7 +54,6 @@ public class HeraRunListener implements SpringApplicationRunListener {
 
     }
 
-    @Override
     public void finished(ConfigurableApplicationContext context, Throwable exception) {
         Date endTime = new Date();
         int serverPort = Integer.parseInt(context.getEnvironment().getProperty("server.port"));

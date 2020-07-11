@@ -10,7 +10,7 @@ import com.dfire.common.util.EnvUtils;
 import com.dfire.config.HeraGlobalEnv;
 import com.dfire.logs.ErrorLog;
 import com.dfire.logs.MonitorLog;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 import java.util.*;
 

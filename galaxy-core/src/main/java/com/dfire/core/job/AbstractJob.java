@@ -12,8 +12,8 @@ import com.dfire.core.emr.Emr;
 import com.dfire.core.emr.WrapEmr;
 import com.dfire.core.util.CommandUtils;
 import com.dfire.logs.HeraLog;
-import org.apache.commons.lang.ArrayUtils;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.ArrayUtils;
+import org.apache.commons.lang3.StringUtils;
 
 import java.io.File;
 import java.util.Arrays;
