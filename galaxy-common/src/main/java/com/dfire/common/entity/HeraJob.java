@@ -1,6 +1,5 @@
 package com.dfire.common.entity;
 
-import com.dfire.common.config.SkipColumn;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

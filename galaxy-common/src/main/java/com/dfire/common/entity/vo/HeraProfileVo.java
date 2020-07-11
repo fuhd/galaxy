@@ -17,7 +17,13 @@ import java.util.Map;
 public class HeraProfileVo {
     private String id;
     private String uid;
+    //TODO: fuhd
+    @Builder.Default
     private Map<String, String> hadoopConf = new HashMap<String, String>();
+    //TODO: fuhd
+    @Builder.Default
     private Date gmtCreate = new Date();
+    //TODO: fuhd
+    @Builder.Default
     private Date gmtModified = new Date();
 }

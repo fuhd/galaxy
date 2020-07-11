@@ -1,6 +1,14 @@
+plugins { id 'org.springframework.boot' version '2.3.1.RELEASE' apply false }
+apply plugin: 'io.spring.dependency-management'
+
 jar {
     archiveBaseName = 'galaxy-monitor'
 }
 
 dependencies {
+    compile 'org.springframework.boot:spring-boot-starter'
+    testImplementation 'junit:junit:4.13'
+    annotationProcessor 'org.projectlombok:lombok:1.18.12'
+    compileOnly 'org.projectlombok:lombok:1.18.12'
+    compile project(':galaxy-common')
 }

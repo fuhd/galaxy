@@ -20,7 +20,8 @@ public class HeraAction {
     private Long id;
 
     private Integer jobId;
-
+    //TODO: 这个注解我加的 fuhd
+    @Builder.Default
     private Integer auto = 0;
 
     private String configs;

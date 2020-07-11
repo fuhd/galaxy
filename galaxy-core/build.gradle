@@ -3,4 +3,23 @@ jar {
 }
 
 dependencies {
+    implementation 'com.amazonaws:aws-java-sdk-emr:1.11.820'
+    implementation 'com.amazonaws:aws-java-sdk-core:1.11.820'
+    implementation 'org.quartz-scheduler:quartz:2.3.2'
+    implementation 'com.aliyun:aliyun-java-sdk-core:4.5.3'
+    implementation 'com.aliyun:aliyun-java-sdk-emr:3.2.6'
+    implementation 'io.netty:netty-all:4.1.51.Final'
+    implementation 'com.auth0:java-jwt:3.10.3'
+    implementation 'com.google.guava:guava:29.0-jre'
+    implementation 'org.projectlombok:lombok:1.18.12'
+    implementation 'com.alibaba:fastjson:1.2.72'
+    implementation 'com.google.protobuf:protobuf-java:3.12.2'
+    implementation 'org.slf4j:slf4j-api:1.7.30'
+    implementation 'org.apache.commons:commons-lang3:3.10'
+    implementation 'com.alibaba:druid:1.1.23'
+    implementation 'commons-lang:commons-lang:20030203.000129'
+    compileOnly 'javax.servlet:javax.servlet-api:4.0.1'
+    testImplementation 'junit:junit:4.13'
+    implementation project(':galaxy-monitor')
+    implementation project(':galaxy-protocol')
 }

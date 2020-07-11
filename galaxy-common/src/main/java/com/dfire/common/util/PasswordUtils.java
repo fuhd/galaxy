@@ -2,14 +2,12 @@ package com.dfire.common.util;
 
 
 import com.dfire.logs.ErrorLog;
-import sun.misc.BASE64Decoder;
-import sun.misc.BASE64Encoder;
+import org.apache.commons.codec.binary.Base64;
 
 import javax.crypto.*;
 import javax.crypto.spec.SecretKeySpec;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
-import java.net.URLEncoder;
 import java.nio.charset.StandardCharsets;
 import java.security.InvalidKeyException;
 import java.security.NoSuchAlgorithmException;
@@ -31,7 +29,7 @@ public class PasswordUtils {
             SecretKey key = buildKey();
             Cipher cipher = Cipher.getInstance("AES");
             cipher.init(Cipher.ENCRYPT_MODE, key);
-            return new BASE64Encoder().encode(cipher.doFinal(content.getBytes(StandardCharsets.UTF_8)));
+            return Base64.encodeBase64String(cipher.doFinal(content.getBytes(StandardCharsets.UTF_8)));
         } catch (NoSuchAlgorithmException | NoSuchPaddingException | InvalidKeyException | IllegalBlockSizeException | BadPaddingException e) {
             ErrorLog.error("加密失败", e);
         }
@@ -66,8 +64,8 @@ public class PasswordUtils {
             SecretKey key = buildKey();
             Cipher cipher = Cipher.getInstance("AES");
             cipher.init(Cipher.DECRYPT_MODE, key);
-            return new String(cipher.doFinal(new BASE64Decoder().decodeBuffer(content)), StandardCharsets.UTF_8);
-        } catch (NoSuchAlgorithmException | NoSuchPaddingException | InvalidKeyException | IOException | IllegalBlockSizeException | BadPaddingException e) {
+            return new String(cipher.doFinal(Base64.decodeBase64(content)), StandardCharsets.UTF_8);
+        } catch (NoSuchAlgorithmException | NoSuchPaddingException | InvalidKeyException | IllegalBlockSizeException | BadPaddingException e) {
             ErrorLog.error("解密失败", e);
         }
         return null;

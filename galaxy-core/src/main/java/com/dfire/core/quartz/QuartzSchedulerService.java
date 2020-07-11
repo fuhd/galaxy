@@ -3,7 +3,7 @@ package com.dfire.core.quartz;
 import com.dfire.common.constants.Constants;
 import com.dfire.logs.ErrorLog;
 import com.dfire.logs.HeraLog;
-import jdk.nashorn.internal.objects.annotations.Constructor;
+//import jdk.nashorn.internal.objects.annotations.Constructor;
 import org.quartz.*;
 import org.quartz.impl.StdSchedulerFactory;
 import org.springframework.context.annotation.Configuration;
@@ -25,7 +25,7 @@ public class QuartzSchedulerService {
     /**
      * 设置quartz配置: @Constructor 先于  @PostConstruct执行
      */
-    @Constructor
+    //@Constructor
     public Properties setQuartzProperties() {
         HeraLog.info("start init quartz properties");
         Properties prop = new Properties();
