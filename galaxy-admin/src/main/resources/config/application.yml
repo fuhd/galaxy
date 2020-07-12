@@ -47,7 +47,7 @@ druid:
     connection-properties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
 server:
   port: 8080
-  context-path: /hera
+  servlet.context-path: /hera
 clean:
   path: ${server.context-path}
 #hera全局配置
@@ -114,8 +114,8 @@ logging:
   path: ~/work/hera-logs/
   level:
     root: INFO
-    org.springframework: ERROR
-    com.dfire.common.mapper: ERROR
+    org.springframework: INFO
+    com.dfire.common.mapper: INFO
 
 # 发送配置邮件的发送者
 mail:
