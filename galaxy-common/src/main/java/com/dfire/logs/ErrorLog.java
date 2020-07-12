@@ -26,6 +26,4 @@ public class ErrorLog {
     public static void warn(String format, Object... arguments) {
         log.warn(format, arguments);
     }
-
-
 }

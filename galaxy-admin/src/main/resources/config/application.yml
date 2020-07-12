@@ -1,6 +1,6 @@
 spring:
   profiles:
-    active: @env@
+    active: dev
   http:
     multipart:
       max-file-size: 100Mb    #允许上传文件的最大大小
@@ -45,12 +45,9 @@ druid:
     stat-mergeSql: true
     filters: stat,wall,log4j
     connection-properties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
-
-
 server:
   port: 8080
   context-path: /hera
-
 clean:
   path: ${server.context-path}
 #hera全局配置

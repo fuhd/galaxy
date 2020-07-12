@@ -1,0 +1,50 @@
+2020-07-12 08:50:11.272 INFO  com.dfire.logs.SocketLog.info:12 NettyChannel{channel=NettyChannel{channel=[id: 0xa5f623cb, L:/127.0.0.1:41134 - R:/127.0.1.1:9887]}}
+
+2020-07-12 08:50:11.275 INFO  com.dfire.logs.SocketLog.info:12 客户端与服务端连接开启
+
+2020-07-12 08:50:11.273 INFO  com.dfire.logs.SocketLog.info:12 connect server success
+
+2020-07-12 08:50:11.311 INFO  com.dfire.logs.SocketLog.info:17 worker client channel active success : /127.0.0.1:41134
+
+2020-07-12 08:50:11.311 INFO  com.dfire.logs.SocketLog.info:17 worker client channel registered connect success : /127.0.0.1:41134
+
+2020-07-12 09:19:13.323 INFO  com.dfire.logs.SocketLog.info:17 worker client channel active success : /127.0.0.1:41402
+
+2020-07-12 09:19:13.324 INFO  com.dfire.logs.SocketLog.info:17 worker client channel registered connect success : /127.0.0.1:41402
+
+2020-07-12 09:19:13.332 INFO  com.dfire.logs.SocketLog.info:12 NettyChannel{channel=NettyChannel{channel=[id: 0x331bb64b, L:/127.0.0.1:41402 - R:/127.0.1.1:9887]}}
+
+2020-07-12 09:19:13.333 INFO  com.dfire.logs.SocketLog.info:12 connect server success
+
+2020-07-12 09:19:13.333 INFO  com.dfire.logs.SocketLog.info:12 客户端与服务端连接开启
+
+2020-07-12 09:39:17.586 INFO  com.dfire.logs.SocketLog.info:12 NettyChannel{channel=NettyChannel{channel=[id: 0x2598f41a, L:/127.0.0.1:41720 - R:/127.0.1.1:9887]}}
+
+2020-07-12 09:39:17.588 INFO  com.dfire.logs.SocketLog.info:12 客户端与服务端连接开启
+
+2020-07-12 09:39:17.588 INFO  com.dfire.logs.SocketLog.info:12 connect server success
+
+2020-07-12 09:39:17.593 INFO  com.dfire.logs.SocketLog.info:17 worker client channel active success : /127.0.0.1:41720
+
+2020-07-12 09:39:17.594 INFO  com.dfire.logs.SocketLog.info:17 worker client channel registered connect success : /127.0.0.1:41720
+
+2020-07-12 09:49:20.170 INFO  com.dfire.logs.SocketLog.info:17 worker client channel active success : /127.0.0.1:42124
+
+2020-07-12 09:49:20.170 INFO  com.dfire.logs.SocketLog.info:17 worker client channel registered connect success : /127.0.0.1:42124
+
+2020-07-12 09:49:20.171 INFO  com.dfire.logs.SocketLog.info:12 NettyChannel{channel=NettyChannel{channel=[id: 0xf1bfb393, L:/127.0.0.1:42124 - R:/127.0.1.1:9887]}}
+
+2020-07-12 09:49:20.173 INFO  com.dfire.logs.SocketLog.info:12 connect server success
+
+2020-07-12 09:49:20.173 INFO  com.dfire.logs.SocketLog.info:12 客户端与服务端连接开启
+
+2020-07-12 09:57:45.801 INFO  com.dfire.logs.SocketLog.info:17 worker client channel active success : /127.0.0.1:42518
+
+2020-07-12 09:57:45.801 INFO  com.dfire.logs.SocketLog.info:17 worker client channel registered connect success : /127.0.0.1:42518
+
+2020-07-12 09:57:45.807 INFO  com.dfire.logs.SocketLog.info:12 NettyChannel{channel=NettyChannel{channel=[id: 0x4ba23555, L:/127.0.0.1:42518 - R:/127.0.1.1:9887]}}
+
+2020-07-12 09:57:45.808 INFO  com.dfire.logs.SocketLog.info:12 connect server success
+
+2020-07-12 09:57:45.808 INFO  com.dfire.logs.SocketLog.info:12 客户端与服务端连接开启
+

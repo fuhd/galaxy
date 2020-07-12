@@ -1,0 +1,169 @@
+2020-07-12 08:47:02.828 ERROR com.dfire.logs.ErrorLog.error:23 检测锁异常
+java.lang.NullPointerException: null
+	at com.dfire.core.netty.master.Master.init(Master.java:77)
+	at com.dfire.core.netty.master.MasterContext.init(MasterContext.java:128)
+	at com.dfire.core.schedule.HeraSchedule.startup(HeraSchedule.java:29)
+	at com.dfire.core.lock.DistributeLock.checkLock(DistributeLock.java:71)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+2020-07-12 08:50:27.790 ERROR com.dfire.logs.ErrorLog.error:15 请求/hera404异常
+
+2020-07-12 08:50:27.942 ERROR com.dfire.logs.ErrorLog.error:15 请求/error.index404异常
+
+2020-07-12 08:50:29.467 ERROR com.dfire.logs.ErrorLog.error:15 请求/favicon.ico404异常
+
+2020-07-12 08:50:29.474 ERROR com.dfire.logs.ErrorLog.error:15 请求/error.index404异常
+
+2020-07-12 08:50:55.674 ERROR com.dfire.logs.ErrorLog.error:15 请求/hera/login/admin404异常
+
+2020-07-12 08:50:55.687 ERROR com.dfire.logs.ErrorLog.error:15 请求/error.index404异常
+
+2020-07-12 08:50:55.772 ERROR com.dfire.logs.ErrorLog.error:15 请求/favicon.ico404异常
+
+2020-07-12 08:50:55.775 ERROR com.dfire.logs.ErrorLog.error:15 请求/error.index404异常
+
+2020-07-12 08:50:59.636 ERROR com.dfire.logs.ErrorLog.error:15 请求/hera/login/admin404异常
+
+2020-07-12 08:50:59.639 ERROR com.dfire.logs.ErrorLog.error:15 请求/error.index404异常
+
+2020-07-12 08:50:59.721 ERROR com.dfire.logs.ErrorLog.error:15 请求/favicon.ico404异常
+
+2020-07-12 08:50:59.724 ERROR com.dfire.logs.ErrorLog.error:15 请求/error.index404异常
+
+2020-07-12 08:51:33.883 ERROR com.dfire.logs.ErrorLog.error:15 请求/hera/404异常
+
+2020-07-12 08:51:33.887 ERROR com.dfire.logs.ErrorLog.error:15 请求/error.index404异常
+
+2020-07-12 08:51:33.973 ERROR com.dfire.logs.ErrorLog.error:15 请求/favicon.ico404异常
+
+2020-07-12 08:51:33.975 ERROR com.dfire.logs.ErrorLog.error:15 请求/error.index404异常
+
+2020-07-12 09:20:00.354 ERROR com.dfire.logs.ErrorLog.error:15 请求/hera/404异常
+
+2020-07-12 09:20:00.393 ERROR com.dfire.logs.ErrorLog.error:15 请求/error.index404异常
+
+2020-07-12 09:20:00.536 ERROR com.dfire.logs.ErrorLog.error:15 请求/favicon.ico404异常
+
+2020-07-12 09:20:00.540 ERROR com.dfire.logs.ErrorLog.error:15 请求/error.index404异常
+
+2020-07-12 09:20:09.209 ERROR com.dfire.logs.ErrorLog.error:15 请求/favicon.ico404异常
+
+2020-07-12 09:20:09.215 ERROR com.dfire.logs.ErrorLog.error:15 请求/error.index404异常
+
+2020-07-12 09:20:12.885 ERROR com.dfire.logs.ErrorLog.error:15 请求/scheduleCenter/init.do404异常
+
+2020-07-12 09:20:12.887 ERROR com.dfire.logs.ErrorLog.error:15 请求/error.index404异常
+
+2020-07-12 09:20:14.378 ERROR com.dfire.logs.ErrorLog.error:15 请求/favicon.ico404异常
+
+2020-07-12 09:20:14.384 ERROR com.dfire.logs.ErrorLog.error:15 请求/error.index404异常
+
+2020-07-12 09:20:20.090 ERROR com.dfire.logs.ErrorLog.error:15 请求/favicon.ico404异常
+
+2020-07-12 09:20:20.093 ERROR com.dfire.logs.ErrorLog.error:15 请求/error.index404异常
+
+2020-07-12 09:20:26.044 ERROR com.dfire.logs.ErrorLog.error:15 请求/favicon.ico404异常
+
+2020-07-12 09:20:26.049 ERROR com.dfire.logs.ErrorLog.error:15 请求/error.index404异常
+
+2020-07-12 09:20:32.562 ERROR com.dfire.logs.ErrorLog.error:15 请求/favicon.ico404异常
+
+2020-07-12 09:20:32.565 ERROR com.dfire.logs.ErrorLog.error:15 请求/error.index404异常
+
+2020-07-12 09:21:10.867 ERROR com.dfire.logs.ErrorLog.error:15 请求/hera/login404异常
+
+2020-07-12 09:21:10.870 ERROR com.dfire.logs.ErrorLog.error:15 请求/error.index404异常
+
+2020-07-12 09:21:10.968 ERROR com.dfire.logs.ErrorLog.error:15 请求/favicon.ico404异常
+
+2020-07-12 09:21:10.971 ERROR com.dfire.logs.ErrorLog.error:15 请求/error.index404异常
+
+2020-07-12 09:21:18.671 ERROR com.dfire.logs.ErrorLog.error:15 请求/hera/login/admin404异常
+
+2020-07-12 09:21:18.674 ERROR com.dfire.logs.ErrorLog.error:15 请求/error.index404异常
+
+2020-07-12 09:21:18.733 ERROR com.dfire.logs.ErrorLog.error:15 请求/favicon.ico404异常
+
+2020-07-12 09:21:18.737 ERROR com.dfire.logs.ErrorLog.error:15 请求/error.index404异常
+
+2020-07-12 09:23:23.896 ERROR com.dfire.logs.ErrorLog.error:15 请求/hera404异常
+
+2020-07-12 09:23:23.903 ERROR com.dfire.logs.ErrorLog.error:15 请求/error.index404异常
+
+2020-07-12 09:23:23.999 ERROR com.dfire.logs.ErrorLog.error:15 请求/favicon.ico404异常
+
+2020-07-12 09:23:24.002 ERROR com.dfire.logs.ErrorLog.error:15 请求/error.index404异常
+
+2020-07-12 09:38:07.951 ERROR com.dfire.logs.ErrorLog.error:15 请求/scheduleCenter/init.do404异常
+
+2020-07-12 09:38:07.954 ERROR com.dfire.logs.ErrorLog.error:15 请求/error.index404异常
+
+2020-07-12 09:38:11.663 ERROR com.dfire.logs.ErrorLog.error:15 请求/developCenter/init.do404异常
+
+2020-07-12 09:38:11.666 ERROR com.dfire.logs.ErrorLog.error:15 请求/error.index404异常
+
+2020-07-12 09:38:17.312 ERROR com.dfire.logs.ErrorLog.error:15 请求/developCenter/init.do404异常
+
+2020-07-12 09:38:17.315 ERROR com.dfire.logs.ErrorLog.error:15 请求/error.index404异常
+
+2020-07-12 09:38:18.430 ERROR com.dfire.logs.ErrorLog.error:15 请求/developCenter/init.do404异常
+
+2020-07-12 09:38:18.432 ERROR com.dfire.logs.ErrorLog.error:15 请求/error.index404异常
+
+2020-07-12 09:38:37.974 ERROR com.dfire.logs.ErrorLog.error:15 请求/developCenter/init.do404异常
+
+2020-07-12 09:38:37.978 ERROR com.dfire.logs.ErrorLog.error:15 请求/error.index404异常
+
+2020-07-12 09:43:10.199 ERROR com.dfire.logs.ErrorLog.error:15 请求/hera404异常
+
+2020-07-12 09:43:10.223 ERROR com.dfire.logs.ErrorLog.error:15 请求/error.index404异常
+
+2020-07-12 09:43:10.397 ERROR com.dfire.logs.ErrorLog.error:15 请求/favicon.ico404异常
+
+2020-07-12 09:43:10.407 ERROR com.dfire.logs.ErrorLog.error:15 请求/error.index404异常
+
+2020-07-12 09:44:48.779 ERROR com.dfire.logs.ErrorLog.error:15 请求/favicon.ico404异常
+
+2020-07-12 09:44:48.783 ERROR com.dfire.logs.ErrorLog.error:15 请求/error.index404异常
+
+2020-07-12 09:44:48.849 ERROR com.dfire.logs.ErrorLog.error:15 请求/favicon.ico404异常
+
+2020-07-12 09:44:48.853 ERROR com.dfire.logs.ErrorLog.error:15 请求/error.index404异常
+
+2020-07-12 09:44:56.099 ERROR com.dfire.logs.ErrorLog.error:15 请求/hera/favicon.ico404异常
+
+2020-07-12 09:44:56.107 ERROR com.dfire.logs.ErrorLog.error:15 请求/error.index404异常
+
+2020-07-12 09:44:56.214 ERROR com.dfire.logs.ErrorLog.error:15 请求/favicon.ico404异常
+
+2020-07-12 09:44:56.219 ERROR com.dfire.logs.ErrorLog.error:15 请求/error.index404异常
+
+2020-07-12 09:49:42.623 ERROR com.dfire.logs.ErrorLog.error:15 请求 /hera 404异常
+
+2020-07-12 09:49:42.678 ERROR com.dfire.logs.ErrorLog.error:15 请求 /error.index 404异常
+
+2020-07-12 09:49:42.849 ERROR com.dfire.logs.ErrorLog.error:15 请求 /favicon.ico 404异常
+
+2020-07-12 09:49:42.856 ERROR com.dfire.logs.ErrorLog.error:15 请求 /error.index 404异常
+
+2020-07-12 09:50:50.797 ERROR com.dfire.logs.ErrorLog.error:15 请求 /hera/home 404异常
+
+2020-07-12 09:50:50.802 ERROR com.dfire.logs.ErrorLog.error:15 请求 /error.index 404异常
+
+2020-07-12 09:50:51.143 ERROR com.dfire.logs.ErrorLog.error:15 请求 /favicon.ico 404异常
+
+2020-07-12 09:50:51.146 ERROR com.dfire.logs.ErrorLog.error:15 请求 /error.index 404异常
+
+2020-07-12 09:58:21.030 ERROR com.dfire.logs.ErrorLog.error:15 请求 /hera 404异常
+
+2020-07-12 09:58:21.038 ERROR com.dfire.logs.ErrorLog.error:15 请求 /error.index 404异常
+
+2020-07-12 09:58:21.143 ERROR com.dfire.logs.ErrorLog.error:15 请求 /favicon.ico 404异常
+
+2020-07-12 09:58:21.159 ERROR com.dfire.logs.ErrorLog.error:15 请求 /error.index 404异常
+

@@ -52,7 +52,7 @@ public class HeraExceptionHandler {
 
     @ExceptionHandler(NoHandlerFoundException.class)
     public ModelAndView handlerNotFoundException(HttpServletRequest request) {
-        ErrorLog.error("请求" + request.getRequestURI() + "404异常");
+        ErrorLog.error("请求 " + request.getRequestURI() + " 404异常");
         return getReturn(NoHandlerFoundException.class, HttpStatus.NOT_FOUND, "page not found", "当您看到这个页面,表示您的访问出错,这个错误是您打开的页面不存在,请确认您输入的地址是正确的,如果是在本站点击后出现这个页面,请联系管理员进行处理感谢您的支持!");
     }
 
