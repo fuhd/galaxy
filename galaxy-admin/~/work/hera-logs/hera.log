@@ -536,3 +536,373 @@
 
 2020-07-12 10:25:37.095 INFO  com.dfire.logs.HeraLog.info:12 hold lock and update time
 
+2020-07-12 19:14:48.474 INFO  com.dfire.logs.HeraLog.info:17 -----------------------------当前机器的IP为:127.0.1.1-----------------------------
+
+2020-07-12 19:14:48.881 WARN  com.dfire.logs.HeraLog.warn:35 配置的工作路径/opt/logs/spring-boot不存在，将使用默认路径:/home/fuhd/work/galaxy/galaxy-admin
+
+2020-07-12 19:14:48.898 WARN  com.dfire.logs.HeraLog.warn:35 the hera.emr.groups is null, all user will use same emr cluster
+
+2020-07-12 19:14:59.931 INFO  com.dfire.logs.HeraLog.info:12 hold lock and update time
+
+2020-07-12 19:14:59.933 INFO  com.dfire.logs.HeraLog.info:12 begin to start master context
+
+2020-07-12 19:14:59.933 INFO  com.dfire.logs.HeraLog.info:12 start init quartz schedule
+
+2020-07-12 19:14:59.933 INFO  com.dfire.logs.HeraLog.info:12 start init quartz properties
+
+2020-07-12 19:14:59.969 INFO  com.dfire.logs.HeraLog.info:12 start init quartz scheduler
+
+2020-07-12 19:15:00.493 INFO  com.dfire.logs.HeraLog.info:12 start master server success
+
+2020-07-12 19:15:00.496 INFO  com.dfire.logs.HeraLog.info:17 start RerunJobInit chore schedule success
+
+2020-07-12 19:15:00.497 INFO  com.dfire.logs.HeraLog.info:17 start RerunJobLaunch chore schedule success
+
+2020-07-12 19:15:00.496 INFO  com.dfire.logs.HeraLog.info:17 -----------------------------init action,time: 1594552500496-----------------------------
+
+2020-07-12 19:15:00.563 INFO  com.dfire.logs.HeraLog.info:17 start LostJobCheck chore schedule success
+
+2020-07-12 19:15:00.564 INFO  com.dfire.logs.HeraLog.info:17 start WorkHeartCheck chore schedule success
+
+2020-07-12 19:15:00.566 INFO  com.dfire.logs.HeraLog.info:17 start JobActionInit chore schedule success
+
+2020-07-12 19:15:00.580 INFO  com.dfire.logs.HeraLog.info:17 start JobFinishCheck chore schedule success
+
+2020-07-12 19:15:00.581 INFO  com.dfire.logs.HeraLog.info:12 init master content success 
+
+2020-07-12 19:15:00.615 INFO  com.dfire.logs.HeraLog.info:17 -----------------------------action size:1, time 1594552500615-----------------------------
+
+2020-07-12 19:15:00.618 INFO  com.dfire.logs.HeraLog.info:17 -----------------------------add actions to handler success, time:1594552500618-----------------------------
+
+2020-07-12 19:15:00.619 INFO  com.dfire.logs.HeraLog.info:12 init work client success 
+
+2020-07-12 19:15:00.789 INFO  com.dfire.logs.HeraLog.info:17 -----------------------------dispatcher actions success, time1594552500789-----------------------------
+
+2020-07-12 19:15:00.834 INFO  com.dfire.logs.HeraLog.info:12 refresh hostGroup cache
+
+2020-07-12 19:15:58.860 INFO  com.dfire.logs.HeraLog.info:12 hold lock and update time
+
+2020-07-12 19:16:00.616 INFO  com.dfire.logs.HeraLog.info:12 刷新hera_job库
+
+2020-07-12 19:16:11.484 INFO  com.dfire.logs.HeraLog.info:12 token 过期
+
+2020-07-12 19:16:58.860 INFO  com.dfire.logs.HeraLog.info:12 hold lock and update time
+
+2020-07-12 19:17:58.870 INFO  com.dfire.logs.HeraLog.info:12 hold lock and update time
+
+2020-07-12 19:18:58.865 INFO  com.dfire.logs.HeraLog.info:12 hold lock and update time
+
+2020-07-12 19:19:58.859 INFO  com.dfire.logs.HeraLog.info:12 hold lock and update time
+
+2020-07-12 19:20:58.868 INFO  com.dfire.logs.HeraLog.info:12 hold lock and update time
+
+2020-07-12 19:21:58.897 INFO  com.dfire.logs.HeraLog.info:12 hold lock and update time
+
+2020-07-12 19:22:58.870 INFO  com.dfire.logs.HeraLog.info:12 hold lock and update time
+
+2020-07-12 19:23:58.859 INFO  com.dfire.logs.HeraLog.info:12 hold lock and update time
+
+2020-07-12 19:24:58.882 INFO  com.dfire.logs.HeraLog.info:12 hold lock and update time
+
+2020-07-12 19:25:58.869 INFO  com.dfire.logs.HeraLog.info:12 hold lock and update time
+
+2020-07-12 19:26:58.875 INFO  com.dfire.logs.HeraLog.info:12 hold lock and update time
+
+2020-07-12 19:27:58.859 INFO  com.dfire.logs.HeraLog.info:12 hold lock and update time
+
+2020-07-12 19:28:58.868 INFO  com.dfire.logs.HeraLog.info:12 hold lock and update time
+
+2020-07-12 19:29:58.861 INFO  com.dfire.logs.HeraLog.info:12 hold lock and update time
+
+2020-07-12 19:30:58.871 INFO  com.dfire.logs.HeraLog.info:12 hold lock and update time
+
+2020-07-12 19:31:58.876 INFO  com.dfire.logs.HeraLog.info:12 hold lock and update time
+
+2020-07-12 19:32:58.859 INFO  com.dfire.logs.HeraLog.info:12 hold lock and update time
+
+2020-07-12 19:33:58.860 INFO  com.dfire.logs.HeraLog.info:12 hold lock and update time
+
+2020-07-12 19:34:58.859 INFO  com.dfire.logs.HeraLog.info:12 hold lock and update time
+
+2020-07-12 19:35:40.362 INFO  com.dfire.logs.HeraLog.info:17 -----------------------------当前机器的IP为:127.0.1.1-----------------------------
+
+2020-07-12 19:35:40.614 WARN  com.dfire.logs.HeraLog.warn:35 配置的工作路径/opt/logs/spring-boot不存在，将使用默认路径:/home/fuhd/work/galaxy/galaxy-admin
+
+2020-07-12 19:35:40.617 WARN  com.dfire.logs.HeraLog.warn:35 the hera.emr.groups is null, all user will use same emr cluster
+
+2020-07-12 19:35:51.201 INFO  com.dfire.logs.HeraLog.info:12 hold lock and update time
+
+2020-07-12 19:35:51.203 INFO  com.dfire.logs.HeraLog.info:12 begin to start master context
+
+2020-07-12 19:35:51.203 INFO  com.dfire.logs.HeraLog.info:12 start init quartz schedule
+
+2020-07-12 19:35:51.203 INFO  com.dfire.logs.HeraLog.info:12 start init quartz properties
+
+2020-07-12 19:35:51.256 INFO  com.dfire.logs.HeraLog.info:12 start init quartz scheduler
+
+2020-07-12 19:35:51.373 INFO  com.dfire.logs.HeraLog.info:12 start master server success
+
+2020-07-12 19:35:51.377 INFO  com.dfire.logs.HeraLog.info:17 start RerunJobInit chore schedule success
+
+2020-07-12 19:35:51.378 INFO  com.dfire.logs.HeraLog.info:17 -----------------------------init action,time: 1594553751378-----------------------------
+
+2020-07-12 19:35:51.379 INFO  com.dfire.logs.HeraLog.info:17 start RerunJobLaunch chore schedule success
+
+2020-07-12 19:35:51.441 INFO  com.dfire.logs.HeraLog.info:17 start LostJobCheck chore schedule success
+
+2020-07-12 19:35:51.443 INFO  com.dfire.logs.HeraLog.info:17 start WorkHeartCheck chore schedule success
+
+2020-07-12 19:35:51.473 INFO  com.dfire.logs.HeraLog.info:17 start JobActionInit chore schedule success
+
+2020-07-12 19:35:51.480 INFO  com.dfire.logs.HeraLog.info:17 start JobFinishCheck chore schedule success
+
+2020-07-12 19:35:51.481 INFO  com.dfire.logs.HeraLog.info:12 init master content success 
+
+2020-07-12 19:35:51.487 INFO  com.dfire.logs.HeraLog.info:17 -----------------------------action size:1, time 1594553751487-----------------------------
+
+2020-07-12 19:35:51.488 INFO  com.dfire.logs.HeraLog.info:12 init work client success 
+
+2020-07-12 19:35:51.491 INFO  com.dfire.logs.HeraLog.info:17 -----------------------------add actions to handler success, time:1594553751491-----------------------------
+
+2020-07-12 19:35:51.584 INFO  com.dfire.logs.HeraLog.info:17 -----------------------------dispatcher actions success, time1594553751584-----------------------------
+
+2020-07-12 19:35:51.592 INFO  com.dfire.logs.HeraLog.info:12 refresh hostGroup cache
+
+2020-07-12 19:36:50.604 INFO  com.dfire.logs.HeraLog.info:12 hold lock and update time
+
+2020-07-12 19:36:51.477 INFO  com.dfire.logs.HeraLog.info:12 刷新hera_job库
+
+2020-07-12 19:37:50.616 INFO  com.dfire.logs.HeraLog.info:12 hold lock and update time
+
+2020-07-12 19:38:54.583 INFO  com.dfire.logs.HeraLog.info:17 -----------------------------当前机器的IP为:127.0.1.1-----------------------------
+
+2020-07-12 19:38:54.838 WARN  com.dfire.logs.HeraLog.warn:35 配置的工作路径/opt/logs/spring-boot不存在，将使用默认路径:/home/fuhd/work/galaxy/galaxy-admin
+
+2020-07-12 19:38:54.841 WARN  com.dfire.logs.HeraLog.warn:35 the hera.emr.groups is null, all user will use same emr cluster
+
+2020-07-12 19:39:05.166 INFO  com.dfire.logs.HeraLog.info:12 hold lock and update time
+
+2020-07-12 19:39:05.168 INFO  com.dfire.logs.HeraLog.info:12 begin to start master context
+
+2020-07-12 19:39:05.168 INFO  com.dfire.logs.HeraLog.info:12 start init quartz schedule
+
+2020-07-12 19:39:05.168 INFO  com.dfire.logs.HeraLog.info:12 start init quartz properties
+
+2020-07-12 19:39:05.188 INFO  com.dfire.logs.HeraLog.info:12 start init quartz scheduler
+
+2020-07-12 19:39:05.270 INFO  com.dfire.logs.HeraLog.info:12 start master server success
+
+2020-07-12 19:39:05.273 INFO  com.dfire.logs.HeraLog.info:17 -----------------------------init action,time: 1594553945273-----------------------------
+
+2020-07-12 19:39:05.273 INFO  com.dfire.logs.HeraLog.info:17 start RerunJobInit chore schedule success
+
+2020-07-12 19:39:05.274 INFO  com.dfire.logs.HeraLog.info:17 start RerunJobLaunch chore schedule success
+
+2020-07-12 19:39:05.298 INFO  com.dfire.logs.HeraLog.info:17 start LostJobCheck chore schedule success
+
+2020-07-12 19:39:05.299 INFO  com.dfire.logs.HeraLog.info:17 start WorkHeartCheck chore schedule success
+
+2020-07-12 19:39:05.300 INFO  com.dfire.logs.HeraLog.info:17 start JobActionInit chore schedule success
+
+2020-07-12 19:39:05.302 INFO  com.dfire.logs.HeraLog.info:17 start JobFinishCheck chore schedule success
+
+2020-07-12 19:39:05.304 INFO  com.dfire.logs.HeraLog.info:12 init master content success 
+
+2020-07-12 19:39:05.308 INFO  com.dfire.logs.HeraLog.info:12 init work client success 
+
+2020-07-12 19:39:05.310 INFO  com.dfire.logs.HeraLog.info:17 -----------------------------action size:1, time 1594553945310-----------------------------
+
+2020-07-12 19:39:05.311 INFO  com.dfire.logs.HeraLog.info:17 -----------------------------add actions to handler success, time:1594553945311-----------------------------
+
+2020-07-12 19:39:05.368 INFO  com.dfire.logs.HeraLog.info:17 -----------------------------dispatcher actions success, time1594553945368-----------------------------
+
+2020-07-12 19:39:05.378 INFO  com.dfire.logs.HeraLog.info:12 refresh hostGroup cache
+
+2020-07-12 19:40:04.830 INFO  com.dfire.logs.HeraLog.info:12 hold lock and update time
+
+2020-07-12 19:40:05.353 INFO  com.dfire.logs.HeraLog.info:12 刷新hera_job库
+
+2020-07-12 19:41:04.834 INFO  com.dfire.logs.HeraLog.info:12 hold lock and update time
+
+2020-07-12 19:42:04.837 INFO  com.dfire.logs.HeraLog.info:12 hold lock and update time
+
+2020-07-12 19:43:13.124 INFO  com.dfire.logs.HeraLog.info:17 -----------------------------当前机器的IP为:127.0.1.1-----------------------------
+
+2020-07-12 19:43:13.363 WARN  com.dfire.logs.HeraLog.warn:35 配置的工作路径/opt/logs/spring-boot不存在，将使用默认路径:/home/fuhd/work/galaxy/galaxy-admin
+
+2020-07-12 19:43:13.366 WARN  com.dfire.logs.HeraLog.warn:35 the hera.emr.groups is null, all user will use same emr cluster
+
+2020-07-12 19:43:23.654 INFO  com.dfire.logs.HeraLog.info:12 hold lock and update time
+
+2020-07-12 19:43:23.656 INFO  com.dfire.logs.HeraLog.info:12 begin to start master context
+
+2020-07-12 19:43:23.656 INFO  com.dfire.logs.HeraLog.info:12 start init quartz schedule
+
+2020-07-12 19:43:23.656 INFO  com.dfire.logs.HeraLog.info:12 start init quartz properties
+
+2020-07-12 19:43:23.670 INFO  com.dfire.logs.HeraLog.info:12 start init quartz scheduler
+
+2020-07-12 19:43:23.744 INFO  com.dfire.logs.HeraLog.info:12 start master server success
+
+2020-07-12 19:43:23.746 INFO  com.dfire.logs.HeraLog.info:17 -----------------------------init action,time: 1594554203746-----------------------------
+
+2020-07-12 19:43:23.746 INFO  com.dfire.logs.HeraLog.info:17 start RerunJobInit chore schedule success
+
+2020-07-12 19:43:23.747 INFO  com.dfire.logs.HeraLog.info:17 start RerunJobLaunch chore schedule success
+
+2020-07-12 19:43:23.764 INFO  com.dfire.logs.HeraLog.info:17 start LostJobCheck chore schedule success
+
+2020-07-12 19:43:23.765 INFO  com.dfire.logs.HeraLog.info:17 start WorkHeartCheck chore schedule success
+
+2020-07-12 19:43:23.766 INFO  com.dfire.logs.HeraLog.info:17 start JobActionInit chore schedule success
+
+2020-07-12 19:43:23.770 INFO  com.dfire.logs.HeraLog.info:17 start JobFinishCheck chore schedule success
+
+2020-07-12 19:43:23.771 INFO  com.dfire.logs.HeraLog.info:12 init master content success 
+
+2020-07-12 19:43:23.775 INFO  com.dfire.logs.HeraLog.info:12 init work client success 
+
+2020-07-12 19:43:23.777 INFO  com.dfire.logs.HeraLog.info:17 -----------------------------action size:1, time 1594554203777-----------------------------
+
+2020-07-12 19:43:23.778 INFO  com.dfire.logs.HeraLog.info:17 -----------------------------add actions to handler success, time:1594554203778-----------------------------
+
+2020-07-12 19:43:23.832 INFO  com.dfire.logs.HeraLog.info:17 -----------------------------dispatcher actions success, time1594554203832-----------------------------
+
+2020-07-12 19:43:23.838 INFO  com.dfire.logs.HeraLog.info:12 refresh hostGroup cache
+
+2020-07-12 19:44:23.374 INFO  com.dfire.logs.HeraLog.info:12 hold lock and update time
+
+2020-07-12 19:44:23.776 INFO  com.dfire.logs.HeraLog.info:12 刷新hera_job库
+
+2020-07-12 19:45:23.370 INFO  com.dfire.logs.HeraLog.info:12 hold lock and update time
+
+2020-07-12 19:46:23.368 INFO  com.dfire.logs.HeraLog.info:12 hold lock and update time
+
+2020-07-12 19:47:23.355 INFO  com.dfire.logs.HeraLog.info:12 hold lock and update time
+
+2020-07-12 19:48:23.354 INFO  com.dfire.logs.HeraLog.info:12 hold lock and update time
+
+2020-07-12 19:49:23.359 INFO  com.dfire.logs.HeraLog.info:12 hold lock and update time
+
+2020-07-12 19:50:23.367 INFO  com.dfire.logs.HeraLog.info:12 hold lock and update time
+
+2020-07-12 19:51:23.356 INFO  com.dfire.logs.HeraLog.info:12 hold lock and update time
+
+2020-07-12 19:52:23.354 INFO  com.dfire.logs.HeraLog.info:12 hold lock and update time
+
+2020-07-12 19:53:23.361 INFO  com.dfire.logs.HeraLog.info:12 hold lock and update time
+
+2020-07-12 19:54:23.354 INFO  com.dfire.logs.HeraLog.info:12 hold lock and update time
+
+2020-07-12 19:55:23.359 INFO  com.dfire.logs.HeraLog.info:12 hold lock and update time
+
+2020-07-12 19:56:23.364 INFO  com.dfire.logs.HeraLog.info:12 hold lock and update time
+
+2020-07-12 19:57:23.356 INFO  com.dfire.logs.HeraLog.info:12 hold lock and update time
+
+2020-07-12 19:58:23.370 INFO  com.dfire.logs.HeraLog.info:12 hold lock and update time
+
+2020-07-12 19:59:23.357 INFO  com.dfire.logs.HeraLog.info:12 hold lock and update time
+
+2020-07-12 20:00:23.356 INFO  com.dfire.logs.HeraLog.info:12 hold lock and update time
+
+2020-07-12 20:00:42.600 INFO  com.dfire.logs.HeraLog.info:17 -----------------------------当前机器的IP为:127.0.1.1-----------------------------
+
+2020-07-12 20:00:42.863 WARN  com.dfire.logs.HeraLog.warn:35 配置的工作路径/opt/logs/spring-boot不存在，将使用默认路径:/home/fuhd/work/galaxy/galaxy-admin
+
+2020-07-12 20:00:42.865 WARN  com.dfire.logs.HeraLog.warn:35 the hera.emr.groups is null, all user will use same emr cluster
+
+2020-07-12 20:00:53.141 INFO  com.dfire.logs.HeraLog.info:12 hold lock and update time
+
+2020-07-12 20:00:53.142 INFO  com.dfire.logs.HeraLog.info:12 begin to start master context
+
+2020-07-12 20:00:53.143 INFO  com.dfire.logs.HeraLog.info:12 start init quartz schedule
+
+2020-07-12 20:00:53.143 INFO  com.dfire.logs.HeraLog.info:12 start init quartz properties
+
+2020-07-12 20:00:53.154 INFO  com.dfire.logs.HeraLog.info:12 start init quartz scheduler
+
+2020-07-12 20:00:53.226 INFO  com.dfire.logs.HeraLog.info:12 start master server success
+
+2020-07-12 20:00:53.229 INFO  com.dfire.logs.HeraLog.info:17 -----------------------------init action,time: 1594555253229-----------------------------
+
+2020-07-12 20:00:53.230 INFO  com.dfire.logs.HeraLog.info:17 start RerunJobInit chore schedule success
+
+2020-07-12 20:00:53.230 INFO  com.dfire.logs.HeraLog.info:17 start RerunJobLaunch chore schedule success
+
+2020-07-12 20:00:53.249 INFO  com.dfire.logs.HeraLog.info:17 start LostJobCheck chore schedule success
+
+2020-07-12 20:00:53.250 INFO  com.dfire.logs.HeraLog.info:17 start WorkHeartCheck chore schedule success
+
+2020-07-12 20:00:53.251 INFO  com.dfire.logs.HeraLog.info:17 start JobActionInit chore schedule success
+
+2020-07-12 20:00:53.253 INFO  com.dfire.logs.HeraLog.info:17 start JobFinishCheck chore schedule success
+
+2020-07-12 20:00:53.255 INFO  com.dfire.logs.HeraLog.info:12 init master content success 
+
+2020-07-12 20:00:53.260 INFO  com.dfire.logs.HeraLog.info:12 init work client success 
+
+2020-07-12 20:00:53.262 INFO  com.dfire.logs.HeraLog.info:17 -----------------------------action size:1, time 1594555253262-----------------------------
+
+2020-07-12 20:00:53.264 INFO  com.dfire.logs.HeraLog.info:17 -----------------------------add actions to handler success, time:1594555253264-----------------------------
+
+2020-07-12 20:00:53.318 INFO  com.dfire.logs.HeraLog.info:17 -----------------------------dispatcher actions success, time1594555253318-----------------------------
+
+2020-07-12 20:00:53.324 INFO  com.dfire.logs.HeraLog.info:12 refresh hostGroup cache
+
+2020-07-12 20:04:30.568 INFO  com.dfire.logs.HeraLog.info:17 -----------------------------当前机器的IP为:127.0.1.1-----------------------------
+
+2020-07-12 20:04:30.813 WARN  com.dfire.logs.HeraLog.warn:35 配置的工作路径/opt/logs/spring-boot不存在，将使用默认路径:/home/fuhd/work/galaxy/galaxy-admin
+
+2020-07-12 20:04:30.815 WARN  com.dfire.logs.HeraLog.warn:35 the hera.emr.groups is null, all user will use same emr cluster
+
+2020-07-12 20:04:41.098 INFO  com.dfire.logs.HeraLog.info:12 hold lock and update time
+
+2020-07-12 20:04:41.100 INFO  com.dfire.logs.HeraLog.info:12 begin to start master context
+
+2020-07-12 20:04:41.100 INFO  com.dfire.logs.HeraLog.info:12 start init quartz schedule
+
+2020-07-12 20:04:41.100 INFO  com.dfire.logs.HeraLog.info:12 start init quartz properties
+
+2020-07-12 20:04:41.114 INFO  com.dfire.logs.HeraLog.info:12 start init quartz scheduler
+
+2020-07-12 20:04:41.187 INFO  com.dfire.logs.HeraLog.info:12 start master server success
+
+2020-07-12 20:04:41.191 INFO  com.dfire.logs.HeraLog.info:17 -----------------------------init action,time: 1594555481191-----------------------------
+
+2020-07-12 20:04:41.191 INFO  com.dfire.logs.HeraLog.info:17 start RerunJobInit chore schedule success
+
+2020-07-12 20:04:41.192 INFO  com.dfire.logs.HeraLog.info:17 start RerunJobLaunch chore schedule success
+
+2020-07-12 20:04:41.213 INFO  com.dfire.logs.HeraLog.info:17 start LostJobCheck chore schedule success
+
+2020-07-12 20:04:41.215 INFO  com.dfire.logs.HeraLog.info:17 start WorkHeartCheck chore schedule success
+
+2020-07-12 20:04:41.221 INFO  com.dfire.logs.HeraLog.info:17 start JobActionInit chore schedule success
+
+2020-07-12 20:04:41.223 INFO  com.dfire.logs.HeraLog.info:17 start JobFinishCheck chore schedule success
+
+2020-07-12 20:04:41.224 INFO  com.dfire.logs.HeraLog.info:12 init master content success 
+
+2020-07-12 20:04:41.227 INFO  com.dfire.logs.HeraLog.info:17 -----------------------------action size:1, time 1594555481227-----------------------------
+
+2020-07-12 20:04:41.229 INFO  com.dfire.logs.HeraLog.info:17 -----------------------------add actions to handler success, time:1594555481229-----------------------------
+
+2020-07-12 20:04:41.232 INFO  com.dfire.logs.HeraLog.info:12 init work client success 
+
+2020-07-12 20:04:41.294 INFO  com.dfire.logs.HeraLog.info:17 -----------------------------dispatcher actions success, time1594555481294-----------------------------
+
+2020-07-12 20:04:41.302 INFO  com.dfire.logs.HeraLog.info:12 refresh hostGroup cache
+
+2020-07-12 20:05:40.817 INFO  com.dfire.logs.HeraLog.info:12 hold lock and update time
+
+2020-07-12 20:05:41.234 INFO  com.dfire.logs.HeraLog.info:12 刷新hera_job库
+
+2020-07-12 20:06:40.814 INFO  com.dfire.logs.HeraLog.info:12 hold lock and update time
+
+2020-07-12 20:07:40.814 INFO  com.dfire.logs.HeraLog.info:12 hold lock and update time
+
+2020-07-12 20:08:40.817 INFO  com.dfire.logs.HeraLog.info:12 hold lock and update time
+
+2020-07-12 20:09:40.806 INFO  com.dfire.logs.HeraLog.info:12 hold lock and update time
+

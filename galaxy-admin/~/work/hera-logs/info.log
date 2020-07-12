@@ -5606,3 +5606,1145 @@ javax.servlet.ServletException: Circular view path [/error.index]: would dispatc
 
 2020-07-12 10:25:38.246 INFO  c.a.druid.pool.DruidDataSource.close:2096 {dataSource-1} closed
 
+2020-07-12 19:14:43.091 INFO  com.dfire.logs.MonitorLog.info:13 spring environmentPrepared
+
+2020-07-12 19:14:43.321 INFO  com.dfire.logs.MonitorLog.info:13 spring contextPrepared
+
+2020-07-12 19:14:43.324 INFO  com.dfire.AdminBootstrap.logStarting:55 Starting AdminBootstrap on ubuntu with PID 4287 (/home/fuhd/work/galaxy/galaxy-admin/build/classes/java/main started by fuhd in /home/fuhd/work/galaxy/galaxy-admin)
+
+2020-07-12 19:14:43.325 INFO  com.dfire.AdminBootstrap.logStartupProfileInfo:655 The following profiles are active: dev
+
+2020-07-12 19:14:43.446 INFO  com.dfire.logs.MonitorLog.info:13 spring contextLoaded
+
+2020-07-12 19:14:47.109 WARN  io.undertow.websockets.jsr.handleDeployment:68 UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+
+2020-07-12 19:14:47.264 INFO  io.undertow.servlet.log:364 Initializing Spring embedded WebApplicationContext
+
+2020-07-12 19:14:47.265 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext:285 Root WebApplicationContext: initialization completed in 3819 ms
+
+2020-07-12 19:14:48.474 INFO  com.dfire.logs.HeraLog.info:17 -----------------------------当前机器的IP为:127.0.1.1-----------------------------
+
+2020-07-12 19:14:48.881 WARN  com.dfire.logs.HeraLog.warn:35 配置的工作路径/opt/logs/spring-boot不存在，将使用默认路径:/home/fuhd/work/galaxy/galaxy-admin
+
+2020-07-12 19:14:48.898 WARN  com.dfire.logs.HeraLog.warn:35 the hera.emr.groups is null, all user will use same emr cluster
+
+2020-07-12 19:14:49.308 INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize:181 Initializing ExecutorService 'applicationTaskExecutor'
+
+2020-07-12 19:14:50.075 INFO  o.q.impl.StdSchedulerFactory.instantiate:1220 Using default implementation for ThreadExecutor
+
+2020-07-12 19:14:50.111 INFO  o.q.core.SchedulerSignalerImpl.<init>:61 Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+
+2020-07-12 19:14:50.111 INFO  org.quartz.core.QuartzScheduler.<init>:229 Quartz Scheduler v.2.3.2 created.
+
+2020-07-12 19:14:50.112 INFO  org.quartz.simpl.RAMJobStore.initialize:155 RAMJobStore initialized.
+
+2020-07-12 19:14:50.113 INFO  org.quartz.core.QuartzScheduler.initialize:294 Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+
+2020-07-12 19:14:50.113 INFO  o.q.impl.StdSchedulerFactory.instantiate:1374 Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+
+2020-07-12 19:14:50.113 INFO  o.q.impl.StdSchedulerFactory.instantiate:1378 Quartz scheduler version: 2.3.2
+
+2020-07-12 19:14:50.113 INFO  org.quartz.core.QuartzScheduler.setJobFactory:2293 JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@3835d3fd
+
+2020-07-12 19:14:50.252 INFO  io.undertow.start:117 starting server: Undertow - 2.1.3.Final
+
+2020-07-12 19:14:50.278 INFO  org.xnio.<clinit>:95 XNIO version 3.8.0.Final
+
+2020-07-12 19:14:50.311 INFO  org.xnio.nio.<clinit>:59 XNIO NIO Implementation Version 3.8.0.Final
+
+2020-07-12 19:14:50.386 INFO  org.jboss.threads.<clinit>:52 JBoss Threads version 3.1.0.Final
+
+2020-07-12 19:14:50.534 INFO  o.s.b.w.e.u.UndertowWebServer.start:133 Undertow started on port(s) 8080 (http) with context path '/hera'
+
+2020-07-12 19:14:50.535 INFO  o.s.s.q.SchedulerFactoryBean.startScheduler:727 Starting Quartz Scheduler now
+
+2020-07-12 19:14:50.535 INFO  org.quartz.core.QuartzScheduler.start:547 Scheduler quartzScheduler_$_NON_CLUSTERED started.
+
+2020-07-12 19:14:50.555 INFO  com.dfire.AdminBootstrap.logStarted:61 Started AdminBootstrap in 9.238 seconds (JVM running for 12.812)
+
+2020-07-12 19:14:59.676 INFO  c.a.druid.pool.DruidDataSource.init:983 {dataSource-1} inited
+
+2020-07-12 19:14:59.931 INFO  com.dfire.logs.HeraLog.info:12 hold lock and update time
+
+2020-07-12 19:14:59.933 INFO  com.dfire.logs.HeraLog.info:12 begin to start master context
+
+2020-07-12 19:14:59.933 INFO  com.dfire.logs.HeraLog.info:12 start init quartz schedule
+
+2020-07-12 19:14:59.933 INFO  com.dfire.logs.HeraLog.info:12 start init quartz properties
+
+2020-07-12 19:14:59.961 INFO  o.q.impl.StdSchedulerFactory.instantiate:1220 Using default implementation for ThreadExecutor
+
+2020-07-12 19:14:59.961 INFO  o.quartz.simpl.SimpleThreadPool.initialize:268 Job execution threads will use class loader of thread: work-schedule-thread-2
+
+2020-07-12 19:14:59.968 INFO  o.q.core.SchedulerSignalerImpl.<init>:61 Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+
+2020-07-12 19:14:59.968 INFO  org.quartz.core.QuartzScheduler.<init>:229 Quartz Scheduler v.2.3.2 created.
+
+2020-07-12 19:14:59.968 INFO  org.quartz.simpl.RAMJobStore.initialize:155 RAMJobStore initialized.
+
+2020-07-12 19:14:59.968 INFO  org.quartz.core.QuartzScheduler.initialize:294 Scheduler meta-data: Quartz Scheduler (v2.3.2) 'heraQuartzSchedulerPool' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 4 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+
+2020-07-12 19:14:59.968 INFO  o.q.impl.StdSchedulerFactory.instantiate:1374 Quartz scheduler 'heraQuartzSchedulerPool' initialized from an externally provided properties instance.
+
+2020-07-12 19:14:59.969 INFO  o.q.impl.StdSchedulerFactory.instantiate:1378 Quartz scheduler version: 2.3.2
+
+2020-07-12 19:14:59.969 INFO  org.quartz.core.QuartzScheduler.start:547 Scheduler heraQuartzSchedulerPool_$_NON_CLUSTERED started.
+
+2020-07-12 19:14:59.969 INFO  com.dfire.logs.HeraLog.info:12 start init quartz scheduler
+
+2020-07-12 19:15:00.493 INFO  com.dfire.logs.HeraLog.info:12 start master server success
+
+2020-07-12 19:15:00.496 INFO  com.dfire.logs.HeraLog.info:17 start RerunJobInit chore schedule success
+
+2020-07-12 19:15:00.497 INFO  com.dfire.logs.HeraLog.info:17 start RerunJobLaunch chore schedule success
+
+2020-07-12 19:15:00.496 INFO  com.dfire.logs.HeraLog.info:17 -----------------------------init action,time: 1594552500496-----------------------------
+
+2020-07-12 19:15:00.563 INFO  com.dfire.logs.HeraLog.info:17 start LostJobCheck chore schedule success
+
+2020-07-12 19:15:00.564 INFO  com.dfire.logs.HeraLog.info:17 start WorkHeartCheck chore schedule success
+
+2020-07-12 19:15:00.566 INFO  com.dfire.logs.HeraLog.info:17 start JobActionInit chore schedule success
+
+2020-07-12 19:15:00.580 INFO  com.dfire.logs.HeraLog.info:17 start JobFinishCheck chore schedule success
+
+2020-07-12 19:15:00.581 INFO  com.dfire.logs.HeraLog.info:12 init master content success 
+
+2020-07-12 19:15:00.615 INFO  com.dfire.logs.HeraLog.info:17 -----------------------------action size:1, time 1594552500615-----------------------------
+
+2020-07-12 19:15:00.618 INFO  com.dfire.logs.HeraLog.info:17 -----------------------------add actions to handler success, time:1594552500618-----------------------------
+
+2020-07-12 19:15:00.619 INFO  com.dfire.logs.HeraLog.info:12 init work client success 
+
+2020-07-12 19:15:00.789 INFO  com.dfire.logs.HeraLog.info:17 -----------------------------dispatcher actions success, time1594552500789-----------------------------
+
+2020-07-12 19:15:00.834 INFO  com.dfire.logs.HeraLog.info:12 refresh hostGroup cache
+
+2020-07-12 19:15:00.853 INFO  com.dfire.logs.SocketLog.info:12 NettyChannel{channel=NettyChannel{channel=[id: 0x52aca348, L:/127.0.0.1:40626 - R:/127.0.1.1:9887]}}
+
+2020-07-12 19:15:00.853 INFO  com.dfire.logs.SocketLog.info:17 worker client channel active success : /127.0.0.1:40626
+
+2020-07-12 19:15:00.863 INFO  com.dfire.logs.SocketLog.info:12 connect server success
+
+2020-07-12 19:15:00.854 INFO  com.dfire.logs.SocketLog.info:17 worker client channel registered connect success : /127.0.0.1:40626
+
+2020-07-12 19:15:00.863 INFO  com.dfire.logs.SocketLog.info:12 客户端与服务端连接开启
+
+2020-07-12 19:15:49.147 INFO  io.undertow.servlet.log:364 Initializing Spring DispatcherServlet 'dispatcherServlet'
+
+2020-07-12 19:15:49.148 INFO  o.s.w.servlet.DispatcherServlet.initServletBean:525 Initializing Servlet 'dispatcherServlet'
+
+2020-07-12 19:15:49.167 INFO  o.s.w.servlet.DispatcherServlet.initServletBean:547 Completed initialization in 19 ms
+
+2020-07-12 19:15:58.860 INFO  com.dfire.logs.HeraLog.info:12 hold lock and update time
+
+2020-07-12 19:16:00.529 ERROR c.a.d.p.DruidAbstractDataSource.testConnectionInternal:1481 discard long time none received connection. , jdbcUrl : jdbc:mysql://192.168.153.129:3306/hera?characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&autoReconnect=true&allowMultiQueries=true&useSSL=false, jdbcUrl : jdbc:mysql://192.168.153.129:3306/hera?characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&autoReconnect=true&allowMultiQueries=true&useSSL=false, lastPacketReceivedIdleMillis : 60847
+
+2020-07-12 19:16:00.568 INFO  com.dfire.logs.ScheduleLog.info:12 全量任务版本生成
+
+2020-07-12 19:16:00.616 INFO  com.dfire.logs.HeraLog.info:12 刷新hera_job库
+
+2020-07-12 19:16:00.675 INFO  com.dfire.logs.ScheduleLog.info:17 batchInsert-> batch size is :1
+
+2020-07-12 19:16:00.707 INFO  com.dfire.logs.ScheduleLog.info:17 [单个任务:false，任务id:null]generate action success
+
+2020-07-12 19:16:00.711 INFO  com.dfire.logs.ScheduleLog.info:12 生成版本时间:121 ms
+
+2020-07-12 19:16:00.711 WARN  com.dfire.logs.ScheduleLog.warn:35 开始进行版本清理
+
+2020-07-12 19:16:00.715 WARN  com.dfire.logs.ScheduleLog.warn:35 版本清理完成,清理handler个数为:0
+
+2020-07-12 19:16:11.484 INFO  com.dfire.logs.HeraLog.info:12 token 过期
+
+2020-07-12 19:16:58.860 INFO  com.dfire.logs.HeraLog.info:12 hold lock and update time
+
+2020-07-12 19:17:58.870 INFO  com.dfire.logs.HeraLog.info:12 hold lock and update time
+
+2020-07-12 19:18:58.865 INFO  com.dfire.logs.HeraLog.info:12 hold lock and update time
+
+2020-07-12 19:19:58.859 INFO  com.dfire.logs.HeraLog.info:12 hold lock and update time
+
+2020-07-12 19:20:58.868 INFO  com.dfire.logs.HeraLog.info:12 hold lock and update time
+
+2020-07-12 19:21:00.500 ERROR c.a.d.p.DruidAbstractDataSource.testConnectionInternal:1481 discard long time none received connection. , jdbcUrl : jdbc:mysql://192.168.153.129:3306/hera?characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&autoReconnect=true&allowMultiQueries=true&useSSL=false, jdbcUrl : jdbc:mysql://192.168.153.129:3306/hera?characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&autoReconnect=true&allowMultiQueries=true&useSSL=false, lastPacketReceivedIdleMillis : 299963
+
+2020-07-12 19:21:58.897 INFO  com.dfire.logs.HeraLog.info:12 hold lock and update time
+
+2020-07-12 19:22:58.870 INFO  com.dfire.logs.HeraLog.info:12 hold lock and update time
+
+2020-07-12 19:23:58.859 INFO  com.dfire.logs.HeraLog.info:12 hold lock and update time
+
+2020-07-12 19:24:58.882 INFO  com.dfire.logs.HeraLog.info:12 hold lock and update time
+
+2020-07-12 19:25:58.869 INFO  com.dfire.logs.HeraLog.info:12 hold lock and update time
+
+2020-07-12 19:26:00.500 ERROR c.a.d.p.DruidAbstractDataSource.testConnectionInternal:1481 discard long time none received connection. , jdbcUrl : jdbc:mysql://192.168.153.129:3306/hera?characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&autoReconnect=true&allowMultiQueries=true&useSSL=false, jdbcUrl : jdbc:mysql://192.168.153.129:3306/hera?characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&autoReconnect=true&allowMultiQueries=true&useSSL=false, lastPacketReceivedIdleMillis : 299995
+
+2020-07-12 19:26:58.875 INFO  com.dfire.logs.HeraLog.info:12 hold lock and update time
+
+2020-07-12 19:27:58.859 INFO  com.dfire.logs.HeraLog.info:12 hold lock and update time
+
+2020-07-12 19:28:58.868 INFO  com.dfire.logs.HeraLog.info:12 hold lock and update time
+
+2020-07-12 19:29:58.861 INFO  com.dfire.logs.HeraLog.info:12 hold lock and update time
+
+2020-07-12 19:30:58.871 INFO  com.dfire.logs.HeraLog.info:12 hold lock and update time
+
+2020-07-12 19:31:00.500 ERROR c.a.d.p.DruidAbstractDataSource.testConnectionInternal:1481 discard long time none received connection. , jdbcUrl : jdbc:mysql://192.168.153.129:3306/hera?characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&autoReconnect=true&allowMultiQueries=true&useSSL=false, jdbcUrl : jdbc:mysql://192.168.153.129:3306/hera?characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&autoReconnect=true&allowMultiQueries=true&useSSL=false, lastPacketReceivedIdleMillis : 299988
+
+2020-07-12 19:31:58.876 INFO  com.dfire.logs.HeraLog.info:12 hold lock and update time
+
+2020-07-12 19:32:58.859 INFO  com.dfire.logs.HeraLog.info:12 hold lock and update time
+
+2020-07-12 19:33:58.860 INFO  com.dfire.logs.HeraLog.info:12 hold lock and update time
+
+2020-07-12 19:34:58.859 INFO  com.dfire.logs.HeraLog.info:12 hold lock and update time
+
+2020-07-12 19:35:27.217 INFO  org.quartz.core.QuartzScheduler.standby:585 Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+
+2020-07-12 19:35:27.221 INFO  io.undertow.stop:252 stopping server: Undertow - 2.1.3.Final
+
+2020-07-12 19:35:27.231 INFO  io.undertow.servlet.log:364 Destroying Spring FrameworkServlet 'dispatcherServlet'
+
+2020-07-12 19:35:27.235 INFO  o.s.s.q.SchedulerFactoryBean.destroy:845 Shutting down Quartz Scheduler
+
+2020-07-12 19:35:27.235 INFO  org.quartz.core.QuartzScheduler.shutdown:666 Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+
+2020-07-12 19:35:27.235 INFO  org.quartz.core.QuartzScheduler.standby:585 Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+
+2020-07-12 19:35:27.235 INFO  org.quartz.core.QuartzScheduler.shutdown:740 Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+
+2020-07-12 19:35:27.242 INFO  o.s.s.c.ThreadPoolTaskExecutor.shutdown:218 Shutting down ExecutorService 'applicationTaskExecutor'
+
+2020-07-12 19:35:27.244 INFO  c.a.druid.pool.DruidDataSource.close:2024 {dataSource-1} closing ...
+
+2020-07-12 19:35:27.248 INFO  c.a.druid.pool.DruidDataSource.close:2096 {dataSource-1} closed
+
+2020-07-12 19:35:38.536 INFO  com.dfire.logs.MonitorLog.info:13 spring environmentPrepared
+
+2020-07-12 19:35:38.590 INFO  com.dfire.logs.MonitorLog.info:13 spring contextPrepared
+
+2020-07-12 19:35:38.593 INFO  com.dfire.AdminBootstrap.logStarting:55 Starting AdminBootstrap on ubuntu with PID 6824 (/home/fuhd/work/galaxy/galaxy-admin/build/classes/java/main started by fuhd in /home/fuhd/work/galaxy/galaxy-admin)
+
+2020-07-12 19:35:38.594 INFO  com.dfire.AdminBootstrap.logStartupProfileInfo:655 The following profiles are active: dev
+
+2020-07-12 19:35:38.634 INFO  com.dfire.logs.MonitorLog.info:13 spring contextLoaded
+
+2020-07-12 19:35:39.866 WARN  io.undertow.websockets.jsr.handleDeployment:68 UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+
+2020-07-12 19:35:39.880 INFO  io.undertow.servlet.log:364 Initializing Spring embedded WebApplicationContext
+
+2020-07-12 19:35:39.881 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext:285 Root WebApplicationContext: initialization completed in 1247 ms
+
+2020-07-12 19:35:40.362 INFO  com.dfire.logs.HeraLog.info:17 -----------------------------当前机器的IP为:127.0.1.1-----------------------------
+
+2020-07-12 19:35:40.614 WARN  com.dfire.logs.HeraLog.warn:35 配置的工作路径/opt/logs/spring-boot不存在，将使用默认路径:/home/fuhd/work/galaxy/galaxy-admin
+
+2020-07-12 19:35:40.617 WARN  com.dfire.logs.HeraLog.warn:35 the hera.emr.groups is null, all user will use same emr cluster
+
+2020-07-12 19:35:40.773 INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize:181 Initializing ExecutorService 'applicationTaskExecutor'
+
+2020-07-12 19:35:41.084 INFO  o.q.impl.StdSchedulerFactory.instantiate:1220 Using default implementation for ThreadExecutor
+
+2020-07-12 19:35:41.092 INFO  o.q.core.SchedulerSignalerImpl.<init>:61 Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+
+2020-07-12 19:35:41.093 INFO  org.quartz.core.QuartzScheduler.<init>:229 Quartz Scheduler v.2.3.2 created.
+
+2020-07-12 19:35:41.093 INFO  org.quartz.simpl.RAMJobStore.initialize:155 RAMJobStore initialized.
+
+2020-07-12 19:35:41.094 INFO  org.quartz.core.QuartzScheduler.initialize:294 Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+
+2020-07-12 19:35:41.094 INFO  o.q.impl.StdSchedulerFactory.instantiate:1374 Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+
+2020-07-12 19:35:41.094 INFO  o.q.impl.StdSchedulerFactory.instantiate:1378 Quartz scheduler version: 2.3.2
+
+2020-07-12 19:35:41.094 INFO  org.quartz.core.QuartzScheduler.setJobFactory:2293 JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@3856d0cb
+
+2020-07-12 19:35:41.143 INFO  io.undertow.start:117 starting server: Undertow - 2.1.3.Final
+
+2020-07-12 19:35:41.148 INFO  org.xnio.<clinit>:95 XNIO version 3.8.0.Final
+
+2020-07-12 19:35:41.154 INFO  org.xnio.nio.<clinit>:59 XNIO NIO Implementation Version 3.8.0.Final
+
+2020-07-12 19:35:41.246 INFO  org.jboss.threads.<clinit>:52 JBoss Threads version 3.1.0.Final
+
+2020-07-12 19:35:41.320 INFO  o.s.b.w.e.u.UndertowWebServer.start:133 Undertow started on port(s) 8080 (http) with context path '/hera'
+
+2020-07-12 19:35:41.321 INFO  o.s.s.q.SchedulerFactoryBean.startScheduler:727 Starting Quartz Scheduler now
+
+2020-07-12 19:35:41.321 INFO  org.quartz.core.QuartzScheduler.start:547 Scheduler quartzScheduler_$_NON_CLUSTERED started.
+
+2020-07-12 19:35:41.330 INFO  com.dfire.AdminBootstrap.logStarted:61 Started AdminBootstrap in 3.337 seconds (JVM running for 3.657)
+
+2020-07-12 19:35:51.078 INFO  c.a.druid.pool.DruidDataSource.init:983 {dataSource-1} inited
+
+2020-07-12 19:35:51.201 INFO  com.dfire.logs.HeraLog.info:12 hold lock and update time
+
+2020-07-12 19:35:51.203 INFO  com.dfire.logs.HeraLog.info:12 begin to start master context
+
+2020-07-12 19:35:51.203 INFO  com.dfire.logs.HeraLog.info:12 start init quartz schedule
+
+2020-07-12 19:35:51.203 INFO  com.dfire.logs.HeraLog.info:12 start init quartz properties
+
+2020-07-12 19:35:51.223 INFO  o.q.impl.StdSchedulerFactory.instantiate:1220 Using default implementation for ThreadExecutor
+
+2020-07-12 19:35:51.223 INFO  o.quartz.simpl.SimpleThreadPool.initialize:268 Job execution threads will use class loader of thread: work-schedule-thread-2
+
+2020-07-12 19:35:51.255 INFO  o.q.core.SchedulerSignalerImpl.<init>:61 Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+
+2020-07-12 19:35:51.256 INFO  org.quartz.core.QuartzScheduler.<init>:229 Quartz Scheduler v.2.3.2 created.
+
+2020-07-12 19:35:51.256 INFO  org.quartz.simpl.RAMJobStore.initialize:155 RAMJobStore initialized.
+
+2020-07-12 19:35:51.256 INFO  org.quartz.core.QuartzScheduler.initialize:294 Scheduler meta-data: Quartz Scheduler (v2.3.2) 'heraQuartzSchedulerPool' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 4 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+
+2020-07-12 19:35:51.256 INFO  o.q.impl.StdSchedulerFactory.instantiate:1374 Quartz scheduler 'heraQuartzSchedulerPool' initialized from an externally provided properties instance.
+
+2020-07-12 19:35:51.256 INFO  o.q.impl.StdSchedulerFactory.instantiate:1378 Quartz scheduler version: 2.3.2
+
+2020-07-12 19:35:51.256 INFO  org.quartz.core.QuartzScheduler.start:547 Scheduler heraQuartzSchedulerPool_$_NON_CLUSTERED started.
+
+2020-07-12 19:35:51.256 INFO  com.dfire.logs.HeraLog.info:12 start init quartz scheduler
+
+2020-07-12 19:35:51.373 INFO  com.dfire.logs.HeraLog.info:12 start master server success
+
+2020-07-12 19:35:51.377 INFO  com.dfire.logs.HeraLog.info:17 start RerunJobInit chore schedule success
+
+2020-07-12 19:35:51.378 INFO  com.dfire.logs.HeraLog.info:17 -----------------------------init action,time: 1594553751378-----------------------------
+
+2020-07-12 19:35:51.379 INFO  com.dfire.logs.HeraLog.info:17 start RerunJobLaunch chore schedule success
+
+2020-07-12 19:35:51.441 INFO  com.dfire.logs.HeraLog.info:17 start LostJobCheck chore schedule success
+
+2020-07-12 19:35:51.443 INFO  com.dfire.logs.HeraLog.info:17 start WorkHeartCheck chore schedule success
+
+2020-07-12 19:35:51.473 INFO  com.dfire.logs.HeraLog.info:17 start JobActionInit chore schedule success
+
+2020-07-12 19:35:51.480 INFO  com.dfire.logs.HeraLog.info:17 start JobFinishCheck chore schedule success
+
+2020-07-12 19:35:51.481 INFO  com.dfire.logs.HeraLog.info:12 init master content success 
+
+2020-07-12 19:35:51.487 INFO  com.dfire.logs.HeraLog.info:17 -----------------------------action size:1, time 1594553751487-----------------------------
+
+2020-07-12 19:35:51.488 INFO  com.dfire.logs.HeraLog.info:12 init work client success 
+
+2020-07-12 19:35:51.491 INFO  com.dfire.logs.HeraLog.info:17 -----------------------------add actions to handler success, time:1594553751491-----------------------------
+
+2020-07-12 19:35:51.561 INFO  com.dfire.logs.SocketLog.info:12 NettyChannel{channel=NettyChannel{channel=[id: 0xed318744, L:/127.0.0.1:40904 - R:/127.0.1.1:9887]}}
+
+2020-07-12 19:35:51.562 INFO  com.dfire.logs.SocketLog.info:12 connect server success
+
+2020-07-12 19:35:51.565 INFO  com.dfire.logs.SocketLog.info:12 客户端与服务端连接开启
+
+2020-07-12 19:35:51.567 INFO  com.dfire.logs.SocketLog.info:17 worker client channel active success : /127.0.0.1:40904
+
+2020-07-12 19:35:51.568 INFO  com.dfire.logs.SocketLog.info:17 worker client channel registered connect success : /127.0.0.1:40904
+
+2020-07-12 19:35:51.584 INFO  com.dfire.logs.HeraLog.info:17 -----------------------------dispatcher actions success, time1594553751584-----------------------------
+
+2020-07-12 19:35:51.592 INFO  com.dfire.logs.HeraLog.info:12 refresh hostGroup cache
+
+2020-07-12 19:36:50.604 INFO  com.dfire.logs.HeraLog.info:12 hold lock and update time
+
+2020-07-12 19:36:51.433 ERROR c.a.d.p.DruidAbstractDataSource.testConnectionInternal:1481 discard long time none received connection. , jdbcUrl : jdbc:mysql://192.168.153.129:3306/hera?characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&autoReconnect=true&allowMultiQueries=true&useSSL=false, jdbcUrl : jdbc:mysql://192.168.153.129:3306/hera?characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&autoReconnect=true&allowMultiQueries=true&useSSL=false, lastPacketReceivedIdleMillis : 60344
+
+2020-07-12 19:36:51.471 INFO  com.dfire.logs.ScheduleLog.info:12 全量任务版本生成
+
+2020-07-12 19:36:51.477 INFO  com.dfire.logs.HeraLog.info:12 刷新hera_job库
+
+2020-07-12 19:36:51.495 INFO  com.dfire.logs.ScheduleLog.info:17 batchInsert-> batch size is :1
+
+2020-07-12 19:36:51.511 INFO  com.dfire.logs.ScheduleLog.info:17 [单个任务:false，任务id:null]generate action success
+
+2020-07-12 19:36:51.515 INFO  com.dfire.logs.ScheduleLog.info:12 生成版本时间:40 ms
+
+2020-07-12 19:36:51.515 WARN  com.dfire.logs.ScheduleLog.warn:35 开始进行版本清理
+
+2020-07-12 19:36:51.518 WARN  com.dfire.logs.ScheduleLog.warn:35 版本清理完成,清理handler个数为:0
+
+2020-07-12 19:37:50.616 INFO  com.dfire.logs.HeraLog.info:12 hold lock and update time
+
+2020-07-12 19:38:46.646 INFO  org.quartz.core.QuartzScheduler.standby:585 Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+
+2020-07-12 19:38:46.649 INFO  io.undertow.stop:252 stopping server: Undertow - 2.1.3.Final
+
+2020-07-12 19:38:46.668 INFO  o.s.s.q.SchedulerFactoryBean.destroy:845 Shutting down Quartz Scheduler
+
+2020-07-12 19:38:46.668 INFO  org.quartz.core.QuartzScheduler.shutdown:666 Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+
+2020-07-12 19:38:46.669 INFO  org.quartz.core.QuartzScheduler.standby:585 Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+
+2020-07-12 19:38:46.669 INFO  org.quartz.core.QuartzScheduler.shutdown:740 Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+
+2020-07-12 19:38:46.670 INFO  o.s.s.c.ThreadPoolTaskExecutor.shutdown:218 Shutting down ExecutorService 'applicationTaskExecutor'
+
+2020-07-12 19:38:46.672 INFO  c.a.druid.pool.DruidDataSource.close:2024 {dataSource-1} closing ...
+
+2020-07-12 19:38:46.682 INFO  c.a.druid.pool.DruidDataSource.close:2096 {dataSource-1} closed
+
+2020-07-12 19:38:52.905 INFO  com.dfire.logs.MonitorLog.info:13 spring environmentPrepared
+
+2020-07-12 19:38:52.959 INFO  com.dfire.logs.MonitorLog.info:13 spring contextPrepared
+
+2020-07-12 19:38:52.962 INFO  com.dfire.AdminBootstrap.logStarting:55 Starting AdminBootstrap on ubuntu with PID 7411 (/home/fuhd/work/galaxy/galaxy-admin/build/classes/java/main started by fuhd in /home/fuhd/work/galaxy/galaxy-admin)
+
+2020-07-12 19:38:52.962 INFO  com.dfire.AdminBootstrap.logStartupProfileInfo:655 The following profiles are active: dev
+
+2020-07-12 19:38:52.998 INFO  com.dfire.logs.MonitorLog.info:13 spring contextLoaded
+
+2020-07-12 19:38:54.144 WARN  io.undertow.websockets.jsr.handleDeployment:68 UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+
+2020-07-12 19:38:54.161 INFO  io.undertow.servlet.log:364 Initializing Spring embedded WebApplicationContext
+
+2020-07-12 19:38:54.161 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext:285 Root WebApplicationContext: initialization completed in 1163 ms
+
+2020-07-12 19:38:54.583 INFO  com.dfire.logs.HeraLog.info:17 -----------------------------当前机器的IP为:127.0.1.1-----------------------------
+
+2020-07-12 19:38:54.838 WARN  com.dfire.logs.HeraLog.warn:35 配置的工作路径/opt/logs/spring-boot不存在，将使用默认路径:/home/fuhd/work/galaxy/galaxy-admin
+
+2020-07-12 19:38:54.841 WARN  com.dfire.logs.HeraLog.warn:35 the hera.emr.groups is null, all user will use same emr cluster
+
+2020-07-12 19:38:54.987 INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize:181 Initializing ExecutorService 'applicationTaskExecutor'
+
+2020-07-12 19:38:55.359 INFO  o.q.impl.StdSchedulerFactory.instantiate:1220 Using default implementation for ThreadExecutor
+
+2020-07-12 19:38:55.373 INFO  o.q.core.SchedulerSignalerImpl.<init>:61 Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+
+2020-07-12 19:38:55.374 INFO  org.quartz.core.QuartzScheduler.<init>:229 Quartz Scheduler v.2.3.2 created.
+
+2020-07-12 19:38:55.374 INFO  org.quartz.simpl.RAMJobStore.initialize:155 RAMJobStore initialized.
+
+2020-07-12 19:38:55.375 INFO  org.quartz.core.QuartzScheduler.initialize:294 Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+
+2020-07-12 19:38:55.375 INFO  o.q.impl.StdSchedulerFactory.instantiate:1374 Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+
+2020-07-12 19:38:55.375 INFO  o.q.impl.StdSchedulerFactory.instantiate:1378 Quartz scheduler version: 2.3.2
+
+2020-07-12 19:38:55.375 INFO  org.quartz.core.QuartzScheduler.setJobFactory:2293 JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@4ac0ed65
+
+2020-07-12 19:38:55.425 INFO  io.undertow.start:117 starting server: Undertow - 2.1.3.Final
+
+2020-07-12 19:38:55.430 INFO  org.xnio.<clinit>:95 XNIO version 3.8.0.Final
+
+2020-07-12 19:38:55.437 INFO  org.xnio.nio.<clinit>:59 XNIO NIO Implementation Version 3.8.0.Final
+
+2020-07-12 19:38:55.461 INFO  org.jboss.threads.<clinit>:52 JBoss Threads version 3.1.0.Final
+
+2020-07-12 19:38:55.498 INFO  o.s.b.w.e.u.UndertowWebServer.start:133 Undertow started on port(s) 8080 (http) with context path '/hera'
+
+2020-07-12 19:38:55.500 INFO  o.s.s.q.SchedulerFactoryBean.startScheduler:727 Starting Quartz Scheduler now
+
+2020-07-12 19:38:55.501 INFO  org.quartz.core.QuartzScheduler.start:547 Scheduler quartzScheduler_$_NON_CLUSTERED started.
+
+2020-07-12 19:38:55.510 INFO  com.dfire.AdminBootstrap.logStarted:61 Started AdminBootstrap in 3.122 seconds (JVM running for 3.473)
+
+2020-07-12 19:39:05.101 INFO  c.a.druid.pool.DruidDataSource.init:983 {dataSource-1} inited
+
+2020-07-12 19:39:05.166 INFO  com.dfire.logs.HeraLog.info:12 hold lock and update time
+
+2020-07-12 19:39:05.168 INFO  com.dfire.logs.HeraLog.info:12 begin to start master context
+
+2020-07-12 19:39:05.168 INFO  com.dfire.logs.HeraLog.info:12 start init quartz schedule
+
+2020-07-12 19:39:05.168 INFO  com.dfire.logs.HeraLog.info:12 start init quartz properties
+
+2020-07-12 19:39:05.181 INFO  o.q.impl.StdSchedulerFactory.instantiate:1220 Using default implementation for ThreadExecutor
+
+2020-07-12 19:39:05.182 INFO  o.quartz.simpl.SimpleThreadPool.initialize:268 Job execution threads will use class loader of thread: work-schedule-thread-2
+
+2020-07-12 19:39:05.187 INFO  o.q.core.SchedulerSignalerImpl.<init>:61 Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+
+2020-07-12 19:39:05.187 INFO  org.quartz.core.QuartzScheduler.<init>:229 Quartz Scheduler v.2.3.2 created.
+
+2020-07-12 19:39:05.187 INFO  org.quartz.simpl.RAMJobStore.initialize:155 RAMJobStore initialized.
+
+2020-07-12 19:39:05.187 INFO  org.quartz.core.QuartzScheduler.initialize:294 Scheduler meta-data: Quartz Scheduler (v2.3.2) 'heraQuartzSchedulerPool' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 4 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+
+2020-07-12 19:39:05.187 INFO  o.q.impl.StdSchedulerFactory.instantiate:1374 Quartz scheduler 'heraQuartzSchedulerPool' initialized from an externally provided properties instance.
+
+2020-07-12 19:39:05.187 INFO  o.q.impl.StdSchedulerFactory.instantiate:1378 Quartz scheduler version: 2.3.2
+
+2020-07-12 19:39:05.187 INFO  org.quartz.core.QuartzScheduler.start:547 Scheduler heraQuartzSchedulerPool_$_NON_CLUSTERED started.
+
+2020-07-12 19:39:05.188 INFO  com.dfire.logs.HeraLog.info:12 start init quartz scheduler
+
+2020-07-12 19:39:05.270 INFO  com.dfire.logs.HeraLog.info:12 start master server success
+
+2020-07-12 19:39:05.273 INFO  com.dfire.logs.HeraLog.info:17 -----------------------------init action,time: 1594553945273-----------------------------
+
+2020-07-12 19:39:05.273 INFO  com.dfire.logs.HeraLog.info:17 start RerunJobInit chore schedule success
+
+2020-07-12 19:39:05.274 INFO  com.dfire.logs.HeraLog.info:17 start RerunJobLaunch chore schedule success
+
+2020-07-12 19:39:05.298 INFO  com.dfire.logs.HeraLog.info:17 start LostJobCheck chore schedule success
+
+2020-07-12 19:39:05.299 INFO  com.dfire.logs.HeraLog.info:17 start WorkHeartCheck chore schedule success
+
+2020-07-12 19:39:05.300 INFO  com.dfire.logs.HeraLog.info:17 start JobActionInit chore schedule success
+
+2020-07-12 19:39:05.302 INFO  com.dfire.logs.HeraLog.info:17 start JobFinishCheck chore schedule success
+
+2020-07-12 19:39:05.304 INFO  com.dfire.logs.HeraLog.info:12 init master content success 
+
+2020-07-12 19:39:05.308 INFO  com.dfire.logs.HeraLog.info:12 init work client success 
+
+2020-07-12 19:39:05.310 INFO  com.dfire.logs.HeraLog.info:17 -----------------------------action size:1, time 1594553945310-----------------------------
+
+2020-07-12 19:39:05.311 INFO  com.dfire.logs.HeraLog.info:17 -----------------------------add actions to handler success, time:1594553945311-----------------------------
+
+2020-07-12 19:39:05.348 INFO  com.dfire.logs.SocketLog.info:12 NettyChannel{channel=NettyChannel{channel=[id: 0x8a71a462, L:/127.0.0.1:40938 - R:/127.0.1.1:9887]}}
+
+2020-07-12 19:39:05.348 INFO  com.dfire.logs.SocketLog.info:12 connect server success
+
+2020-07-12 19:39:05.348 INFO  com.dfire.logs.SocketLog.info:12 客户端与服务端连接开启
+
+2020-07-12 19:39:05.354 INFO  com.dfire.logs.SocketLog.info:17 worker client channel active success : /127.0.0.1:40938
+
+2020-07-12 19:39:05.356 INFO  com.dfire.logs.SocketLog.info:17 worker client channel registered connect success : /127.0.0.1:40938
+
+2020-07-12 19:39:05.368 INFO  com.dfire.logs.HeraLog.info:17 -----------------------------dispatcher actions success, time1594553945368-----------------------------
+
+2020-07-12 19:39:05.378 INFO  com.dfire.logs.HeraLog.info:12 refresh hostGroup cache
+
+2020-07-12 19:40:04.830 INFO  com.dfire.logs.HeraLog.info:12 hold lock and update time
+
+2020-07-12 19:40:05.283 ERROR c.a.d.p.DruidAbstractDataSource.testConnectionInternal:1481 discard long time none received connection. , jdbcUrl : jdbc:mysql://192.168.153.129:3306/hera?characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&autoReconnect=true&allowMultiQueries=true&useSSL=false, jdbcUrl : jdbc:mysql://192.168.153.129:3306/hera?characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&autoReconnect=true&allowMultiQueries=true&useSSL=false, lastPacketReceivedIdleMillis : 60187
+
+2020-07-12 19:40:05.301 INFO  com.dfire.logs.ScheduleLog.info:12 全量任务版本生成
+
+2020-07-12 19:40:05.353 INFO  com.dfire.logs.HeraLog.info:12 刷新hera_job库
+
+2020-07-12 19:40:05.367 INFO  com.dfire.logs.ScheduleLog.info:17 batchInsert-> batch size is :1
+
+2020-07-12 19:40:05.383 INFO  com.dfire.logs.ScheduleLog.info:17 [单个任务:false，任务id:null]generate action success
+
+2020-07-12 19:40:05.388 INFO  com.dfire.logs.ScheduleLog.info:12 生成版本时间:82 ms
+
+2020-07-12 19:40:05.388 WARN  com.dfire.logs.ScheduleLog.warn:35 开始进行版本清理
+
+2020-07-12 19:40:05.391 WARN  com.dfire.logs.ScheduleLog.warn:35 版本清理完成,清理handler个数为:0
+
+2020-07-12 19:41:04.834 INFO  com.dfire.logs.HeraLog.info:12 hold lock and update time
+
+2020-07-12 19:42:04.837 INFO  com.dfire.logs.HeraLog.info:12 hold lock and update time
+
+2020-07-12 19:43:04.692 INFO  org.quartz.core.QuartzScheduler.standby:585 Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+
+2020-07-12 19:43:04.694 INFO  io.undertow.stop:252 stopping server: Undertow - 2.1.3.Final
+
+2020-07-12 19:43:04.728 INFO  o.s.s.q.SchedulerFactoryBean.destroy:845 Shutting down Quartz Scheduler
+
+2020-07-12 19:43:04.729 INFO  org.quartz.core.QuartzScheduler.shutdown:666 Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+
+2020-07-12 19:43:04.729 INFO  org.quartz.core.QuartzScheduler.standby:585 Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+
+2020-07-12 19:43:04.730 INFO  org.quartz.core.QuartzScheduler.shutdown:740 Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+
+2020-07-12 19:43:04.733 INFO  o.s.s.c.ThreadPoolTaskExecutor.shutdown:218 Shutting down ExecutorService 'applicationTaskExecutor'
+
+2020-07-12 19:43:04.735 INFO  c.a.druid.pool.DruidDataSource.close:2024 {dataSource-1} closing ...
+
+2020-07-12 19:43:04.749 INFO  c.a.druid.pool.DruidDataSource.close:2096 {dataSource-1} closed
+
+2020-07-12 19:43:11.523 INFO  com.dfire.logs.MonitorLog.info:13 spring environmentPrepared
+
+2020-07-12 19:43:11.570 INFO  com.dfire.logs.MonitorLog.info:13 spring contextPrepared
+
+2020-07-12 19:43:11.573 INFO  com.dfire.AdminBootstrap.logStarting:55 Starting AdminBootstrap on ubuntu with PID 8102 (/home/fuhd/work/galaxy/galaxy-admin/build/classes/java/main started by fuhd in /home/fuhd/work/galaxy/galaxy-admin)
+
+2020-07-12 19:43:11.574 INFO  com.dfire.AdminBootstrap.logStartupProfileInfo:655 The following profiles are active: dev
+
+2020-07-12 19:43:11.608 INFO  com.dfire.logs.MonitorLog.info:13 spring contextLoaded
+
+2020-07-12 19:43:12.697 WARN  io.undertow.websockets.jsr.handleDeployment:68 UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+
+2020-07-12 19:43:12.715 INFO  io.undertow.servlet.log:364 Initializing Spring embedded WebApplicationContext
+
+2020-07-12 19:43:12.715 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext:285 Root WebApplicationContext: initialization completed in 1106 ms
+
+2020-07-12 19:43:13.124 INFO  com.dfire.logs.HeraLog.info:17 -----------------------------当前机器的IP为:127.0.1.1-----------------------------
+
+2020-07-12 19:43:13.363 WARN  com.dfire.logs.HeraLog.warn:35 配置的工作路径/opt/logs/spring-boot不存在，将使用默认路径:/home/fuhd/work/galaxy/galaxy-admin
+
+2020-07-12 19:43:13.366 WARN  com.dfire.logs.HeraLog.warn:35 the hera.emr.groups is null, all user will use same emr cluster
+
+2020-07-12 19:43:13.502 INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize:181 Initializing ExecutorService 'applicationTaskExecutor'
+
+2020-07-12 19:43:13.783 INFO  o.q.impl.StdSchedulerFactory.instantiate:1220 Using default implementation for ThreadExecutor
+
+2020-07-12 19:43:13.793 INFO  o.q.core.SchedulerSignalerImpl.<init>:61 Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+
+2020-07-12 19:43:13.793 INFO  org.quartz.core.QuartzScheduler.<init>:229 Quartz Scheduler v.2.3.2 created.
+
+2020-07-12 19:43:13.794 INFO  org.quartz.simpl.RAMJobStore.initialize:155 RAMJobStore initialized.
+
+2020-07-12 19:43:13.794 INFO  org.quartz.core.QuartzScheduler.initialize:294 Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+
+2020-07-12 19:43:13.795 INFO  o.q.impl.StdSchedulerFactory.instantiate:1374 Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+
+2020-07-12 19:43:13.795 INFO  o.q.impl.StdSchedulerFactory.instantiate:1378 Quartz scheduler version: 2.3.2
+
+2020-07-12 19:43:13.795 INFO  org.quartz.core.QuartzScheduler.setJobFactory:2293 JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@2d2f09a4
+
+2020-07-12 19:43:13.842 INFO  io.undertow.start:117 starting server: Undertow - 2.1.3.Final
+
+2020-07-12 19:43:13.847 INFO  org.xnio.<clinit>:95 XNIO version 3.8.0.Final
+
+2020-07-12 19:43:13.854 INFO  org.xnio.nio.<clinit>:59 XNIO NIO Implementation Version 3.8.0.Final
+
+2020-07-12 19:43:13.876 INFO  org.jboss.threads.<clinit>:52 JBoss Threads version 3.1.0.Final
+
+2020-07-12 19:43:13.909 INFO  o.s.b.w.e.u.UndertowWebServer.start:133 Undertow started on port(s) 8080 (http) with context path '/hera'
+
+2020-07-12 19:43:13.913 INFO  o.s.s.q.SchedulerFactoryBean.startScheduler:727 Starting Quartz Scheduler now
+
+2020-07-12 19:43:13.913 INFO  org.quartz.core.QuartzScheduler.start:547 Scheduler quartzScheduler_$_NON_CLUSTERED started.
+
+2020-07-12 19:43:13.924 INFO  com.dfire.AdminBootstrap.logStarted:61 Started AdminBootstrap in 2.895 seconds (JVM running for 3.2)
+
+2020-07-12 19:43:23.590 INFO  c.a.druid.pool.DruidDataSource.init:983 {dataSource-1} inited
+
+2020-07-12 19:43:23.654 INFO  com.dfire.logs.HeraLog.info:12 hold lock and update time
+
+2020-07-12 19:43:23.656 INFO  com.dfire.logs.HeraLog.info:12 begin to start master context
+
+2020-07-12 19:43:23.656 INFO  com.dfire.logs.HeraLog.info:12 start init quartz schedule
+
+2020-07-12 19:43:23.656 INFO  com.dfire.logs.HeraLog.info:12 start init quartz properties
+
+2020-07-12 19:43:23.667 INFO  o.q.impl.StdSchedulerFactory.instantiate:1220 Using default implementation for ThreadExecutor
+
+2020-07-12 19:43:23.667 INFO  o.quartz.simpl.SimpleThreadPool.initialize:268 Job execution threads will use class loader of thread: work-schedule-thread-2
+
+2020-07-12 19:43:23.669 INFO  o.q.core.SchedulerSignalerImpl.<init>:61 Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+
+2020-07-12 19:43:23.669 INFO  org.quartz.core.QuartzScheduler.<init>:229 Quartz Scheduler v.2.3.2 created.
+
+2020-07-12 19:43:23.669 INFO  org.quartz.simpl.RAMJobStore.initialize:155 RAMJobStore initialized.
+
+2020-07-12 19:43:23.669 INFO  org.quartz.core.QuartzScheduler.initialize:294 Scheduler meta-data: Quartz Scheduler (v2.3.2) 'heraQuartzSchedulerPool' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 4 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+
+2020-07-12 19:43:23.669 INFO  o.q.impl.StdSchedulerFactory.instantiate:1374 Quartz scheduler 'heraQuartzSchedulerPool' initialized from an externally provided properties instance.
+
+2020-07-12 19:43:23.669 INFO  o.q.impl.StdSchedulerFactory.instantiate:1378 Quartz scheduler version: 2.3.2
+
+2020-07-12 19:43:23.670 INFO  org.quartz.core.QuartzScheduler.start:547 Scheduler heraQuartzSchedulerPool_$_NON_CLUSTERED started.
+
+2020-07-12 19:43:23.670 INFO  com.dfire.logs.HeraLog.info:12 start init quartz scheduler
+
+2020-07-12 19:43:23.744 INFO  com.dfire.logs.HeraLog.info:12 start master server success
+
+2020-07-12 19:43:23.746 INFO  com.dfire.logs.HeraLog.info:17 -----------------------------init action,time: 1594554203746-----------------------------
+
+2020-07-12 19:43:23.746 INFO  com.dfire.logs.HeraLog.info:17 start RerunJobInit chore schedule success
+
+2020-07-12 19:43:23.747 INFO  com.dfire.logs.HeraLog.info:17 start RerunJobLaunch chore schedule success
+
+2020-07-12 19:43:23.764 INFO  com.dfire.logs.HeraLog.info:17 start LostJobCheck chore schedule success
+
+2020-07-12 19:43:23.765 INFO  com.dfire.logs.HeraLog.info:17 start WorkHeartCheck chore schedule success
+
+2020-07-12 19:43:23.766 INFO  com.dfire.logs.HeraLog.info:17 start JobActionInit chore schedule success
+
+2020-07-12 19:43:23.770 INFO  com.dfire.logs.HeraLog.info:17 start JobFinishCheck chore schedule success
+
+2020-07-12 19:43:23.771 INFO  com.dfire.logs.HeraLog.info:12 init master content success 
+
+2020-07-12 19:43:23.775 INFO  com.dfire.logs.HeraLog.info:12 init work client success 
+
+2020-07-12 19:43:23.777 INFO  com.dfire.logs.HeraLog.info:17 -----------------------------action size:1, time 1594554203777-----------------------------
+
+2020-07-12 19:43:23.778 INFO  com.dfire.logs.HeraLog.info:17 -----------------------------add actions to handler success, time:1594554203778-----------------------------
+
+2020-07-12 19:43:23.818 INFO  com.dfire.logs.SocketLog.info:17 worker client channel active success : /127.0.0.1:40980
+
+2020-07-12 19:43:23.818 INFO  com.dfire.logs.SocketLog.info:17 worker client channel registered connect success : /127.0.0.1:40980
+
+2020-07-12 19:43:23.820 INFO  com.dfire.logs.SocketLog.info:12 NettyChannel{channel=NettyChannel{channel=[id: 0xfcf5d40c, L:/127.0.0.1:40980 - R:/127.0.1.1:9887]}}
+
+2020-07-12 19:43:23.821 INFO  com.dfire.logs.SocketLog.info:12 connect server success
+
+2020-07-12 19:43:23.821 INFO  com.dfire.logs.SocketLog.info:12 客户端与服务端连接开启
+
+2020-07-12 19:43:23.832 INFO  com.dfire.logs.HeraLog.info:17 -----------------------------dispatcher actions success, time1594554203832-----------------------------
+
+2020-07-12 19:43:23.838 INFO  com.dfire.logs.HeraLog.info:12 refresh hostGroup cache
+
+2020-07-12 19:44:23.374 INFO  com.dfire.logs.HeraLog.info:12 hold lock and update time
+
+2020-07-12 19:44:23.756 ERROR c.a.d.p.DruidAbstractDataSource.testConnectionInternal:1481 discard long time none received connection. , jdbcUrl : jdbc:mysql://192.168.153.129:3306/hera?characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&autoReconnect=true&allowMultiQueries=true&useSSL=false, jdbcUrl : jdbc:mysql://192.168.153.129:3306/hera?characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&autoReconnect=true&allowMultiQueries=true&useSSL=false, lastPacketReceivedIdleMillis : 60170
+
+2020-07-12 19:44:23.767 INFO  com.dfire.logs.ScheduleLog.info:12 全量任务版本生成
+
+2020-07-12 19:44:23.776 INFO  com.dfire.logs.HeraLog.info:12 刷新hera_job库
+
+2020-07-12 19:44:23.797 INFO  com.dfire.logs.ScheduleLog.info:17 batchInsert-> batch size is :1
+
+2020-07-12 19:44:23.823 INFO  com.dfire.logs.ScheduleLog.info:17 [单个任务:false，任务id:null]generate action success
+
+2020-07-12 19:44:23.827 INFO  com.dfire.logs.ScheduleLog.info:12 生成版本时间:56 ms
+
+2020-07-12 19:44:23.827 WARN  com.dfire.logs.ScheduleLog.warn:35 开始进行版本清理
+
+2020-07-12 19:44:23.830 WARN  com.dfire.logs.ScheduleLog.warn:35 版本清理完成,清理handler个数为:0
+
+2020-07-12 19:45:23.370 INFO  com.dfire.logs.HeraLog.info:12 hold lock and update time
+
+2020-07-12 19:46:23.368 INFO  com.dfire.logs.HeraLog.info:12 hold lock and update time
+
+2020-07-12 19:47:23.355 INFO  com.dfire.logs.HeraLog.info:12 hold lock and update time
+
+2020-07-12 19:48:23.354 INFO  com.dfire.logs.HeraLog.info:12 hold lock and update time
+
+2020-07-12 19:49:23.359 INFO  com.dfire.logs.HeraLog.info:12 hold lock and update time
+
+2020-07-12 19:49:23.750 ERROR c.a.d.p.DruidAbstractDataSource.testConnectionInternal:1481 discard long time none received connection. , jdbcUrl : jdbc:mysql://192.168.153.129:3306/hera?characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&autoReconnect=true&allowMultiQueries=true&useSSL=false, jdbcUrl : jdbc:mysql://192.168.153.129:3306/hera?characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&autoReconnect=true&allowMultiQueries=true&useSSL=false, lastPacketReceivedIdleMillis : 299987
+
+2020-07-12 19:50:23.367 INFO  com.dfire.logs.HeraLog.info:12 hold lock and update time
+
+2020-07-12 19:51:23.356 INFO  com.dfire.logs.HeraLog.info:12 hold lock and update time
+
+2020-07-12 19:52:23.354 INFO  com.dfire.logs.HeraLog.info:12 hold lock and update time
+
+2020-07-12 19:53:23.361 INFO  com.dfire.logs.HeraLog.info:12 hold lock and update time
+
+2020-07-12 19:54:23.354 INFO  com.dfire.logs.HeraLog.info:12 hold lock and update time
+
+2020-07-12 19:54:23.749 ERROR c.a.d.p.DruidAbstractDataSource.testConnectionInternal:1481 discard long time none received connection. , jdbcUrl : jdbc:mysql://192.168.153.129:3306/hera?characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&autoReconnect=true&allowMultiQueries=true&useSSL=false, jdbcUrl : jdbc:mysql://192.168.153.129:3306/hera?characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&autoReconnect=true&allowMultiQueries=true&useSSL=false, lastPacketReceivedIdleMillis : 299991
+
+2020-07-12 19:55:23.359 INFO  com.dfire.logs.HeraLog.info:12 hold lock and update time
+
+2020-07-12 19:56:23.364 INFO  com.dfire.logs.HeraLog.info:12 hold lock and update time
+
+2020-07-12 19:57:23.356 INFO  com.dfire.logs.HeraLog.info:12 hold lock and update time
+
+2020-07-12 19:58:23.370 INFO  com.dfire.logs.HeraLog.info:12 hold lock and update time
+
+2020-07-12 19:59:23.357 INFO  com.dfire.logs.HeraLog.info:12 hold lock and update time
+
+2020-07-12 19:59:23.749 ERROR c.a.d.p.DruidAbstractDataSource.testConnectionInternal:1481 discard long time none received connection. , jdbcUrl : jdbc:mysql://192.168.153.129:3306/hera?characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&autoReconnect=true&allowMultiQueries=true&useSSL=false, jdbcUrl : jdbc:mysql://192.168.153.129:3306/hera?characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&autoReconnect=true&allowMultiQueries=true&useSSL=false, lastPacketReceivedIdleMillis : 299994
+
+2020-07-12 20:00:23.356 INFO  com.dfire.logs.HeraLog.info:12 hold lock and update time
+
+2020-07-12 20:00:23.765 INFO  com.dfire.logs.ScheduleLog.info:12 全量任务版本生成
+
+2020-07-12 20:00:23.772 ERROR c.a.d.p.DruidAbstractDataSource.testConnectionInternal:1481 discard long time none received connection. , jdbcUrl : jdbc:mysql://192.168.153.129:3306/hera?characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&autoReconnect=true&allowMultiQueries=true&useSSL=false, jdbcUrl : jdbc:mysql://192.168.153.129:3306/hera?characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&autoReconnect=true&allowMultiQueries=true&useSSL=false, lastPacketReceivedIdleMillis : 60017
+
+2020-07-12 20:00:23.776 INFO  com.dfire.logs.ScheduleLog.info:17 batchInsert-> batch size is :1
+
+2020-07-12 20:00:23.798 INFO  com.dfire.logs.ScheduleLog.info:17 [单个任务:false，任务id:null]generate action success
+
+2020-07-12 20:00:23.799 INFO  com.dfire.logs.ScheduleLog.info:12 生成版本时间:31 ms
+
+2020-07-12 20:00:33.042 INFO  org.quartz.core.QuartzScheduler.standby:585 Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+
+2020-07-12 20:00:33.046 INFO  io.undertow.stop:252 stopping server: Undertow - 2.1.3.Final
+
+2020-07-12 20:00:33.071 INFO  o.s.s.q.SchedulerFactoryBean.destroy:845 Shutting down Quartz Scheduler
+
+2020-07-12 20:00:33.071 INFO  org.quartz.core.QuartzScheduler.shutdown:666 Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+
+2020-07-12 20:00:33.071 INFO  org.quartz.core.QuartzScheduler.standby:585 Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+
+2020-07-12 20:00:33.072 INFO  org.quartz.core.QuartzScheduler.shutdown:740 Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+
+2020-07-12 20:00:33.075 INFO  o.s.s.c.ThreadPoolTaskExecutor.shutdown:218 Shutting down ExecutorService 'applicationTaskExecutor'
+
+2020-07-12 20:00:33.076 INFO  c.a.druid.pool.DruidDataSource.close:2024 {dataSource-1} closing ...
+
+2020-07-12 20:00:33.081 INFO  c.a.druid.pool.DruidDataSource.close:2096 {dataSource-1} closed
+
+2020-07-12 20:00:40.796 INFO  com.dfire.logs.MonitorLog.info:13 spring environmentPrepared
+
+2020-07-12 20:00:40.846 INFO  com.dfire.logs.MonitorLog.info:13 spring contextPrepared
+
+2020-07-12 20:00:40.848 INFO  com.dfire.AdminBootstrap.logStarting:55 Starting AdminBootstrap on ubuntu with PID 10100 (/home/fuhd/work/galaxy/galaxy-admin/build/classes/java/main started by fuhd in /home/fuhd/work/galaxy/galaxy-admin)
+
+2020-07-12 20:00:40.849 INFO  com.dfire.AdminBootstrap.logStartupProfileInfo:655 The following profiles are active: dev
+
+2020-07-12 20:00:40.886 INFO  com.dfire.logs.MonitorLog.info:13 spring contextLoaded
+
+2020-07-12 20:00:42.116 WARN  io.undertow.websockets.jsr.handleDeployment:68 UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+
+2020-07-12 20:00:42.130 INFO  io.undertow.servlet.log:364 Initializing Spring embedded WebApplicationContext
+
+2020-07-12 20:00:42.131 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext:285 Root WebApplicationContext: initialization completed in 1245 ms
+
+2020-07-12 20:00:42.600 INFO  com.dfire.logs.HeraLog.info:17 -----------------------------当前机器的IP为:127.0.1.1-----------------------------
+
+2020-07-12 20:00:42.863 WARN  com.dfire.logs.HeraLog.warn:35 配置的工作路径/opt/logs/spring-boot不存在，将使用默认路径:/home/fuhd/work/galaxy/galaxy-admin
+
+2020-07-12 20:00:42.865 WARN  com.dfire.logs.HeraLog.warn:35 the hera.emr.groups is null, all user will use same emr cluster
+
+2020-07-12 20:00:43.017 INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize:181 Initializing ExecutorService 'applicationTaskExecutor'
+
+2020-07-12 20:00:43.303 INFO  o.q.impl.StdSchedulerFactory.instantiate:1220 Using default implementation for ThreadExecutor
+
+2020-07-12 20:00:43.313 INFO  o.q.core.SchedulerSignalerImpl.<init>:61 Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+
+2020-07-12 20:00:43.313 INFO  org.quartz.core.QuartzScheduler.<init>:229 Quartz Scheduler v.2.3.2 created.
+
+2020-07-12 20:00:43.314 INFO  org.quartz.simpl.RAMJobStore.initialize:155 RAMJobStore initialized.
+
+2020-07-12 20:00:43.314 INFO  org.quartz.core.QuartzScheduler.initialize:294 Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+
+2020-07-12 20:00:43.315 INFO  o.q.impl.StdSchedulerFactory.instantiate:1374 Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+
+2020-07-12 20:00:43.315 INFO  o.q.impl.StdSchedulerFactory.instantiate:1378 Quartz scheduler version: 2.3.2
+
+2020-07-12 20:00:43.315 INFO  org.quartz.core.QuartzScheduler.setJobFactory:2293 JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@b81938d
+
+2020-07-12 20:00:43.366 INFO  io.undertow.start:117 starting server: Undertow - 2.1.3.Final
+
+2020-07-12 20:00:43.386 INFO  org.xnio.<clinit>:95 XNIO version 3.8.0.Final
+
+2020-07-12 20:00:43.394 INFO  org.xnio.nio.<clinit>:59 XNIO NIO Implementation Version 3.8.0.Final
+
+2020-07-12 20:00:43.418 INFO  org.jboss.threads.<clinit>:52 JBoss Threads version 3.1.0.Final
+
+2020-07-12 20:00:43.459 INFO  o.s.b.w.e.u.UndertowWebServer.start:133 Undertow started on port(s) 8080 (http) with context path '/hera'
+
+2020-07-12 20:00:43.460 INFO  o.s.s.q.SchedulerFactoryBean.startScheduler:727 Starting Quartz Scheduler now
+
+2020-07-12 20:00:43.460 INFO  org.quartz.core.QuartzScheduler.start:547 Scheduler quartzScheduler_$_NON_CLUSTERED started.
+
+2020-07-12 20:00:43.468 INFO  com.dfire.AdminBootstrap.logStarted:61 Started AdminBootstrap in 3.204 seconds (JVM running for 3.584)
+
+2020-07-12 20:00:53.073 INFO  c.a.druid.pool.DruidDataSource.init:983 {dataSource-1} inited
+
+2020-07-12 20:00:53.141 INFO  com.dfire.logs.HeraLog.info:12 hold lock and update time
+
+2020-07-12 20:00:53.142 INFO  com.dfire.logs.HeraLog.info:12 begin to start master context
+
+2020-07-12 20:00:53.143 INFO  com.dfire.logs.HeraLog.info:12 start init quartz schedule
+
+2020-07-12 20:00:53.143 INFO  com.dfire.logs.HeraLog.info:12 start init quartz properties
+
+2020-07-12 20:00:53.152 INFO  o.q.impl.StdSchedulerFactory.instantiate:1220 Using default implementation for ThreadExecutor
+
+2020-07-12 20:00:53.152 INFO  o.quartz.simpl.SimpleThreadPool.initialize:268 Job execution threads will use class loader of thread: work-schedule-thread-2
+
+2020-07-12 20:00:53.153 INFO  o.q.core.SchedulerSignalerImpl.<init>:61 Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+
+2020-07-12 20:00:53.153 INFO  org.quartz.core.QuartzScheduler.<init>:229 Quartz Scheduler v.2.3.2 created.
+
+2020-07-12 20:00:53.154 INFO  org.quartz.simpl.RAMJobStore.initialize:155 RAMJobStore initialized.
+
+2020-07-12 20:00:53.154 INFO  org.quartz.core.QuartzScheduler.initialize:294 Scheduler meta-data: Quartz Scheduler (v2.3.2) 'heraQuartzSchedulerPool' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 4 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+
+2020-07-12 20:00:53.154 INFO  o.q.impl.StdSchedulerFactory.instantiate:1374 Quartz scheduler 'heraQuartzSchedulerPool' initialized from an externally provided properties instance.
+
+2020-07-12 20:00:53.154 INFO  o.q.impl.StdSchedulerFactory.instantiate:1378 Quartz scheduler version: 2.3.2
+
+2020-07-12 20:00:53.154 INFO  org.quartz.core.QuartzScheduler.start:547 Scheduler heraQuartzSchedulerPool_$_NON_CLUSTERED started.
+
+2020-07-12 20:00:53.154 INFO  com.dfire.logs.HeraLog.info:12 start init quartz scheduler
+
+2020-07-12 20:00:53.226 INFO  com.dfire.logs.HeraLog.info:12 start master server success
+
+2020-07-12 20:00:53.229 INFO  com.dfire.logs.HeraLog.info:17 -----------------------------init action,time: 1594555253229-----------------------------
+
+2020-07-12 20:00:53.230 INFO  com.dfire.logs.HeraLog.info:17 start RerunJobInit chore schedule success
+
+2020-07-12 20:00:53.230 INFO  com.dfire.logs.HeraLog.info:17 start RerunJobLaunch chore schedule success
+
+2020-07-12 20:00:53.249 INFO  com.dfire.logs.HeraLog.info:17 start LostJobCheck chore schedule success
+
+2020-07-12 20:00:53.250 INFO  com.dfire.logs.HeraLog.info:17 start WorkHeartCheck chore schedule success
+
+2020-07-12 20:00:53.251 INFO  com.dfire.logs.HeraLog.info:17 start JobActionInit chore schedule success
+
+2020-07-12 20:00:53.253 INFO  com.dfire.logs.HeraLog.info:17 start JobFinishCheck chore schedule success
+
+2020-07-12 20:00:53.255 INFO  com.dfire.logs.HeraLog.info:12 init master content success 
+
+2020-07-12 20:00:53.260 INFO  com.dfire.logs.HeraLog.info:12 init work client success 
+
+2020-07-12 20:00:53.262 INFO  com.dfire.logs.HeraLog.info:17 -----------------------------action size:1, time 1594555253262-----------------------------
+
+2020-07-12 20:00:53.264 INFO  com.dfire.logs.HeraLog.info:17 -----------------------------add actions to handler success, time:1594555253264-----------------------------
+
+2020-07-12 20:00:53.299 INFO  com.dfire.logs.SocketLog.info:12 NettyChannel{channel=NettyChannel{channel=[id: 0xd84761e1, L:/127.0.0.1:41112 - R:/127.0.1.1:9887]}}
+
+2020-07-12 20:00:53.299 INFO  com.dfire.logs.SocketLog.info:12 客户端与服务端连接开启
+
+2020-07-12 20:00:53.299 INFO  com.dfire.logs.SocketLog.info:12 connect server success
+
+2020-07-12 20:00:53.304 INFO  com.dfire.logs.SocketLog.info:17 worker client channel active success : /127.0.0.1:41112
+
+2020-07-12 20:00:53.305 INFO  com.dfire.logs.SocketLog.info:17 worker client channel registered connect success : /127.0.0.1:41112
+
+2020-07-12 20:00:53.318 INFO  com.dfire.logs.HeraLog.info:17 -----------------------------dispatcher actions success, time1594555253318-----------------------------
+
+2020-07-12 20:00:53.324 INFO  com.dfire.logs.HeraLog.info:12 refresh hostGroup cache
+
+2020-07-12 20:00:59.460 INFO  org.quartz.core.QuartzScheduler.standby:585 Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+
+2020-07-12 20:00:59.467 INFO  io.undertow.stop:252 stopping server: Undertow - 2.1.3.Final
+
+2020-07-12 20:00:59.491 INFO  o.s.s.q.SchedulerFactoryBean.destroy:845 Shutting down Quartz Scheduler
+
+2020-07-12 20:00:59.491 INFO  org.quartz.core.QuartzScheduler.shutdown:666 Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+
+2020-07-12 20:00:59.492 INFO  org.quartz.core.QuartzScheduler.standby:585 Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+
+2020-07-12 20:00:59.493 INFO  org.quartz.core.QuartzScheduler.shutdown:740 Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+
+2020-07-12 20:00:59.494 INFO  o.s.s.c.ThreadPoolTaskExecutor.shutdown:218 Shutting down ExecutorService 'applicationTaskExecutor'
+
+2020-07-12 20:00:59.497 INFO  c.a.druid.pool.DruidDataSource.close:2024 {dataSource-1} closing ...
+
+2020-07-12 20:00:59.511 INFO  c.a.druid.pool.DruidDataSource.close:2096 {dataSource-1} closed
+
+2020-07-12 20:04:28.943 INFO  com.dfire.logs.MonitorLog.info:13 spring environmentPrepared
+
+2020-07-12 20:04:28.993 INFO  com.dfire.logs.MonitorLog.info:13 spring contextPrepared
+
+2020-07-12 20:04:28.996 INFO  com.dfire.AdminBootstrap.logStarting:55 Starting AdminBootstrap on ubuntu with PID 10437 (/home/fuhd/work/galaxy/galaxy-admin/build/classes/java/main started by fuhd in /home/fuhd/work/galaxy/galaxy-admin)
+
+2020-07-12 20:04:28.997 INFO  com.dfire.AdminBootstrap.logStartupProfileInfo:655 The following profiles are active: dev
+
+2020-07-12 20:04:29.037 INFO  com.dfire.logs.MonitorLog.info:13 spring contextLoaded
+
+2020-07-12 20:04:30.138 WARN  io.undertow.websockets.jsr.handleDeployment:68 UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+
+2020-07-12 20:04:30.154 INFO  io.undertow.servlet.log:364 Initializing Spring embedded WebApplicationContext
+
+2020-07-12 20:04:30.154 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext:285 Root WebApplicationContext: initialization completed in 1117 ms
+
+2020-07-12 20:04:30.568 INFO  com.dfire.logs.HeraLog.info:17 -----------------------------当前机器的IP为:127.0.1.1-----------------------------
+
+2020-07-12 20:04:30.813 WARN  com.dfire.logs.HeraLog.warn:35 配置的工作路径/opt/logs/spring-boot不存在，将使用默认路径:/home/fuhd/work/galaxy/galaxy-admin
+
+2020-07-12 20:04:30.815 WARN  com.dfire.logs.HeraLog.warn:35 the hera.emr.groups is null, all user will use same emr cluster
+
+2020-07-12 20:04:30.954 INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize:181 Initializing ExecutorService 'applicationTaskExecutor'
+
+2020-07-12 20:04:31.276 INFO  o.q.impl.StdSchedulerFactory.instantiate:1220 Using default implementation for ThreadExecutor
+
+2020-07-12 20:04:31.288 INFO  o.q.core.SchedulerSignalerImpl.<init>:61 Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+
+2020-07-12 20:04:31.288 INFO  org.quartz.core.QuartzScheduler.<init>:229 Quartz Scheduler v.2.3.2 created.
+
+2020-07-12 20:04:31.289 INFO  org.quartz.simpl.RAMJobStore.initialize:155 RAMJobStore initialized.
+
+2020-07-12 20:04:31.289 INFO  org.quartz.core.QuartzScheduler.initialize:294 Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+
+2020-07-12 20:04:31.289 INFO  o.q.impl.StdSchedulerFactory.instantiate:1374 Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+
+2020-07-12 20:04:31.290 INFO  o.q.impl.StdSchedulerFactory.instantiate:1378 Quartz scheduler version: 2.3.2
+
+2020-07-12 20:04:31.290 INFO  org.quartz.core.QuartzScheduler.setJobFactory:2293 JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@4dad2363
+
+2020-07-12 20:04:31.347 INFO  io.undertow.start:117 starting server: Undertow - 2.1.3.Final
+
+2020-07-12 20:04:31.352 INFO  org.xnio.<clinit>:95 XNIO version 3.8.0.Final
+
+2020-07-12 20:04:31.361 INFO  org.xnio.nio.<clinit>:59 XNIO NIO Implementation Version 3.8.0.Final
+
+2020-07-12 20:04:31.387 INFO  org.jboss.threads.<clinit>:52 JBoss Threads version 3.1.0.Final
+
+2020-07-12 20:04:31.420 INFO  o.s.b.w.e.u.UndertowWebServer.start:133 Undertow started on port(s) 8080 (http) with context path '/hera'
+
+2020-07-12 20:04:31.421 INFO  o.s.s.q.SchedulerFactoryBean.startScheduler:727 Starting Quartz Scheduler now
+
+2020-07-12 20:04:31.422 INFO  org.quartz.core.QuartzScheduler.start:547 Scheduler quartzScheduler_$_NON_CLUSTERED started.
+
+2020-07-12 20:04:31.430 INFO  com.dfire.AdminBootstrap.logStarted:61 Started AdminBootstrap in 3.009 seconds (JVM running for 3.384)
+
+2020-07-12 20:04:41.036 INFO  c.a.druid.pool.DruidDataSource.init:983 {dataSource-1} inited
+
+2020-07-12 20:04:41.098 INFO  com.dfire.logs.HeraLog.info:12 hold lock and update time
+
+2020-07-12 20:04:41.100 INFO  com.dfire.logs.HeraLog.info:12 begin to start master context
+
+2020-07-12 20:04:41.100 INFO  com.dfire.logs.HeraLog.info:12 start init quartz schedule
+
+2020-07-12 20:04:41.100 INFO  com.dfire.logs.HeraLog.info:12 start init quartz properties
+
+2020-07-12 20:04:41.112 INFO  o.q.impl.StdSchedulerFactory.instantiate:1220 Using default implementation for ThreadExecutor
+
+2020-07-12 20:04:41.112 INFO  o.quartz.simpl.SimpleThreadPool.initialize:268 Job execution threads will use class loader of thread: work-schedule-thread-2
+
+2020-07-12 20:04:41.113 INFO  o.q.core.SchedulerSignalerImpl.<init>:61 Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+
+2020-07-12 20:04:41.114 INFO  org.quartz.core.QuartzScheduler.<init>:229 Quartz Scheduler v.2.3.2 created.
+
+2020-07-12 20:04:41.114 INFO  org.quartz.simpl.RAMJobStore.initialize:155 RAMJobStore initialized.
+
+2020-07-12 20:04:41.114 INFO  org.quartz.core.QuartzScheduler.initialize:294 Scheduler meta-data: Quartz Scheduler (v2.3.2) 'heraQuartzSchedulerPool' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 4 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+
+2020-07-12 20:04:41.114 INFO  o.q.impl.StdSchedulerFactory.instantiate:1374 Quartz scheduler 'heraQuartzSchedulerPool' initialized from an externally provided properties instance.
+
+2020-07-12 20:04:41.114 INFO  o.q.impl.StdSchedulerFactory.instantiate:1378 Quartz scheduler version: 2.3.2
+
+2020-07-12 20:04:41.114 INFO  org.quartz.core.QuartzScheduler.start:547 Scheduler heraQuartzSchedulerPool_$_NON_CLUSTERED started.
+
+2020-07-12 20:04:41.114 INFO  com.dfire.logs.HeraLog.info:12 start init quartz scheduler
+
+2020-07-12 20:04:41.187 INFO  com.dfire.logs.HeraLog.info:12 start master server success
+
+2020-07-12 20:04:41.191 INFO  com.dfire.logs.HeraLog.info:17 -----------------------------init action,time: 1594555481191-----------------------------
+
+2020-07-12 20:04:41.191 INFO  com.dfire.logs.HeraLog.info:17 start RerunJobInit chore schedule success
+
+2020-07-12 20:04:41.192 INFO  com.dfire.logs.HeraLog.info:17 start RerunJobLaunch chore schedule success
+
+2020-07-12 20:04:41.213 INFO  com.dfire.logs.HeraLog.info:17 start LostJobCheck chore schedule success
+
+2020-07-12 20:04:41.215 INFO  com.dfire.logs.HeraLog.info:17 start WorkHeartCheck chore schedule success
+
+2020-07-12 20:04:41.221 INFO  com.dfire.logs.HeraLog.info:17 start JobActionInit chore schedule success
+
+2020-07-12 20:04:41.223 INFO  com.dfire.logs.HeraLog.info:17 start JobFinishCheck chore schedule success
+
+2020-07-12 20:04:41.224 INFO  com.dfire.logs.HeraLog.info:12 init master content success 
+
+2020-07-12 20:04:41.227 INFO  com.dfire.logs.HeraLog.info:17 -----------------------------action size:1, time 1594555481227-----------------------------
+
+2020-07-12 20:04:41.229 INFO  com.dfire.logs.HeraLog.info:17 -----------------------------add actions to handler success, time:1594555481229-----------------------------
+
+2020-07-12 20:04:41.232 INFO  com.dfire.logs.HeraLog.info:12 init work client success 
+
+2020-07-12 20:04:41.283 INFO  com.dfire.logs.SocketLog.info:17 worker client channel active success : /127.0.0.1:41148
+
+2020-07-12 20:04:41.284 INFO  com.dfire.logs.SocketLog.info:17 worker client channel registered connect success : /127.0.0.1:41148
+
+2020-07-12 20:04:41.287 INFO  com.dfire.logs.SocketLog.info:12 NettyChannel{channel=NettyChannel{channel=[id: 0xa5427c29, L:/127.0.0.1:41148 - R:/127.0.1.1:9887]}}
+
+2020-07-12 20:04:41.289 INFO  com.dfire.logs.SocketLog.info:12 客户端与服务端连接开启
+
+2020-07-12 20:04:41.289 INFO  com.dfire.logs.SocketLog.info:12 connect server success
+
+2020-07-12 20:04:41.294 INFO  com.dfire.logs.HeraLog.info:17 -----------------------------dispatcher actions success, time1594555481294-----------------------------
+
+2020-07-12 20:04:41.302 INFO  com.dfire.logs.HeraLog.info:12 refresh hostGroup cache
+
+2020-07-12 20:05:40.817 INFO  com.dfire.logs.HeraLog.info:12 hold lock and update time
+
+2020-07-12 20:05:41.211 ERROR c.a.d.p.DruidAbstractDataSource.testConnectionInternal:1481 discard long time none received connection. , jdbcUrl : jdbc:mysql://192.168.153.129:3306/hera?characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&autoReconnect=true&allowMultiQueries=true&useSSL=false, jdbcUrl : jdbc:mysql://192.168.153.129:3306/hera?characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&autoReconnect=true&allowMultiQueries=true&useSSL=false, lastPacketReceivedIdleMillis : 60174
+
+2020-07-12 20:05:41.220 INFO  com.dfire.logs.ScheduleLog.info:12 全量任务版本生成
+
+2020-07-12 20:05:41.234 INFO  com.dfire.logs.HeraLog.info:12 刷新hera_job库
+
+2020-07-12 20:05:41.256 INFO  com.dfire.logs.ScheduleLog.info:17 batchInsert-> batch size is :1
+
+2020-07-12 20:05:41.272 INFO  com.dfire.logs.ScheduleLog.info:17 [单个任务:false，任务id:null]generate action success
+
+2020-07-12 20:05:41.276 INFO  com.dfire.logs.ScheduleLog.info:12 生成版本时间:50 ms
+
+2020-07-12 20:05:41.276 WARN  com.dfire.logs.ScheduleLog.warn:35 开始进行版本清理
+
+2020-07-12 20:05:41.279 WARN  com.dfire.logs.ScheduleLog.warn:35 版本清理完成,清理handler个数为:0
+
+2020-07-12 20:06:40.814 INFO  com.dfire.logs.HeraLog.info:12 hold lock and update time
+
+2020-07-12 20:07:40.814 INFO  com.dfire.logs.HeraLog.info:12 hold lock and update time
+
+2020-07-12 20:08:40.817 INFO  com.dfire.logs.HeraLog.info:12 hold lock and update time
+
+2020-07-12 20:09:40.806 INFO  com.dfire.logs.HeraLog.info:12 hold lock and update time
+
+2020-07-12 20:09:48.977 INFO  org.quartz.core.QuartzScheduler.standby:585 Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+
+2020-07-12 20:09:48.986 INFO  io.undertow.stop:252 stopping server: Undertow - 2.1.3.Final
+
+2020-07-12 20:09:49.023 INFO  o.s.s.q.SchedulerFactoryBean.destroy:845 Shutting down Quartz Scheduler
+
+2020-07-12 20:09:49.024 INFO  org.quartz.core.QuartzScheduler.shutdown:666 Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+
+2020-07-12 20:09:49.027 INFO  org.quartz.core.QuartzScheduler.standby:585 Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+
+2020-07-12 20:09:49.028 INFO  org.quartz.core.QuartzScheduler.shutdown:740 Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+
+2020-07-12 20:09:49.031 INFO  o.s.s.c.ThreadPoolTaskExecutor.shutdown:218 Shutting down ExecutorService 'applicationTaskExecutor'
+
+2020-07-12 20:09:49.033 INFO  c.a.druid.pool.DruidDataSource.close:2024 {dataSource-1} closing ...
+
+2020-07-12 20:09:49.037 INFO  c.a.druid.pool.DruidDataSource.close:2096 {dataSource-1} closed
+

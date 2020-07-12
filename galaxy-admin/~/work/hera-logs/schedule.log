@@ -116,3 +116,71 @@
 
 2020-07-12 10:22:37.652 WARN  com.dfire.logs.ScheduleLog.warn:35 版本清理完成,清理handler个数为:0
 
+2020-07-12 19:16:00.568 INFO  com.dfire.logs.ScheduleLog.info:12 全量任务版本生成
+
+2020-07-12 19:16:00.675 INFO  com.dfire.logs.ScheduleLog.info:17 batchInsert-> batch size is :1
+
+2020-07-12 19:16:00.707 INFO  com.dfire.logs.ScheduleLog.info:17 [单个任务:false，任务id:null]generate action success
+
+2020-07-12 19:16:00.711 INFO  com.dfire.logs.ScheduleLog.info:12 生成版本时间:121 ms
+
+2020-07-12 19:16:00.711 WARN  com.dfire.logs.ScheduleLog.warn:35 开始进行版本清理
+
+2020-07-12 19:16:00.715 WARN  com.dfire.logs.ScheduleLog.warn:35 版本清理完成,清理handler个数为:0
+
+2020-07-12 19:36:51.471 INFO  com.dfire.logs.ScheduleLog.info:12 全量任务版本生成
+
+2020-07-12 19:36:51.495 INFO  com.dfire.logs.ScheduleLog.info:17 batchInsert-> batch size is :1
+
+2020-07-12 19:36:51.511 INFO  com.dfire.logs.ScheduleLog.info:17 [单个任务:false，任务id:null]generate action success
+
+2020-07-12 19:36:51.515 INFO  com.dfire.logs.ScheduleLog.info:12 生成版本时间:40 ms
+
+2020-07-12 19:36:51.515 WARN  com.dfire.logs.ScheduleLog.warn:35 开始进行版本清理
+
+2020-07-12 19:36:51.518 WARN  com.dfire.logs.ScheduleLog.warn:35 版本清理完成,清理handler个数为:0
+
+2020-07-12 19:40:05.301 INFO  com.dfire.logs.ScheduleLog.info:12 全量任务版本生成
+
+2020-07-12 19:40:05.367 INFO  com.dfire.logs.ScheduleLog.info:17 batchInsert-> batch size is :1
+
+2020-07-12 19:40:05.383 INFO  com.dfire.logs.ScheduleLog.info:17 [单个任务:false，任务id:null]generate action success
+
+2020-07-12 19:40:05.388 INFO  com.dfire.logs.ScheduleLog.info:12 生成版本时间:82 ms
+
+2020-07-12 19:40:05.388 WARN  com.dfire.logs.ScheduleLog.warn:35 开始进行版本清理
+
+2020-07-12 19:40:05.391 WARN  com.dfire.logs.ScheduleLog.warn:35 版本清理完成,清理handler个数为:0
+
+2020-07-12 19:44:23.767 INFO  com.dfire.logs.ScheduleLog.info:12 全量任务版本生成
+
+2020-07-12 19:44:23.797 INFO  com.dfire.logs.ScheduleLog.info:17 batchInsert-> batch size is :1
+
+2020-07-12 19:44:23.823 INFO  com.dfire.logs.ScheduleLog.info:17 [单个任务:false，任务id:null]generate action success
+
+2020-07-12 19:44:23.827 INFO  com.dfire.logs.ScheduleLog.info:12 生成版本时间:56 ms
+
+2020-07-12 19:44:23.827 WARN  com.dfire.logs.ScheduleLog.warn:35 开始进行版本清理
+
+2020-07-12 19:44:23.830 WARN  com.dfire.logs.ScheduleLog.warn:35 版本清理完成,清理handler个数为:0
+
+2020-07-12 20:00:23.765 INFO  com.dfire.logs.ScheduleLog.info:12 全量任务版本生成
+
+2020-07-12 20:00:23.776 INFO  com.dfire.logs.ScheduleLog.info:17 batchInsert-> batch size is :1
+
+2020-07-12 20:00:23.798 INFO  com.dfire.logs.ScheduleLog.info:17 [单个任务:false，任务id:null]generate action success
+
+2020-07-12 20:00:23.799 INFO  com.dfire.logs.ScheduleLog.info:12 生成版本时间:31 ms
+
+2020-07-12 20:05:41.220 INFO  com.dfire.logs.ScheduleLog.info:12 全量任务版本生成
+
+2020-07-12 20:05:41.256 INFO  com.dfire.logs.ScheduleLog.info:17 batchInsert-> batch size is :1
+
+2020-07-12 20:05:41.272 INFO  com.dfire.logs.ScheduleLog.info:17 [单个任务:false，任务id:null]generate action success
+
+2020-07-12 20:05:41.276 INFO  com.dfire.logs.ScheduleLog.info:12 生成版本时间:50 ms
+
+2020-07-12 20:05:41.276 WARN  com.dfire.logs.ScheduleLog.warn:35 开始进行版本清理
+
+2020-07-12 20:05:41.279 WARN  com.dfire.logs.ScheduleLog.warn:35 版本清理完成,清理handler个数为:0
+

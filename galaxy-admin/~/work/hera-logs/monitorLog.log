@@ -52,3 +52,39 @@
 
 2020-07-12 10:21:25.102 INFO  com.dfire.logs.MonitorLog.info:13 spring contextLoaded
 
+2020-07-12 19:14:43.091 INFO  com.dfire.logs.MonitorLog.info:13 spring environmentPrepared
+
+2020-07-12 19:14:43.321 INFO  com.dfire.logs.MonitorLog.info:13 spring contextPrepared
+
+2020-07-12 19:14:43.446 INFO  com.dfire.logs.MonitorLog.info:13 spring contextLoaded
+
+2020-07-12 19:35:38.536 INFO  com.dfire.logs.MonitorLog.info:13 spring environmentPrepared
+
+2020-07-12 19:35:38.590 INFO  com.dfire.logs.MonitorLog.info:13 spring contextPrepared
+
+2020-07-12 19:35:38.634 INFO  com.dfire.logs.MonitorLog.info:13 spring contextLoaded
+
+2020-07-12 19:38:52.905 INFO  com.dfire.logs.MonitorLog.info:13 spring environmentPrepared
+
+2020-07-12 19:38:52.959 INFO  com.dfire.logs.MonitorLog.info:13 spring contextPrepared
+
+2020-07-12 19:38:52.998 INFO  com.dfire.logs.MonitorLog.info:13 spring contextLoaded
+
+2020-07-12 19:43:11.523 INFO  com.dfire.logs.MonitorLog.info:13 spring environmentPrepared
+
+2020-07-12 19:43:11.570 INFO  com.dfire.logs.MonitorLog.info:13 spring contextPrepared
+
+2020-07-12 19:43:11.608 INFO  com.dfire.logs.MonitorLog.info:13 spring contextLoaded
+
+2020-07-12 20:00:40.796 INFO  com.dfire.logs.MonitorLog.info:13 spring environmentPrepared
+
+2020-07-12 20:00:40.846 INFO  com.dfire.logs.MonitorLog.info:13 spring contextPrepared
+
+2020-07-12 20:00:40.886 INFO  com.dfire.logs.MonitorLog.info:13 spring contextLoaded
+
+2020-07-12 20:04:28.943 INFO  com.dfire.logs.MonitorLog.info:13 spring environmentPrepared
+
+2020-07-12 20:04:28.993 INFO  com.dfire.logs.MonitorLog.info:13 spring contextPrepared
+
+2020-07-12 20:04:29.037 INFO  com.dfire.logs.MonitorLog.info:13 spring contextLoaded
+

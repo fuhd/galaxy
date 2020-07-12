@@ -1,11 +1,12 @@
-${AnsiColor.BRIGHT_CYAN}
-  _
- | |__   ___ _ __ __ _
- | '_ \ / _ \ '__/ _` |
- | | | |  __/ | | (_| |
- |_| |_|\___|_|  \__,_|     create by: 凌霄 小苏打 生煎 火锅
+${AnsiColor.BRIGHT_YELLOW}
+    ______      __
+   / ____/___ _/ /___ __  ____  __
+  / / __/ __ `/ / __ `/ |/_/ / / /
+ / /_/ / /_/ / / /_/ />  </ /_/ /
+ \____/\__,_/_/\__,_/_/|_|\__, /
+                         /____/       create by: 并非柳下惠（老柳）
 
 ${AnsiColor.BRIGHT_YELLOW}
-::: Spring-Boot ${spring-boot.version}     ::: Hera (version:${hera.version})
+::: Spring-Boot ${spring-boot.version}     ::: Galaxy (version:${hera.version})
 
 ${AnsiColor.DEFAULT}
