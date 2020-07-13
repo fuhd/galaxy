@@ -2,6 +2,7 @@ plugins { id 'org.springframework.boot' version '2.3.1.RELEASE' }
 apply plugin: 'io.spring.dependency-management'
 
 jar {
+    enabled = true
     archiveBaseName = 'galaxy-admin'
 }
 
@@ -13,33 +14,10 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-undertow'
     implementation 'org.quartz-scheduler:quartz:2.3.2'
     implementation 'org.springframework.boot:spring-boot-starter-freemarker'
-    implementation 'org.springframework.boot:spring-boot-starter-test'
-    implementation 'mysql:mysql-connector-java:8.0.20'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
     implementation 'com.alibaba:fastjson:1.2.72'
-    implementation 'javax.mail:mail:1.4.7'
-    implementation 'org.yaml:snakeyaml:1.26'
     implementation 'com.google.protobuf:protobuf-java:3.12.2'
-    implementation 'com.github.pagehelper:pagehelper:5.1.11'
-    annotationProcessor 'org.projectlombok:lombok:1.18.12'
-    compileOnly 'org.projectlombok:lombok:1.18.12'
-    implementation 'log4j:log4j:1.2.17'
-    implementation 'org.slf4j:log4j-over-slf4j:1.7.30'
-    implementation 'commons-fileupload:commons-fileupload:1.4'
-    /*implementation('com.alibaba:druid:1.1.23'){
-        transitive = false
-        exclude group: 'com.alibaba', module: 'jconsole'
-        exclude group: 'com.alibaba', module: 'tools'
-    }*/
-    implementation 'org.apache.commons:commons-lang3:3.10'
-    implementation 'org.aspectj:aspectjrt:1.9.5'
     implementation 'org.aspectj:aspectjweaver:1.9.5'
-    testImplementation 'io.netty:netty-all:4.1.51.Final'
-    implementation 'org.jetbrains:annotations:19.0.0'
-    annotationProcessor 'org.projectlombok:lombok:1.18.12'
-    compileOnly 'org.projectlombok:lombok:1.18.12'
-    testAnnotationProcessor 'org.projectlombok:lombok:1.18.12'
-    testCompileOnly 'org.projectlombok:lombok:1.18.12'
-    implementation 'joda-time:joda-time:2.10.6'
     implementation project(':galaxy-core')
     implementation project(':galaxy-common')
     implementation project(':galaxy-monitor')

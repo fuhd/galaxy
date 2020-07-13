@@ -8,7 +8,7 @@ import com.dfire.common.service.HeraRerunService;
 import com.dfire.common.util.ActionUtil;
 import com.dfire.common.util.Pair;
 import com.dfire.common.util.StringUtil;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

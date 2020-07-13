@@ -3,7 +3,7 @@ package com.dfire.common.util;
 import com.dfire.common.constants.Constants;
 import com.dfire.common.kv.Tuple;
 import com.dfire.logs.ErrorLog;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 import org.joda.time.DateTime;
 
 import java.text.ParseException;

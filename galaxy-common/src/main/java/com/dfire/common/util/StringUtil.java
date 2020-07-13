@@ -8,7 +8,7 @@ import com.dfire.common.constants.Constants;
 import com.dfire.common.processor.DownProcessor;
 import com.dfire.common.processor.Processor;
 import com.dfire.logs.ErrorLog;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;

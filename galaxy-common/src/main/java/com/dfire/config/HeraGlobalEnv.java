@@ -4,7 +4,7 @@ import com.dfire.common.constants.Constants;
 import com.dfire.common.enums.OperatorSystemEnum;
 import com.dfire.logs.HeraLog;
 import lombok.Getter;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;
 

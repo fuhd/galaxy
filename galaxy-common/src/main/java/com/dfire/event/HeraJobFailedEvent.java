@@ -4,6 +4,7 @@ import com.dfire.common.entity.HeraJob;
 import com.dfire.common.entity.vo.HeraJobHistoryVo;
 import com.dfire.common.enums.TriggerTypeEnum;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 import java.util.Objects;
 
@@ -13,6 +14,7 @@ import java.util.Objects;
  * @desc
  */
 @Data
+@EqualsAndHashCode(callSuper=true)
 public class HeraJobFailedEvent extends ApplicationEvent {
 
     private final HeraJobHistoryVo heraJobHistory;

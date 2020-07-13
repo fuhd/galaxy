@@ -11,7 +11,7 @@ import com.dfire.common.kv.Tuple;
 import com.dfire.common.vo.JobStatus;
 import com.dfire.common.vo.LogContent;
 import com.dfire.logs.ErrorLog;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.BeanUtils;
 
 import java.text.SimpleDateFormat;

@@ -4,7 +4,7 @@ import com.dfire.common.constants.Constants;
 import com.dfire.common.service.EmailService;
 import com.dfire.config.HeraGlobalEnv;
 import com.dfire.logs.MonitorLog;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Service;
 
 import javax.mail.Message;

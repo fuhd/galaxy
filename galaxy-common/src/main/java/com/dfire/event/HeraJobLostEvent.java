@@ -1,6 +1,7 @@
 package com.dfire.event;
 
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 /**
  * @author: <a href="mailto:lingxiao@2dfire.com">凌霄</a>
@@ -8,11 +9,13 @@ import lombok.Data;
  * @desc
  */
 @Data
+@EqualsAndHashCode(callSuper = true)
 public class HeraJobLostEvent extends ApplicationEvent {
 
     private final Long jobId;
-    public HeraJobLostEvent(EventType type, Long jobId){
+
+    public HeraJobLostEvent(EventType type, Long jobId) {
         super(type);
-        this.jobId=jobId;
+        this.jobId = jobId;
     }
 }
