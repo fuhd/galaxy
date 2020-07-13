@@ -55,8 +55,8 @@
 <#macro commonHeader>
     <header class="main-header">
         <a href="${request.contextPath}/home" class="logo">
-            <span class="logo-mini"><b>赫拉</b></span>
-            <span class="logo-lg"><b>赫拉任务调度系统</b></span>
+            <span class="logo-mini"><b>星河</b></span>
+            <span class="logo-lg"><b>星河数据中台</b></span>
         </a>
         <nav class="navbar navbar-static-top" role="navigation">
             <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button"><span

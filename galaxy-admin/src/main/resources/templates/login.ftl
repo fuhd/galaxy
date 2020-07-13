@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head lang="en">
-    <title>赫拉任务调度系统</title>
+    <title>星河数据中台</title>
     <base href="${request.contextPath}" id="baseURl">
     <#import "/common/common.macro.ftl" as netCommon>
     <@netCommon.commonStyle />
@@ -27,7 +27,7 @@
 
 <div class="login box box-primary">
     <#--<div class="box png">-->
-    <div><h3 align="center" class="title">赫拉任务调度系统</h3></div>
+    <div><h3 align="center" class="title">星河数据中台</h3></div>
     <div class="input">
         <div class="log">
             <ul class="nav nav-tabs" role="tablist" id="menu-tab">

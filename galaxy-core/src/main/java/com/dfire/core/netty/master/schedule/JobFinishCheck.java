@@ -133,7 +133,7 @@ public class JobFinishCheck extends ScheduledChore {
                 .build());
 
 
-        String phoneMsg = "赫拉任务" + job.getJobId() + "未按时完成请尽快排查";
+        String phoneMsg = "星河任务" + job.getJobId() + "未按时完成请尽快排查";
 
         Optional.of(monitorUser)
                 .ifPresent(users ->

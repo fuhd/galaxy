@@ -20,7 +20,7 @@
         </div>
         <div id="footer">
             <ul>
-                <li><a href='${request.contextPath}/home'>赫拉首页</a></li>
+                <li><a href='${request.contextPath}/home'>星河首页</a></li>
                 <li><a href='${request.contextPath}/scheduleCenter' title='调度中心'>调度中心</a></li>
                 <li><a href='${request.contextPath}/developCenter' title='开发中心'>开发中心</a></li>
                 <li><a href='${request.contextPath}/jobDetail' title='今日任务详情'>今日任务详情</a></li>
