@@ -62,7 +62,7 @@ spring:
 #    connection-properties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
 server:
   port: 8080
-  servlet.context-path: /hera
+  servlet.context-path: /galaxy
 clean:
   path: ${server.context-path}
 #hera全局配置
@@ -126,7 +126,7 @@ india:
 logging:
   config: classpath:config/logback-spring.xml
   #path: /opt/logs/spring-boot   # 日志路径
-  path: ~/work/hera-logs/
+  path: /home/fuhd/work/hera-logs/
   level:
     root: INFO
     org.springframework: INFO
