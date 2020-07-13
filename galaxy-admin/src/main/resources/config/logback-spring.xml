@@ -192,49 +192,49 @@
     </root>
 
 
-    <logger name="com.dfire.logs.TaskLog" additivity="true">
+    <logger name="com.starriverdata.logs.TaskLog" additivity="true">
         <level value="INFO"/>
         <appender-ref ref="taskLog"/>
     </logger>
-    <logger name="com.dfire.logs.MonitorLog" additivity="true">
+    <logger name="com.starriverdata.logs.MonitorLog" additivity="true">
         <level value="INFO"/>
         <appender-ref ref="monitorLog"/>
     </logger>
-    <logger name="com.dfire.logs.HeartLog" additivity="true">
+    <logger name="com.starriverdata.logs.HeartLog" additivity="true">
         <level value="INFO"/>
         <appender-ref ref="heartLog"/>
     </logger>
-    <logger name="com.dfire.logs.MasterLog" additivity="true">
+    <logger name="com.starriverdata.logs.MasterLog" additivity="true">
         <level value="WARN"/>
         <appender-ref ref="masterLog"/>
     </logger>
-    <logger name="com.dfire.logs.WorkerLog" additivity="true">
+    <logger name="com.starriverdata.logs.WorkerLog" additivity="true">
         <level value="WARN"/>
         <appender-ref ref="workerLog"/>
     </logger>
-    <logger name="com.dfire.logs.ScheduleLog" additivity="true">
+    <logger name="com.starriverdata.logs.ScheduleLog" additivity="true">
         <level value="INFO"/>
         <appender-ref ref="scheduleLog"/>
     </logger>
-    <logger name="com.dfire.logs.SocketLog" additivity="true">
+    <logger name="com.starriverdata.logs.SocketLog" additivity="true">
         <level value="INFO"/>
         <appender-ref ref="socketLog"/>
     </logger>
-    <logger name="com.dfire.logs.HeraLog" additivity="true">
+    <logger name="com.starriverdata.logs.HeraLog" additivity="true">
         <level value="INFO"/>
         <appender-ref ref="heraLog"/>
     </logger>
-    <logger name="com.dfire.logs.DebugLog" additivity="true">
+    <logger name="com.starriverdata.logs.DebugLog" additivity="true">
         <level value="INFO"/>
         <appender-ref ref="debugLog"/>
     </logger>
 
-    <logger name="com.dfire.logs.ScanLog" additivity="true">
+    <logger name="com.starriverdata.logs.ScanLog" additivity="true">
         <level value="INFO"/>
         <appender-ref ref="scanLog"/>
     </logger>
 
-    <logger name="com.dfire.logs.ErrorLog" additivity="true">
+    <logger name="com.starriverdata.logs.ErrorLog" additivity="true">
         <level value="INFO"/>
         <appender-ref ref="errorLog"/>
     </logger>

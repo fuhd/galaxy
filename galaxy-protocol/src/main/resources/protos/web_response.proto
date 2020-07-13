@@ -4,7 +4,7 @@ import "status.proto";
 import "web_operate.proto";
 
 option optimize_for = SPEED;
-option java_package = "com.dfire.protocol";
+option java_package = "com.starriverdata.protocol";
 option java_outer_classname = "RpcWebResponse";
 
 //web请求执行任务响应

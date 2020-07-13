@@ -1,7 +1,7 @@
 syntax = "proto3";
 
 option optimize_for = SPEED;
-option java_package = "com.dfire.protocol";
+option java_package = "com.starriverdata.protocol";
 option java_outer_classname = "JobExecuteKind";
 
 //任务执行类型
