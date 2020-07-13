@@ -25,7 +25,11 @@ dependencies {
     implementation 'log4j:log4j:1.2.17'
     implementation 'org.slf4j:log4j-over-slf4j:1.7.30'
     implementation 'commons-fileupload:commons-fileupload:1.4'
-    implementation 'com.alibaba:druid:1.1.23'
+    /*implementation('com.alibaba:druid:1.1.23'){
+        transitive = false
+        exclude group: 'com.alibaba', module: 'jconsole'
+        exclude group: 'com.alibaba', module: 'tools'
+    }*/
     implementation 'org.apache.commons:commons-lang3:3.10'
     implementation 'org.aspectj:aspectjrt:1.9.5'
     implementation 'org.aspectj:aspectjweaver:1.9.5'

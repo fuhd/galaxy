@@ -1,169 +1,107 @@
-2020-07-12 08:47:02.828 ERROR com.dfire.logs.ErrorLog.error:23 检测锁异常
-java.lang.NullPointerException: null
-	at com.dfire.core.netty.master.Master.init(Master.java:77)
-	at com.dfire.core.netty.master.MasterContext.init(MasterContext.java:128)
-	at com.dfire.core.schedule.HeraSchedule.startup(HeraSchedule.java:29)
-	at com.dfire.core.lock.DistributeLock.checkLock(DistributeLock.java:71)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
-	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+2020-07-13 11:36:19.060 ERROR com.dfire.logs.ErrorLog.error:23 检测锁异常
+java.net.BindException: 地址已在使用
+	at java.base/sun.nio.ch.Net.bind0(Native Method)
+	at java.base/sun.nio.ch.Net.bind(Net.java:461)
+	at java.base/sun.nio.ch.Net.bind(Net.java:453)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:227)
+	at io.netty.channel.socket.nio.NioServerSocketChannel.doBind(NioServerSocketChannel.java:134)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.bind(AbstractChannel.java:550)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.bind(DefaultChannelPipeline.java:1334)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeBind(AbstractChannelHandlerContext.java:506)
+	at io.netty.channel.AbstractChannelHandlerContext.bind(AbstractChannelHandlerContext.java:491)
+	at io.netty.channel.DefaultChannelPipeline.bind(DefaultChannelPipeline.java:973)
+	at io.netty.channel.AbstractChannel.bind(AbstractChannel.java:248)
+	at io.netty.bootstrap.AbstractBootstrap$2.run(AbstractBootstrap.java:356)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:164)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:472)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:500)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:834)
 
-2020-07-12 08:50:27.790 ERROR com.dfire.logs.ErrorLog.error:15 请求/hera404异常
-
-2020-07-12 08:50:27.942 ERROR com.dfire.logs.ErrorLog.error:15 请求/error.index404异常
-
-2020-07-12 08:50:29.467 ERROR com.dfire.logs.ErrorLog.error:15 请求/favicon.ico404异常
-
-2020-07-12 08:50:29.474 ERROR com.dfire.logs.ErrorLog.error:15 请求/error.index404异常
-
-2020-07-12 08:50:55.674 ERROR com.dfire.logs.ErrorLog.error:15 请求/hera/login/admin404异常
-
-2020-07-12 08:50:55.687 ERROR com.dfire.logs.ErrorLog.error:15 请求/error.index404异常
-
-2020-07-12 08:50:55.772 ERROR com.dfire.logs.ErrorLog.error:15 请求/favicon.ico404异常
-
-2020-07-12 08:50:55.775 ERROR com.dfire.logs.ErrorLog.error:15 请求/error.index404异常
-
-2020-07-12 08:50:59.636 ERROR com.dfire.logs.ErrorLog.error:15 请求/hera/login/admin404异常
-
-2020-07-12 08:50:59.639 ERROR com.dfire.logs.ErrorLog.error:15 请求/error.index404异常
-
-2020-07-12 08:50:59.721 ERROR com.dfire.logs.ErrorLog.error:15 请求/favicon.ico404异常
-
-2020-07-12 08:50:59.724 ERROR com.dfire.logs.ErrorLog.error:15 请求/error.index404异常
-
-2020-07-12 08:51:33.883 ERROR com.dfire.logs.ErrorLog.error:15 请求/hera/404异常
-
-2020-07-12 08:51:33.887 ERROR com.dfire.logs.ErrorLog.error:15 请求/error.index404异常
-
-2020-07-12 08:51:33.973 ERROR com.dfire.logs.ErrorLog.error:15 请求/favicon.ico404异常
-
-2020-07-12 08:51:33.975 ERROR com.dfire.logs.ErrorLog.error:15 请求/error.index404异常
-
-2020-07-12 09:20:00.354 ERROR com.dfire.logs.ErrorLog.error:15 请求/hera/404异常
-
-2020-07-12 09:20:00.393 ERROR com.dfire.logs.ErrorLog.error:15 请求/error.index404异常
-
-2020-07-12 09:20:00.536 ERROR com.dfire.logs.ErrorLog.error:15 请求/favicon.ico404异常
-
-2020-07-12 09:20:00.540 ERROR com.dfire.logs.ErrorLog.error:15 请求/error.index404异常
-
-2020-07-12 09:20:09.209 ERROR com.dfire.logs.ErrorLog.error:15 请求/favicon.ico404异常
-
-2020-07-12 09:20:09.215 ERROR com.dfire.logs.ErrorLog.error:15 请求/error.index404异常
-
-2020-07-12 09:20:12.885 ERROR com.dfire.logs.ErrorLog.error:15 请求/scheduleCenter/init.do404异常
-
-2020-07-12 09:20:12.887 ERROR com.dfire.logs.ErrorLog.error:15 请求/error.index404异常
-
-2020-07-12 09:20:14.378 ERROR com.dfire.logs.ErrorLog.error:15 请求/favicon.ico404异常
-
-2020-07-12 09:20:14.384 ERROR com.dfire.logs.ErrorLog.error:15 请求/error.index404异常
-
-2020-07-12 09:20:20.090 ERROR com.dfire.logs.ErrorLog.error:15 请求/favicon.ico404异常
-
-2020-07-12 09:20:20.093 ERROR com.dfire.logs.ErrorLog.error:15 请求/error.index404异常
-
-2020-07-12 09:20:26.044 ERROR com.dfire.logs.ErrorLog.error:15 请求/favicon.ico404异常
-
-2020-07-12 09:20:26.049 ERROR com.dfire.logs.ErrorLog.error:15 请求/error.index404异常
-
-2020-07-12 09:20:32.562 ERROR com.dfire.logs.ErrorLog.error:15 请求/favicon.ico404异常
-
-2020-07-12 09:20:32.565 ERROR com.dfire.logs.ErrorLog.error:15 请求/error.index404异常
-
-2020-07-12 09:21:10.867 ERROR com.dfire.logs.ErrorLog.error:15 请求/hera/login404异常
-
-2020-07-12 09:21:10.870 ERROR com.dfire.logs.ErrorLog.error:15 请求/error.index404异常
-
-2020-07-12 09:21:10.968 ERROR com.dfire.logs.ErrorLog.error:15 请求/favicon.ico404异常
-
-2020-07-12 09:21:10.971 ERROR com.dfire.logs.ErrorLog.error:15 请求/error.index404异常
-
-2020-07-12 09:21:18.671 ERROR com.dfire.logs.ErrorLog.error:15 请求/hera/login/admin404异常
-
-2020-07-12 09:21:18.674 ERROR com.dfire.logs.ErrorLog.error:15 请求/error.index404异常
-
-2020-07-12 09:21:18.733 ERROR com.dfire.logs.ErrorLog.error:15 请求/favicon.ico404异常
-
-2020-07-12 09:21:18.737 ERROR com.dfire.logs.ErrorLog.error:15 请求/error.index404异常
-
-2020-07-12 09:23:23.896 ERROR com.dfire.logs.ErrorLog.error:15 请求/hera404异常
-
-2020-07-12 09:23:23.903 ERROR com.dfire.logs.ErrorLog.error:15 请求/error.index404异常
-
-2020-07-12 09:23:23.999 ERROR com.dfire.logs.ErrorLog.error:15 请求/favicon.ico404异常
-
-2020-07-12 09:23:24.002 ERROR com.dfire.logs.ErrorLog.error:15 请求/error.index404异常
-
-2020-07-12 09:38:07.951 ERROR com.dfire.logs.ErrorLog.error:15 请求/scheduleCenter/init.do404异常
-
-2020-07-12 09:38:07.954 ERROR com.dfire.logs.ErrorLog.error:15 请求/error.index404异常
-
-2020-07-12 09:38:11.663 ERROR com.dfire.logs.ErrorLog.error:15 请求/developCenter/init.do404异常
-
-2020-07-12 09:38:11.666 ERROR com.dfire.logs.ErrorLog.error:15 请求/error.index404异常
-
-2020-07-12 09:38:17.312 ERROR com.dfire.logs.ErrorLog.error:15 请求/developCenter/init.do404异常
-
-2020-07-12 09:38:17.315 ERROR com.dfire.logs.ErrorLog.error:15 请求/error.index404异常
-
-2020-07-12 09:38:18.430 ERROR com.dfire.logs.ErrorLog.error:15 请求/developCenter/init.do404异常
-
-2020-07-12 09:38:18.432 ERROR com.dfire.logs.ErrorLog.error:15 请求/error.index404异常
-
-2020-07-12 09:38:37.974 ERROR com.dfire.logs.ErrorLog.error:15 请求/developCenter/init.do404异常
-
-2020-07-12 09:38:37.978 ERROR com.dfire.logs.ErrorLog.error:15 请求/error.index404异常
-
-2020-07-12 09:43:10.199 ERROR com.dfire.logs.ErrorLog.error:15 请求/hera404异常
-
-2020-07-12 09:43:10.223 ERROR com.dfire.logs.ErrorLog.error:15 请求/error.index404异常
-
-2020-07-12 09:43:10.397 ERROR com.dfire.logs.ErrorLog.error:15 请求/favicon.ico404异常
-
-2020-07-12 09:43:10.407 ERROR com.dfire.logs.ErrorLog.error:15 请求/error.index404异常
-
-2020-07-12 09:44:48.779 ERROR com.dfire.logs.ErrorLog.error:15 请求/favicon.ico404异常
-
-2020-07-12 09:44:48.783 ERROR com.dfire.logs.ErrorLog.error:15 请求/error.index404异常
-
-2020-07-12 09:44:48.849 ERROR com.dfire.logs.ErrorLog.error:15 请求/favicon.ico404异常
-
-2020-07-12 09:44:48.853 ERROR com.dfire.logs.ErrorLog.error:15 请求/error.index404异常
-
-2020-07-12 09:44:56.099 ERROR com.dfire.logs.ErrorLog.error:15 请求/hera/favicon.ico404异常
-
-2020-07-12 09:44:56.107 ERROR com.dfire.logs.ErrorLog.error:15 请求/error.index404异常
-
-2020-07-12 09:44:56.214 ERROR com.dfire.logs.ErrorLog.error:15 请求/favicon.ico404异常
-
-2020-07-12 09:44:56.219 ERROR com.dfire.logs.ErrorLog.error:15 请求/error.index404异常
-
-2020-07-12 09:49:42.623 ERROR com.dfire.logs.ErrorLog.error:15 请求 /hera 404异常
-
-2020-07-12 09:49:42.678 ERROR com.dfire.logs.ErrorLog.error:15 请求 /error.index 404异常
-
-2020-07-12 09:49:42.849 ERROR com.dfire.logs.ErrorLog.error:15 请求 /favicon.ico 404异常
-
-2020-07-12 09:49:42.856 ERROR com.dfire.logs.ErrorLog.error:15 请求 /error.index 404异常
-
-2020-07-12 09:50:50.797 ERROR com.dfire.logs.ErrorLog.error:15 请求 /hera/home 404异常
-
-2020-07-12 09:50:50.802 ERROR com.dfire.logs.ErrorLog.error:15 请求 /error.index 404异常
-
-2020-07-12 09:50:51.143 ERROR com.dfire.logs.ErrorLog.error:15 请求 /favicon.ico 404异常
-
-2020-07-12 09:50:51.146 ERROR com.dfire.logs.ErrorLog.error:15 请求 /error.index 404异常
-
-2020-07-12 09:58:21.030 ERROR com.dfire.logs.ErrorLog.error:15 请求 /hera 404异常
-
-2020-07-12 09:58:21.038 ERROR com.dfire.logs.ErrorLog.error:15 请求 /error.index 404异常
-
-2020-07-12 09:58:21.143 ERROR com.dfire.logs.ErrorLog.error:15 请求 /favicon.ico 404异常
-
-2020-07-12 09:58:21.159 ERROR com.dfire.logs.ErrorLog.error:15 请求 /error.index 404异常
+2020-07-13 11:36:22.704 ERROR com.dfire.logs.ErrorLog.error:23 检测锁异常
+java.net.BindException: 地址已在使用
+	at java.base/sun.nio.ch.Net.bind0(Native Method)
+	at java.base/sun.nio.ch.Net.bind(Net.java:461)
+	at java.base/sun.nio.ch.Net.bind(Net.java:453)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:227)
+	at io.netty.channel.socket.nio.NioServerSocketChannel.doBind(NioServerSocketChannel.java:134)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.bind(AbstractChannel.java:550)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.bind(DefaultChannelPipeline.java:1334)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeBind(AbstractChannelHandlerContext.java:506)
+	at io.netty.channel.AbstractChannelHandlerContext.bind(AbstractChannelHandlerContext.java:491)
+	at io.netty.channel.DefaultChannelPipeline.bind(DefaultChannelPipeline.java:973)
+	at io.netty.channel.AbstractChannel.bind(AbstractChannel.java:248)
+	at io.netty.bootstrap.AbstractBootstrap$2.run(AbstractBootstrap.java:356)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:164)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:472)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:500)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+2020-07-13 11:37:53.189 ERROR com.dfire.logs.ErrorLog.error:23 执行shell异常
+java.io.IOException: Cannot run program "sh" (in directory "/Users/wyr/Desktop"): error=2, 没有那个文件或目录
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1128)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1071)
+	at com.dfire.core.tool.RunShell.run(RunShell.java:44)
+	at com.dfire.core.tool.RunShellTest.runShell(RunShellTest.java:17)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:118)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:412)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.io.IOException: error=2, 没有那个文件或目录
+	at java.base/java.lang.ProcessImpl.forkAndExec(Native Method)
+	at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:340)
+	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:271)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1107)
+	... 53 common frames omitted
 

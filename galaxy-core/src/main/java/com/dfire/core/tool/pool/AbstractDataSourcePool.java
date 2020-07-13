@@ -1,8 +1,8 @@
 package com.dfire.core.tool.pool;
 
-import com.alibaba.druid.pool.DruidDataSource;
 import com.dfire.config.HeraGlobalEnv;
 import com.dfire.logs.ErrorLog;
+import com.zaxxer.hikari.HikariDataSource;
 
 import java.sql.Connection;
 
@@ -16,21 +16,21 @@ public abstract class AbstractDataSourcePool {
 
     private volatile boolean isClose;
 
-    private DruidDataSource dataSource;
+    private HikariDataSource dataSource;
 
     public AbstractDataSourcePool() {
-        dataSource = new DruidDataSource();
+        dataSource = new HikariDataSource();
         dataSource.setDriverClassName(HeraGlobalEnv.getSparkDriver());
-        dataSource.setUrl(HeraGlobalEnv.getSparkAddress());
+        dataSource.setJdbcUrl(HeraGlobalEnv.getSparkAddress());
         dataSource.setUsername(HeraGlobalEnv.getSparkUser());
         dataSource.setPassword(HeraGlobalEnv.getSparkPassword());
-        dataSource.setInitialSize(1);
-        dataSource.setMaxActive(20);
-        dataSource.setMinIdle(1);
-        dataSource.setTestOnBorrow(true);
-        dataSource.setTestOnReturn(false);
-        dataSource.setTestWhileIdle(true);
-        dataSource.setTimeBetweenEvictionRunsMillis(600 * 1000);
+        dataSource.setMinimumIdle(5);
+        dataSource.setIdleTimeout(180000);
+        dataSource.setMaximumPoolSize(5);
+        dataSource.setAutoCommit(true);
+        dataSource.setMaxLifetime(1800000);
+        dataSource.setConnectionTimeout(30000);
+        dataSource.setPoolName("GalaxySparkHikariCP");
         isClose = false;
     }
 
