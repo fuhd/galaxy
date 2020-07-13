@@ -22,6 +22,8 @@ spring:
   mvc:
     throw-exception-if-no-handler-found: true
     static-path-pattern: /static/**
+    pathmatch:
+      use-suffix-pattern: true
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
     driverClassName: com.mysql.jdbc.Driver
@@ -62,7 +64,7 @@ spring:
 #    connection-properties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
 server:
   port: 8080
-  servlet.context-path: /galaxy
+  servlet.context-path: /hera
 clean:
   path: ${server.context-path}
 #hera全局配置
