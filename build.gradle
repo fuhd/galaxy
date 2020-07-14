@@ -36,5 +36,5 @@ buildscript {
 }
 
 wrapper {
-    gradleVersion = '6.3'
+    gradleVersion = '6.5.1'
 }
