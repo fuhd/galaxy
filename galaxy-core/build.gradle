@@ -1,4 +1,5 @@
 apply plugin: 'java-library'
+
 jar {
     enabled = true
     archiveBaseName = 'galaxy-core'

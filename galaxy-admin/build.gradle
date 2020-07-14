@@ -1,5 +1,4 @@
 plugins { id 'org.springframework.boot' version '2.3.1.RELEASE' }
-apply plugin: 'io.spring.dependency-management'
 
 jar {
     enabled = true
