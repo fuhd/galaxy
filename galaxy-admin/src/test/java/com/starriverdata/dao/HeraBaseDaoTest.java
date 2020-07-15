@@ -31,8 +31,8 @@ import java.util.*;
  * @time: Created in 下午5:15 2018/5/14
  * @desc
  */
-@ComponentScan(basePackages = "com.dfire")
-@MapperScan(basePackages = "com.dfire.common.mapper")
+@ComponentScan(basePackages = "com.starriverdata")
+@MapperScan(basePackages = "com.starriverdata.common.mapper")
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringBootTest(classes = HeraBaseDaoTest.class)
 public class HeraBaseDaoTest {

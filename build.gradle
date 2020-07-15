@@ -24,7 +24,9 @@ subprojects {
         implementation 'com.google.guava:guava:29.0-jre'
         implementation 'org.apache.commons:commons-lang3:3.10'
         implementation 'org.slf4j:slf4j-api:1.7.30'
-        testImplementation 'junit:junit:4.13'
+        testImplementation('junit:junit:4.13') {
+            exclude group: 'org.hamcrest', module: 'hamcrest-core'
+        }
     }
 }
 

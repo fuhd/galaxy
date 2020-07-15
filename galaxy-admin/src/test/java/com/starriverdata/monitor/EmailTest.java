@@ -15,8 +15,8 @@ import javax.mail.MessagingException;
  * @author <a href="mailto:huoguo@2dfire.com">火锅</a>
  * @time 2018/11/21
  */
-@ComponentScan(basePackages = "com.dfire")
-@MapperScan(basePackages = "com.dfire.common.mapper")
+@ComponentScan(basePackages = "com.starriverdata")
+@MapperScan(basePackages = "com.starriverdata.common.mapper")
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringBootTest(classes = EmailTest.class)
 public class EmailTest {
