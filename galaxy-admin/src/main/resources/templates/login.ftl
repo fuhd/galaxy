@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head lang="en">
-    <title>星河数据中台</title>
+    <title>星河大数据平台</title>
     <base href="${request.contextPath}" id="baseURl">
     <#import "/common/common.macro.ftl" as netCommon>
     <@netCommon.commonStyle />
@@ -21,18 +21,17 @@
     </style>
 </head>
 
-
 <body>
 
 
 <div class="login box box-primary">
     <#--<div class="box png">-->
-    <div><h3 align="center" class="title">星河数据中台</h3></div>
+    <div><h3 align="center" class="title">星河大数据平台</h3></div>
     <div class="input">
         <div class="log">
             <ul class="nav nav-tabs" role="tablist" id="menu-tab">
                 <li class="active"><a href="#tab-login" role="tab" data-toggle="tab">登录</a></li>
-                <li><a href="#tab-middle" role="tab-register" data-toggle="tab" onclick="loadGroups()"> 注册</a></li>
+                <!-- <li><a href="#tab-middle" role="tab-register" data-toggle="tab" onclick="loadGroups()"> 注册</a></li> -->
             </ul>
 
             <div class="tab-content">
@@ -87,7 +86,7 @@
                                 </select>
                             </div>
                             <input type="reset" class="btn btn-default pull-left" value="重置">
-                            <input type="submit" class="btn btn-primary pull-right" value="注册">
+                            <!-- <input type="submit" class="btn btn-primary pull-right" value="注册"> -->
                         </fieldset>
                     </form>
 
