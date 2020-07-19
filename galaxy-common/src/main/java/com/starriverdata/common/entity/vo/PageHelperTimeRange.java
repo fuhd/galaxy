@@ -2,11 +2,6 @@ package com.starriverdata.common.entity.vo;
 
 import lombok.Data;
 
-/**
- *
- * @author jet
- * @date 2019-12-20
- */
 @Data
 public class PageHelperTimeRange {
     private Integer offset;

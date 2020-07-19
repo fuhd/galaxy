@@ -36,5 +36,4 @@ public class HeraUser {
 
     private String description;
 
-
 }

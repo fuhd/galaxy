@@ -22,7 +22,6 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * 任务定时是否完成检测
- * @author scx
  */
 public class JobFinishCheck extends ScheduledChore {
 

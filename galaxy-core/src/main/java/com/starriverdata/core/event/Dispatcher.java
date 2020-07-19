@@ -16,9 +16,7 @@ import java.util.List;
 
 
 /**
- * @author: <a href="mailto:lingxiao@2dfire.com">凌霄</a>
- * @time: Created in 11:00 2018/1/4
- * @desc hera中的任务事件observer, 接受事件，全局广播dispatch
+ * hera中的任务事件observer, 接受事件，全局广播dispatch
  */
 public class Dispatcher extends AbstractObservable {
 
@@ -68,8 +66,6 @@ public class Dispatcher extends AbstractObservable {
 
     /**
      * 事件广播，每次任务状态变化，触发响应事件，全局广播，自动调度successEvent,触发依赖调度一些依赖更新
-     *
-     * @param applicationEvent
      */
     public void dispatch(ApplicationEvent applicationEvent) {
         try {
@@ -94,7 +90,5 @@ public class Dispatcher extends AbstractObservable {
         } catch (Exception e) {
             ErrorLog.error("global dispatch job event error", e);
         }
-
     }
-
 }

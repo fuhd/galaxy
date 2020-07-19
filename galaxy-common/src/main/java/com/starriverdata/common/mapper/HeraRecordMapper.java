@@ -6,12 +6,6 @@ import org.apache.ibatis.annotations.*;
 
 import java.util.List;
 
-/**
- * desc:
- *
- * @author scx
- * @create 2019/06/10
- */
 public interface HeraRecordMapper {
 
     @Insert("insert into hera_record (#{heraRecord})")

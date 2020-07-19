@@ -7,12 +7,6 @@ import lombok.NoArgsConstructor;
 
 import java.util.Map;
 
-/**
- * desc:
- *
- * @author scx
- * @create 2019/11/25
- */
 @Data
 @Builder
 @AllArgsConstructor
@@ -38,6 +32,5 @@ public class HeraRerunVo {
     private Map<String, String> extra;
 
     private Long actionNow;
-
 
 }

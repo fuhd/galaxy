@@ -11,14 +11,7 @@ import com.starriverdata.config.HeraGlobalEnv;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-/**
- * desc:
- *
- * @author scx
- * @create 2019/04/28
- */
 public abstract class AbstractJobFailAlarm implements JobFailAlarm {
-
 
     /**
      * 任务失败告警

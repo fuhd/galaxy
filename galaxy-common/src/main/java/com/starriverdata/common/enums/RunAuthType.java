@@ -1,11 +1,5 @@
 package com.starriverdata.common.enums;
 
-/**
- * desc:
- *
- * @author scx
- * @create 2019/06/20
- */
 public enum RunAuthType {
 
     /**

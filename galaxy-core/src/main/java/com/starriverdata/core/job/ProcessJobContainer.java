@@ -8,21 +8,15 @@ import com.starriverdata.config.HeraGlobalEnv;
 import java.util.List;
 
 /**
- * @author: <a href="mailto:lingxiao@2dfire.com">凌霄</a>
- * @time: Created in 上午12:30 2018/4/26
- * @desc job执行单元的集合体，按照处理顺序，先执行前置处理（job执行所需进行的upload,download），
+ * job执行单元的集合体，按照处理顺序，先执行前置处理（job执行所需进行的upload,download），
  * 在执行核心处理（shell, hive）(脚本执行逻辑),最后执行后置处理
  */
-
 public class ProcessJobContainer extends AbstractJob {
-
 
     private List<Job> pres;
     private List<Job> posts;
     private Job job;
-
     private Job running;
-
 
     public ProcessJobContainer(JobContext jobContext, List<Job> pres, List<Job> posts, Job core) {
         super(jobContext);
@@ -34,8 +28,6 @@ public class ProcessJobContainer extends AbstractJob {
 
     /**
      * 单个任务完整执行逻辑，按照前置，core，后置顺序执行
-     *
-     * @return
      */
     @Override
     public int run() throws Exception {

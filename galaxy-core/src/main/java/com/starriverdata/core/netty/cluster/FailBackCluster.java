@@ -14,12 +14,8 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * 集群容错之失败重试
- *
- * @author xiaosuda
- * @date 2019/2/23
  */
 public class FailBackCluster extends AbstractCluster {
-
 
     /**
      * 最大重试次数
@@ -31,7 +27,6 @@ public class FailBackCluster extends AbstractCluster {
     private static final int RETRY_DELAY = 5;
 
     private volatile Timer retryTimer;
-
 
     public static HeraChannel wrap(HeraChannel channel) {
         return new FailBackCluster(channel);
@@ -68,6 +63,4 @@ public class FailBackCluster extends AbstractCluster {
         }
         retryTimer.newTimeout(new RetryTimerTask(channel, msg, RETRY_TIMES, RETRY_DELAY), RETRY_DELAY, TimeUnit.SECONDS);
     }
-
-
 }

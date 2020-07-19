@@ -16,14 +16,7 @@ import java.net.URISyntaxException;
 import java.net.URL;
 import java.util.List;
 
-/**
- * desc:
- *
- * @author scx
- * @create 2019/04/26
- */
 public class HttpUtils {
-
 
     public static String doGet(String urlStr, List<BasicHeader> headers) {
         URI uri = null;
@@ -60,6 +53,5 @@ public class HttpUtils {
         }
         return null;
     }
-
 
 }

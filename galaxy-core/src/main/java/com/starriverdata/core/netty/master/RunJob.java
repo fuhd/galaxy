@@ -2,9 +2,6 @@ package com.starriverdata.core.netty.master;
 
 import com.starriverdata.common.vo.JobElement;
 
-/**
- * @author scx
- */
 public interface RunJob {
 
     /**

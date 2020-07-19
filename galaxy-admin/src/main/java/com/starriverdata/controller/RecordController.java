@@ -26,16 +26,9 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import java.util.*;
 import java.util.stream.Collectors;
 
-/**
- * desc:
- *
- * @author scx
- * @create 2019/07/17
- */
 @Controller
 @RequestMapping("/record")
 public class RecordController extends BaseHeraController {
-
 
     @Autowired
     private HeraUserService heraUserService;
@@ -104,7 +97,6 @@ public class RecordController extends BaseHeraController {
 
     }
 
-
     @RequestMapping("/now")
     @ResponseBody
     public JsonResponse findNow(Integer logId, String logType, String type) {
@@ -148,5 +140,4 @@ public class RecordController extends BaseHeraController {
 
         return new JsonResponse(true, resData);
     }
-
 }

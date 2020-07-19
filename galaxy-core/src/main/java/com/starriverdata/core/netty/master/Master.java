@@ -1,6 +1,5 @@
 package com.starriverdata.core.netty.master;
 
-
 import com.starriverdata.common.constants.Constants;
 import com.starriverdata.common.constants.LogConstant;
 import com.starriverdata.common.constants.TimeFormatConstant;
@@ -46,9 +45,7 @@ import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
 
 /**
- * @author: <a href="mailto:lingxiao@2dfire.com">凌霄</a>
- * @time: Created in 16:24 2018/1/12
- * @desc hera核心任务调度器
+ * hera核心任务调度器
  */
 @Component
 @Order(1)
@@ -236,12 +233,8 @@ public class Master {
         return false;
     }
 
-
     /**
      * 递归获取所有父级依赖任务
-     *
-     * @param dpIdStr
-     * @return
      */
     public Set<HeraJob> getParentJob(String dpIdStr, Set<Integer> jobCheck) {
         Set<HeraJob> jobSet = new HashSet<>();
@@ -298,7 +291,6 @@ public class Master {
 
     }
 
-
     /**
      * 批量插入
      *
@@ -328,7 +320,6 @@ public class Master {
             }
         }
     }
-
 
     /**
      * 生成action
@@ -361,7 +352,6 @@ public class Master {
         }
         return heraActionList;
     }
-
 
     public void clearInvalidAction() {
         ScheduleLog.warn("开始进行版本清理");
@@ -399,7 +389,6 @@ public class Master {
         shouldRemove.forEach(dispatcher::removeJobHandler);
         ScheduleLog.warn("版本清理完成,清理handler个数为:" + shouldRemove.size());
     }
-
 
     /**
      * 递归生成任务依赖action
@@ -583,9 +572,7 @@ public class Master {
 
     /**
      * 获取hostGroupId中可以分发任务的worker
-     *
      * @param jobElement job 部分信息
-     * @return
      */
     private MasterWorkHolder getRunnableWork(JobElement jobElement) throws HostGroupNotExistsException {
         //TODO 如果是emr集群 是否可以在这里判断内存信息？
@@ -631,7 +618,6 @@ public class Master {
             ErrorLog.error("添加开发中心执行任务失败:" + element.getJobId(), e);
         }
     }
-
 
     private String getInheritVal(Integer groupId, String key, String defaultKey) {
         HeraGroup group = masterContext.getHeraGroupService().findConfigById(groupId);
@@ -815,7 +801,6 @@ public class Master {
 
     }
 
-
     private void notifyAdmin(String title, String content) {
         HeraUser admin = masterContext.getHeraUserService().findByName(HeraGlobalEnv.getAdmin());
         if (admin != null) {
@@ -829,8 +814,6 @@ public class Master {
 
     /**
      * work断开的处理
-     *
-     * @param channel channel
      */
     public void workerDisconnectProcess(Channel channel) {
         String ip = getIpFromChannel(channel);
@@ -1010,6 +993,5 @@ public class Master {
     		}
     	}
     }
-
 
 }

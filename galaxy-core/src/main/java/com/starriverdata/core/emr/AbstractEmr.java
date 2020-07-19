@@ -17,10 +17,7 @@ import java.util.concurrent.atomic.AtomicLong;
 import java.util.concurrent.locks.LockSupport;
 
 /**
- * desc: emr集群 抽象类
- *
- * @author scx
- * @create 2019/04/01
+ * emr集群 抽象类
  */
 public abstract class AbstractEmr implements EmrJob, Emr {
 
@@ -32,7 +29,6 @@ public abstract class AbstractEmr implements EmrJob, Emr {
      * 缓存的集群IP
      */
     // protected volatile List<String> cacheIp = null;
-
 
     protected String prefixKey = "ssh -o StrictHostKeyChecking=no -i ";
     /**
@@ -196,11 +192,8 @@ public abstract class AbstractEmr implements EmrJob, Emr {
         }
     }
 
-
     /**
      * 判断是否有创建好的集群
-     *
-     * @return 结果
      */
     private boolean notAlive(String owner) {
         //如果当前缓存的集群已经关闭，查询是否有已经启动的
@@ -230,16 +223,11 @@ public abstract class AbstractEmr implements EmrJob, Emr {
 
     /**
      * 判断集群是否活着
-     *
-     * @param cacheClusterId cacheClusterId
-     * @return boolean
      */
     protected abstract boolean checkAlive(String cacheClusterId);
 
     /**
      * 获得emr集群的登录ip/域名
-     *
-     * @return ip/域名
      */
     @Override
     public String getIp(String owner) {
@@ -337,8 +325,6 @@ public abstract class AbstractEmr implements EmrJob, Emr {
 
     /**
      * 关闭集群操作
-     *
-     * @param clusterId clusterId
      */
     protected abstract void terminateCluster(String clusterId);
 
@@ -350,8 +336,6 @@ public abstract class AbstractEmr implements EmrJob, Emr {
 
     /**
      * 发送创建集群的请求
-     *
-     * @return 返回clusterId
      */
     protected abstract String sendCreateRequest(String owner);
 
@@ -366,17 +350,11 @@ public abstract class AbstractEmr implements EmrJob, Emr {
 
     /**
      * 检测集群是否创建完成
-     *
-     * @param clusterId clusterId
-     * @return
      */
     protected abstract boolean isCompletion(String clusterId) throws HeraException;
 
     /**
      * 获得master的ip
-     *
-     * @param clusterId clusterId
-     * @return
      */
     protected abstract List<String> getMasterIp(String clusterId);
 
@@ -406,6 +384,5 @@ public abstract class AbstractEmr implements EmrJob, Emr {
         }
         return prefixKey + " /home/docker/conf/fixed.pem hadoop@" + host;
     }
-
 
 }

@@ -14,9 +14,7 @@ import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
 /**
- * @author: <a href="mailto:lingxiao@2dfire.com">凌霄</a>
- * @time: Created in 23:24 2018/1/12
- * @desc 任务运行过程中的日志记录
+ * 任务运行过程中的日志记录
  */
 @Data
 public class LogContent {
@@ -57,8 +55,6 @@ public class LogContent {
 
     /**
      * size大小的队列
-     *
-     * @param log
      */
     private void queuePushLog(String log) {
         try {

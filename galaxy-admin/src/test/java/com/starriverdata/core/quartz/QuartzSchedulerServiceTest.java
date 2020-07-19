@@ -5,19 +5,13 @@ import org.quartz.*;
 
 import java.io.IOException;
 
-/**
- * Created by xiaosuda on 2018/6/26.
- */
 public class QuartzSchedulerServiceTest {
-
-
 
     @Test
     public void start() throws IOException, SchedulerException, InterruptedException {
 
         QuartzSchedulerService quartzSchedulerService = new QuartzSchedulerService();
         quartzSchedulerService.start();
-
 
         JobDetail jobDetail = JobBuilder.newJob(HeraQuartzJob.class).withIdentity("hera").build();
         CronScheduleBuilder scheduleBuilder = CronScheduleBuilder.cronSchedule("0/5 * * * * ?");

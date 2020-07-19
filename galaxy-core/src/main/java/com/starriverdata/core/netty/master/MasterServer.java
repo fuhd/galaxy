@@ -19,11 +19,6 @@ import io.netty.handler.timeout.IdleStateHandler;
 
 import java.util.concurrent.TimeUnit;
 
-/**
- * @author: <a href="mailto:lingxiao@2dfire.com">凌霄</a>
- * @time: Created in 10:34 2018/1/10
- * @desc
- */
 public class MasterServer {
 
     private ServerBootstrap serverBootstrap;
@@ -35,8 +30,6 @@ public class MasterServer {
     /**
      * ProtobufVarint32LengthFieldPrepender:对protobuf协议的的消息头上加上一个长度为32的整形字段,用于标志这个消息的长度。
      * ProtobufVarint32FrameDecoder:针对protobuf协议的ProtobufVarint32LengthFieldPrepender()所加的长度属性的解码器
-     *
-     * @param handler
      */
     public MasterServer(final MasterHandler handler) {
         serverBootstrap = new ServerBootstrap();

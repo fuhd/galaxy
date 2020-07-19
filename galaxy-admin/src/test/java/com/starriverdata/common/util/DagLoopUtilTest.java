@@ -4,9 +4,6 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-/**
- * Created by xiaosuda on 2018/7/10.
- */
 public class DagLoopUtilTest {
 
     @Test
@@ -36,5 +33,4 @@ public class DagLoopUtilTest {
         System.out.println(dagLoopUtil.getLoop());
 
     }
-
 }

@@ -12,10 +12,7 @@ import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
 /**
- * desc: work心跳超时check
- *
- * @author scx
- * @create 2020/01/06
+ * work心跳超时check
  */
 public class WorkHeartCheck extends ScheduledChore {
 

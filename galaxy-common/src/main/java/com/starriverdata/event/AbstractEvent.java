@@ -3,11 +3,6 @@ package com.starriverdata.event;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-/**
- * @author: <a href="mailto:lingxiao@2dfire.com">凌霄</a>
- * @time: Created in 下午4:56 2018/4/18
- * @desc
- */
 @Data
 @NoArgsConstructor
 public class AbstractEvent {

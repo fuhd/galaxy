@@ -10,10 +10,7 @@ import org.joda.time.DateTime;
 import java.util.concurrent.TimeUnit;
 
 /**
- * desc: 任务版本的生成初始化
- *
- * @author scx
- * @create 2020/01/07
+ * 任务版本的生成初始化
  */
 public class JobActionInit extends ScheduledChore {
 

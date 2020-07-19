@@ -1,11 +1,5 @@
 package com.starriverdata.common.enums;
 
-/**
- * desc:
- *
- * @author scx
- * @create 2019/04/28
- */
 public enum JobStatus {
 
     /**

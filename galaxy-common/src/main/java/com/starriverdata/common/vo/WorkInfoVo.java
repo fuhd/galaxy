@@ -4,11 +4,6 @@ import lombok.Data;
 
 import java.util.List;
 
-/**
- *
- * @author xiaosuda
- * @date 2018/11/14
- */
 @Data
 public class WorkInfoVo {
 

@@ -7,9 +7,7 @@ import lombok.Data;
 
 
 /**
- * @author: <a href="mailto:lingxiao@2dfire.com">凌霄</a>
- * @time: Created in 10:54 2018/1/4
- * @desc 任务队列中job的实体
+ * 任务队列中job的实体
  */
 @Data
 @Builder

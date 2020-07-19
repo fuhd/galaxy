@@ -2,12 +2,6 @@ package com.starriverdata.common.entity.form;
 
 import lombok.Data;
 
-/**
- * desc:
- *
- * @author scx
- * @create 2019/11/28
- */
 @Data
 public class HeraRerunForm {
     private Integer id;

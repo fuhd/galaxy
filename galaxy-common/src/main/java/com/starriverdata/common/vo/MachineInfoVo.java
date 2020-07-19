@@ -2,10 +2,6 @@ package com.starriverdata.common.vo;
 
 import lombok.Data;
 
-/**
- * @author xiaosuda
- * @date 2018/11/14
- */
 @Data
 public class MachineInfoVo {
     /**

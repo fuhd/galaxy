@@ -7,11 +7,7 @@ import java.util.concurrent.ExecutorCompletionService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 
-/**
- * Created by xiaosuda on 2018/6/27.
- */
 public class WorkHandlerTest {
-
 
     @Test
     public void TestExecutorCompletionService() {

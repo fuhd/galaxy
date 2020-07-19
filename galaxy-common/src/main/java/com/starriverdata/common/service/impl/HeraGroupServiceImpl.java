@@ -14,11 +14,6 @@ import org.springframework.stereotype.Service;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * @author: <a href="mailto:lingxiao@2dfire.com">凌霄</a>
- * @time: Created in 下午5:02 2018/4/17
- * @desc
- */
 @Service("heraGroupService")
 public class HeraGroupServiceImpl implements HeraGroupService {
 

@@ -21,10 +21,6 @@ import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.Future;
 import java.util.concurrent.TimeUnit;
 
-/**
- * @author xiaosuda
- * @date 2018/11/10
- */
 public class MasterExecuteJob {
 
     public Future<Response> executeJob(final MasterContext context, final MasterWorkHolder holder, ExecuteKind kind, final Long id) {
@@ -43,10 +39,6 @@ public class MasterExecuteJob {
 
     /**
      * 请求work 执行手动任务
-     *
-     * @param context    MasterContext
-     * @param workHolder MasterWorkHolder
-     * @return Future
      */
     private Future<Response> executeManualJob(MasterContext context, MasterWorkHolder workHolder, Long actionId) {
         workHolder.getManningRunning().add(actionId);
@@ -63,11 +55,6 @@ public class MasterExecuteJob {
 
     /**
      * 请求work 执行调度任务/恢复任务
-     *
-     * @param context    MasterContext
-     * @param workHolder MasterWorkHolder
-     * @param actionId   String
-     * @return Future
      */
     private Future<Response> executeScheduleJob(MasterContext context, MasterWorkHolder workHolder, Long actionId) {
         workHolder.getRunning().add(actionId);
@@ -85,11 +72,6 @@ public class MasterExecuteJob {
 
     /**
      * 请求work 执行开发中心任务
-     *
-     * @param context    MasterContext
-     * @param workHolder MasterWorkHolder
-     * @param id         String
-     * @return Future
      */
     private Future<Response> executeDebugJob(MasterContext context, MasterWorkHolder workHolder, Long id) {
         workHolder.getDebugRunning().add(id);
@@ -106,13 +88,6 @@ public class MasterExecuteJob {
 
     /**
      * 向work发送执行任务的命令 并等待work返回结果
-     *
-     * @param context  MasterContext
-     * @param request  Request
-     * @param holder   MasterWorkHolder
-     * @param actionId String
-     * @param typeEnum TriggerTypeEnum
-     * @return Future
      */
 
     private Future<Response> buildFuture(MasterContext context, Request request, MasterWorkHolder holder, Long actionId, TriggerTypeEnum typeEnum) {

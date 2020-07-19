@@ -8,10 +8,6 @@ import java.io.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-/**
- * @author xiaosuda
- * @date 2018/4/13
- */
 @Data
 public class MemUseRateJob {
 

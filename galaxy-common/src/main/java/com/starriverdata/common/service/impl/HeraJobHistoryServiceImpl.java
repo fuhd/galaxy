@@ -10,16 +10,10 @@ import org.springframework.stereotype.Service;
 
 import java.util.*;
 
-/**
- * @author: <a href="mailto:lingxiao@2dfire.com">凌霄</a>
- * @time: Created in 19:18 2018/1/12
- * @desc
- */
 @Service("heraJobHistoryService")
 public class HeraJobHistoryServiceImpl implements HeraJobHistoryService {
     @Autowired
     HeraJobHistoryMapper heraJobHistoryMapper;
-
 
     @Override
     public int updateHeraJobHistoryLog(HeraJobHistory heraJobHistory) {

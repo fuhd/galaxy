@@ -2,8 +2,6 @@ package com.starriverdata.core.route.check;
 
 /**
  * worker 检测的结果信息
- * @author <a href="mailto:huoguo@2dfire.com">火锅</a>
- * @time 2018/11/9
  */
 public enum ResultReason {
 

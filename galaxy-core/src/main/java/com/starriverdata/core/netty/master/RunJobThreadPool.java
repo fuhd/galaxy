@@ -20,14 +20,7 @@ import java.util.*;
 import java.util.concurrent.*;
 import java.util.stream.Collectors;
 
-/**
- * desc:
- *
- * @author scx
- * @create 2019/04/24
- */
 public class RunJobThreadPool extends ThreadPoolExecutor {
-
 
     private static ConcurrentHashMap<Runnable, JobElement> jobEmrType;
     private EmrJob emr;

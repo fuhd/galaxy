@@ -15,9 +15,7 @@ import java.util.regex.Pattern;
 
 
 /**
- * @author: <a href="mailto:lingxiao@2dfire.com">凌霄</a>
- * @time: Created in 15:40 2018/3/22
- * @desc 层次结构属性解析，hera时间配置解析
+ * 层次结构属性解析，hera时间配置解析
  */
 public class RenderHierarchyProperties extends HierarchyProperties {
 
@@ -40,8 +38,6 @@ public class RenderHierarchyProperties extends HierarchyProperties {
 
 
     /**
-     * @param template
-     * @param dateStr
      * @return hera配置日期变量替换,"${yesterday}"为系统变量
      */
     public static String render(String template, String dateStr) throws HeraException {

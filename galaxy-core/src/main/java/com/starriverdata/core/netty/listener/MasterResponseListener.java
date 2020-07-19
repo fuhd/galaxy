@@ -11,10 +11,6 @@ import lombok.NoArgsConstructor;
 
 import java.util.concurrent.CountDownLatch;
 
-/**
- * @author xiaosuda
- * @date 2018/7/31
- */
 @Data
 @AllArgsConstructor
 @NoArgsConstructor

@@ -13,9 +13,6 @@ import java.util.regex.Pattern;
 
 /**
  * 仅仅用于heraAction
- * @author:  火锅
- * @time: Created in 上午11:13 2018/5/17
- * @desc
  */
 public class HeraActionBatchInsertDriver extends XMLLanguageDriver implements LanguageDriver {
 

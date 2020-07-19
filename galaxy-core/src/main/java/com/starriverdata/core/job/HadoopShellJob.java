@@ -2,11 +2,6 @@ package com.starriverdata.core.job;
 
 import com.starriverdata.common.constants.RunningJobKeyConstant;
 
-/**
- * @author: <a href="mailto:lingxiao@2dfire.com">凌霄</a>
- * @time: Created in 上午11:09 2018/5/1
- * @desc
- */
 public class HadoopShellJob extends ShellJob {
 
     public HadoopShellJob(JobContext jobContext) {

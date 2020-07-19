@@ -12,10 +12,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.List;
 
-/**
- * @author xiaosuda
- * @date 2018/4/20
- */
 @Controller
 @RequestMapping("/hostGroup/")
 public class HostGroupController {

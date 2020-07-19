@@ -4,11 +4,9 @@ option optimize_for = SPEED;
 option java_package = "com.starriverdata.protocol";
 option java_outer_classname = "RpcHeartBeatMessage";
 
-
 message AllHeartBeatInfoMessage {
     map<string, HeartBeatMessage> values= 1;
 }
-
 
 message HeartBeatMessage {
 

@@ -12,10 +12,6 @@ import java.io.File;
 import java.util.*;
 import java.util.stream.Collectors;
 
-/**
- * @author xiaosuda
- * @date 2018/4/16
- */
 @Configuration
 public class HeraGlobalEnv {
 

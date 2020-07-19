@@ -22,10 +22,7 @@ import java.util.*;
 import java.util.concurrent.TimeUnit;
 
 /**
- * desc:任务信号丢失定时检测backup
- *
- * @author scx
- * @create 2020/01/06
+ * 任务信号丢失定时检测backup
  */
 public class LostJobCheck extends ScheduledChore {
 

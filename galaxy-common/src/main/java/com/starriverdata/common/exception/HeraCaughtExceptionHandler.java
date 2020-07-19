@@ -2,11 +2,6 @@ package com.starriverdata.common.exception;
 
 import com.starriverdata.logs.ErrorLog;
 
-/**
- * @author: <a href="mailto:lingxiao@2dfire.com">凌霄</a>
- * @time: Created in 下午3:23 2018/6/12
- * @desc
- */
 public class HeraCaughtExceptionHandler implements Thread.UncaughtExceptionHandler {
 
     @Override

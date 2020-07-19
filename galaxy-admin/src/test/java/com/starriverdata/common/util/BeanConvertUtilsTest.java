@@ -12,9 +12,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-/**
- * Created by xiaosuda on 2018/6/13.
- */
 public class BeanConvertUtilsTest {
 
     @Test

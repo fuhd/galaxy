@@ -25,11 +25,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import java.util.*;
 import java.util.stream.Collectors;
 
-/**
- * @author: <a href="mailto:lingxiao@2dfire.com">凌霄</a>
- * @time: Created in 下午4:10 2018/6/14
- * @desc
- */
 @Controller
 @RequestMapping("/userManage/")
 public class UserManageController {
@@ -131,8 +126,6 @@ public class UserManageController {
 
     /**
      * operateType: 1,执行删除操作，2，执行审核通过操作，3，执行审核拒绝操作
-     *
-     * @return
      */
 
     @RequestMapping(value = "/operateUser", method = RequestMethod.POST)

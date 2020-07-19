@@ -19,14 +19,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-/**
- * desc:
- *
- * @author scx
- * @create 2019/04/01
- */
 public class AliYunEmr extends AbstractEmr {
-
 
     public static final String NAME = "aliYun";
 
@@ -77,7 +70,6 @@ public class AliYunEmr extends AbstractEmr {
             MonitorLog.error("关闭集群" + clusterId + "失败", e);
         }
     }
-
 
     @Override
     protected void shutdown() {
@@ -141,8 +133,6 @@ public class AliYunEmr extends AbstractEmr {
 
     /**
      * 引导操作
-     *
-     * @param request request
      */
     private void setBootStrapAction(CreateClusterV2Request request) {
         List<CreateClusterV2Request.BootstrapAction> actions = new ArrayList<>();
@@ -296,8 +286,6 @@ public class AliYunEmr extends AbstractEmr {
 
     /**
      * 设置自定义的hive 元数据地址
-     *
-     * @param configs
      */
     private void setCustomHiveMetaDB(List<Config> configs) {
         Config metaConf = new Config();
@@ -348,8 +336,6 @@ public class AliYunEmr extends AbstractEmr {
 
     /**
      * 设置弹性伸缩  阿里云暂时不支持api模式
-     *
-     * @param clusterId clusterId
      */
     private void setAutoScaling(String clusterId) {
 

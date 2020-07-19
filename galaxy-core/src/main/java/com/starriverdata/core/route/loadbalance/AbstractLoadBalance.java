@@ -11,12 +11,9 @@ import com.starriverdata.core.route.check.ResultReason;
 import com.starriverdata.logs.MasterLog;
 
 /**
- * @author: <a href="mailto:lingxiao@2dfire.com">凌霄</a>
- * @time: Created in 上午11:09 2018/10/10
- * @desc 任务执行worker选择路由
+ * 任务执行worker选择路由
  */
 public abstract class AbstractLoadBalance implements LoadBalance {
-
 
     @Override
     public MasterWorkHolder select(JobElement jobElement, MasterContext masterContext) throws HostGroupNotExistsException {
@@ -62,7 +59,6 @@ public abstract class AbstractLoadBalance implements LoadBalance {
         }
         return true;
     }
-
 
     protected abstract MasterWorkHolder doSelect(HeraHostGroupVo hostGroup, MasterContext masterContext);
 }

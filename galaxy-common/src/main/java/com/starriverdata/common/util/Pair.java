@@ -1,17 +1,10 @@
 package com.starriverdata.common.util;
 
-/**
- * desc:
- *
- * @author scx
- * @create 2019/07/22
- */
 public class Pair<A, B> {
 
     private A fst;
 
     private B snd;
-
 
     public Pair(A a, B b) {
         this.fst = a;

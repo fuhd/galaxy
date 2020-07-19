@@ -13,10 +13,7 @@ import java.util.*;
 import java.util.concurrent.TimeUnit;
 
 /**
- * desc:重跑任务的初始化，比如生成版本，总共要执行的次数等
- *
- * @author scx
- * @create 2020/01/06
+ * 重跑任务的初始化，比如生成版本，总共要执行的次数等
  */
 public class RerunJobInit extends ScheduledChore {
 

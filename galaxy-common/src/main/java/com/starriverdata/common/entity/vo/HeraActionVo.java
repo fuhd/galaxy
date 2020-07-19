@@ -14,11 +14,6 @@ import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
-/**
- * @author: <a href="mailto:lingxiao@2dfire.com">凌霄</a>
- * @time: Created in 上午11:00 2018/5/16
- * @desc
- */
 @Builder
 @Data
 @NoArgsConstructor

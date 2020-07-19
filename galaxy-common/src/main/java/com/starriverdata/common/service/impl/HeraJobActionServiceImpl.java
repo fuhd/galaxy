@@ -24,11 +24,6 @@ import org.springframework.stereotype.Service;
 
 import java.util.*;
 
-/**
- * @author: <a href="mailto:lingxiao@2dfire.com">凌霄</a>
- * @time: Created in 下午3:43 2018/5/16
- * @desc
- */
 @Service("heraJobActionService")
 public class HeraJobActionServiceImpl implements HeraJobActionService {
 
@@ -65,9 +60,6 @@ public class HeraJobActionServiceImpl implements HeraJobActionService {
 
     /**
      * 判断是更新该是修改
-     *
-     * @param heraAction
-     * @return
      */
     private boolean isNeedUpdateAction(HeraAction heraAction, Long nowAction) {
         HeraAction action = heraJobActionMapper.findById(heraAction.getId());
@@ -166,9 +158,6 @@ public class HeraJobActionServiceImpl implements HeraJobActionService {
 
     /**
      * 根据jobId查询版本运行信息，只能是取最新版本信息
-     *
-     * @param jobId
-     * @return
      */
     @Override
     public JobStatus findJobStatusByJobId(Long jobId) {

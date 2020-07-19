@@ -17,10 +17,6 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- * @author xiaosuda
- * @date 2018/7/13
- */
 public class JwtUtils {
 
     private final static String secret = "WWW.TWO_D_FIRE.COM/INFRASTRUCTURE";
@@ -59,7 +55,6 @@ public class JwtUtils {
     public static boolean verifyToken(String token) {
         return getClaims(token) != null;
     }
-
 
     private static Map<String, Claim> getClaims(String token) {
         DecodedJWT jwt;

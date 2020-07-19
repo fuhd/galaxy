@@ -26,9 +26,7 @@ import java.util.*;
 import java.util.concurrent.ExecutionException;
 
 /**
- * @author: <a href="mailto:lingxiao@2dfire.com">凌霄</a>
- * @time: Created in 16:52 2018/1/13
- * @desc 系统管理
+ * 系统管理
  */
 @Controller
 public class SystemManageController extends BaseHeraController {
@@ -211,8 +209,6 @@ public class SystemManageController extends BaseHeraController {
 
     /**
      * 首页任务运行top10
-     *
-     * @return
      */
     @RequestMapping(value = "/homePage/findJobRunTimeTop10", method = RequestMethod.GET)
     @ResponseBody
@@ -223,8 +219,6 @@ public class SystemManageController extends BaseHeraController {
 
     /**
      * 今日所有任务状态，初始化首页饼图
-     *
-     * @return
      */
     @RequestMapping(value = "/homePage/findAllJobStatus", method = RequestMethod.GET)
     @ResponseBody
@@ -235,8 +229,6 @@ public class SystemManageController extends BaseHeraController {
 
     /**
      * 今日所有任务状态明细，线形图初始化
-     *
-     * @return
      */
     @RequestMapping(value = "/homePage/findAllJobStatusDetail", method = RequestMethod.GET)
     @ResponseBody
@@ -246,8 +238,6 @@ public class SystemManageController extends BaseHeraController {
 
     /**
      * 今日所有任务状态明细，线形图初始化
-     *
-     * @return
      */
     @RequestMapping(value = "/homePage/getJobQueueInfo", method = RequestMethod.GET)
     @ResponseBody
@@ -258,8 +248,6 @@ public class SystemManageController extends BaseHeraController {
 
     /**
      * 今日所有任务状态明细，线形图初始化
-     *
-     * @return
      */
     @RequestMapping(value = "/homePage/getNotRunJob", method = RequestMethod.GET)
     @ResponseBody
@@ -270,8 +258,6 @@ public class SystemManageController extends BaseHeraController {
 
     /**
      * 今日所有任务状态明细，线形图初始化
-     *
-     * @return
      */
     @RequestMapping(value = "/homePage/getFailJob", method = RequestMethod.GET)
     @ResponseBody

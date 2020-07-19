@@ -23,12 +23,6 @@ import javax.servlet.http.HttpServletRequest;
 import java.lang.reflect.Method;
 import java.util.Map;
 
-/**
- * desc:
- *
- * @author scx
- * @create 2019/06/18
- */
 @ControllerAdvice
 public class HeraExceptionHandler {
 

@@ -6,9 +6,7 @@ import org.apache.commons.lang3.StringUtils;
 import java.util.*;
 
 /**
- * @author: <a href="mailto:lingxiao@2dfire.com">凌霄</a>
- * @time: Created in 14:58 2018/3/22
- * @desc 带层次结构的属性, 任务配置继承
+ * 带层次结构的属性, 任务配置继承
  */
 public class HierarchyProperties {
 
@@ -54,9 +52,7 @@ public class HierarchyProperties {
     }
 
     /**
-     * @param key
-     * @return
-     * @desc 获取属性值, 如果自身属性中没有，则向父属性查询
+     * 获取属性值, 如果自身属性中没有，则向父属性查询
      */
     public String getProperty(String key) {
         if (properties != null && properties.containsKey(key)) {
@@ -69,36 +65,28 @@ public class HierarchyProperties {
     }
 
     /**
-     * @param key
-     * @return
-     * @desc 获取属性值, 如果自身属性中没有，则向父属性查询
+     * 获取属性值, 如果自身属性中没有，则向父属性查询
      */
     public String getProperty(String key, String defaultValue) {
         return StringUtils.isBlank(getProperty(key)) ? defaultValue : getProperty(key);
     }
 
     /**
-     * @param key
-     * @return
-     * @desc 获取属性值, 只在自身属性中查询
+     * 获取属性值, 只在自身属性中查询
      */
     public String getLocalProperty(String key) {
         return properties.get(key);
     }
 
     /**
-     * @param key
-     * @param defaultValue
-     * @return 获取属性值, 只在自身属性中查询, 如果没有，则返回传入的默认值
+     * 获取属性值, 只在自身属性中查询, 如果没有，则返回传入的默认值
      */
     public String getLocalProperty(String key, String defaultValue) {
         return StringUtils.isBlank(getLocalProperty(key)) ? defaultValue : getLocalProperty(key);
     }
 
     /**
-     * @param key
-     * @return
-     * @desc 向上获取所有的数据, 一般用于获取带继承性质的属性, 比如classpath，需要父级的classpath
+     * 向上获取所有的数据, 一般用于获取带继承性质的属性, 比如classpath，需要父级的classpath
      */
     public List<String> getHierarchyProperty(String key) {
         List<String> list = new ArrayList<>();
@@ -113,8 +101,6 @@ public class HierarchyProperties {
 
     /**
      * 获得层级属性
-     *
-     * @return
      */
     public Map<String, String> getAllProperties() {
         if (parent != null) {

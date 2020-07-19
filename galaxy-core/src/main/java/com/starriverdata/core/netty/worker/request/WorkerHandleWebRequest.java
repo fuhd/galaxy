@@ -17,10 +17,6 @@ import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.Future;
 import java.util.concurrent.TimeUnit;
 
-/**
- * @author xiaosuda
- * @date 2018/11/9
- */
 public class WorkerHandleWebRequest {
 
     public static Future<WebResponse> handleWebExecute(final WorkContext workContext, ExecuteKind kind, Long id) {

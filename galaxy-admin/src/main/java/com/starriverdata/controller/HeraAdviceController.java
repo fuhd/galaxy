@@ -10,10 +10,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
-/**
- * @author xiaosuda
- * @date 2018/12/5
- */
 @Controller
 @RequestMapping("/adviceController")
 public class HeraAdviceController extends BaseHeraController {

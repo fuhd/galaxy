@@ -9,10 +9,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-/**
- * @author xiaosuda
- * @date 2018/8/6
- */
 @Data
 public class RunShell {
     private List<String> commands;

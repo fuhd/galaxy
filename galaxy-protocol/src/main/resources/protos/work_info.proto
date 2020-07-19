@@ -14,7 +14,6 @@ message WorkInfo {
    repeated ProcessMonitor processMonitor = 3;
 }
 
-
 message OSInfo {
    float user = 1;
    float system = 2;
@@ -39,8 +38,6 @@ message MachineInfo {
    //磁盘分区挂载的目录 即挂载点
    string mountedOn = 7;
 }
-
-
 
 message ProcessMonitor {
     string  pid = 1;

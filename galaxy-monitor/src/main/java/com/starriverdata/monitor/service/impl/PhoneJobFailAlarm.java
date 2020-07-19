@@ -15,9 +15,6 @@ import java.util.Set;
 
 /**
  * 电话告警 使用者自己实现
- *
- * @author xiaosuda
- * @date 2019/3/6
  */
 @Alarm
 public class PhoneJobFailAlarm extends AbstractJobFailAlarm {

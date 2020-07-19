@@ -3,8 +3,6 @@ package com.starriverdata.core.netty.master.constant;
 
 /**
  * master 相关静态配置参数
- * @author <a href="mailto:huoguo@2dfire.com">火锅</a>
- * @time 2018/11/28
  */
 public class MasterConstant {
 

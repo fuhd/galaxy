@@ -7,10 +7,6 @@ import com.starriverdata.logs.ScheduleLog;
 import org.quartz.Job;
 import org.quartz.JobExecutionContext;
 
-/**
- * @author xiaosuda
- * @date 2018/6/26
- */
 public class HeraQuartzJob implements Job {
 
     @Override

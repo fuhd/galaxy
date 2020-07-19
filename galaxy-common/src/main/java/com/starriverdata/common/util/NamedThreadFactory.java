@@ -3,11 +3,6 @@ package com.starriverdata.common.util;
 import java.util.concurrent.ThreadFactory;
 import java.util.concurrent.atomic.AtomicInteger;
 
-/**
- *
- * @author xiaosuda
- * @date 2018/7/2
- */
 public class NamedThreadFactory implements ThreadFactory {
 
     private final static AtomicInteger POOL_SEQ = new AtomicInteger(1);

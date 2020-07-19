@@ -11,11 +11,6 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.stream.Collectors;
 
-/**
- * @author: <a href="mailto:lingxiao@2dfire.com">凌霄</a>
- * @time: Created in 19:20 2018/1/12
- * @desc
- */
 @Service("heraFileService")
 public class HeraFileServiceImpl implements HeraFileService {
 
@@ -65,9 +60,6 @@ public class HeraFileServiceImpl implements HeraFileService {
 
     /**
      * 构建开发中心文件树
-     *
-     * @param user
-     * @return
      */
     @Override
     public List<HeraFileTreeNodeVo> buildFileTree(String user) {

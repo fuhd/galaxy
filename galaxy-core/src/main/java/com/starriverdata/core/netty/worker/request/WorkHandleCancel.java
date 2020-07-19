@@ -16,9 +16,7 @@ import java.util.Date;
 import java.util.concurrent.Future;
 
 /**
- * @author: <a href="mailto:lingxiao@2dfire.com">凌霄</a>
- * @time: Created in 下午10:57 2018/5/11
- * @desc worker端执行接受到master hander端的取消任务指令的时候，开始执行取消任务逻辑
+ * worker端执行接受到master hander端的取消任务指令的时候，开始执行取消任务逻辑
  */
 public class WorkHandleCancel {
 
@@ -44,11 +42,6 @@ public class WorkHandleCancel {
 
     /**
      * 取消执行手动任务，先判断任务是否在运行队列中，再执行取消任务逻辑
-     *
-     * @param workContext
-     * @param request
-     * @param historyId
-     * @return
      */
     private Future<RpcResponse.Response> cancelManual(WorkContext workContext, RpcRequest.Request request, Long historyId) {
         HeraJobHistory heraJobHistory = workContext.getHeraJobHistoryService().findById(historyId);
@@ -75,11 +68,6 @@ public class WorkHandleCancel {
 
     /**
      * 取消执行调度任务，先判断任务是否在运行队列中，再执行取消任务逻辑
-     *
-     * @param workContext
-     * @param request
-     * @param historyId
-     * @return
      */
     private Future<RpcResponse.Response> cancelSchedule(WorkContext workContext, RpcRequest.Request request, Long historyId) {
         HeraJobHistory heraJobHistory = workContext.getHeraJobHistoryService().findById(historyId);
@@ -108,11 +96,6 @@ public class WorkHandleCancel {
 
     /**
      * 取消执行开发中心任务，先判断任务是否在运行队列中，再执行取消任务逻辑
-     *
-     * @param workContext
-     * @param request
-     * @param debugId
-     * @return
      */
     private Future<RpcResponse.Response> cancelDebug(WorkContext workContext, RpcRequest.Request request, Long debugId) {
         Future<RpcResponse.Response> future;
@@ -139,5 +122,4 @@ public class WorkHandleCancel {
         }
         return future;
     }
-
 }

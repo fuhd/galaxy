@@ -7,12 +7,7 @@ import org.apache.ibatis.annotations.*;
 
 import java.util.List;
 
-/**
- * @author xiaosuda
- * @date 2018/12/14
- */
 public interface HeraRerunMapper {
-
 
     String COLUMN = " id,is_end,action_now,job_id,name,start_millis,end_millis,sso_name,extra,gmt_create ";
     String TABLE = " hera_rerun ";

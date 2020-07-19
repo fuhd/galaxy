@@ -7,10 +7,7 @@ import com.zaxxer.hikari.HikariDataSource;
 import java.sql.Connection;
 
 /**
- * @Description : Druid连接池
- * @Author ： HeGuoZi
- * @Date ： 10:04 2018/8/24
- * @Modified :
+ * Druid连接池
  */
 public abstract class AbstractDataSourcePool {
 

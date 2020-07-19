@@ -5,9 +5,6 @@ import org.junit.Test;
 
 import java.util.Date;
 
-/**
- * Created by xiaosuda on 2018/7/17.
- */
 public class ActionUtilTest {
 
     @Test

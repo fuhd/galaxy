@@ -33,12 +33,6 @@ import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
 
-/**
- * desc:
- *
- * @author scx
- * @create 2019/04/23
- */
 public class MasterRunJob implements RunJob {
 
     private Master master;
@@ -60,7 +54,6 @@ public class MasterRunJob implements RunJob {
 
     /**
      * 开发中心脚本执行逻辑
-     *
      * @param selectWork 所选机器
      * @param debugId    debugId
      */
@@ -189,12 +182,6 @@ public class MasterRunJob implements RunJob {
 
     /**
      * 自动调度任务开始执行入口，向master端的channel写请求任务执行请求
-     *
-     * @param selectWork    selectWork
-     * @param actionId      actionId
-     * @param runCount      runCount
-     * @param retryCount    retryCount
-     * @param retryWaitTime retryWaitTime
      */
     private void runScheduleJobContext(MasterWorkHolder selectWork, Long actionId, int runCount, int retryCount, int retryWaitTime) {
         DebugLog.info("重试次数：{},重试时间：{},actionId:{}", retryCount, retryWaitTime, actionId);
@@ -323,8 +310,6 @@ public class MasterRunJob implements RunJob {
 
     /**
      * 任务超出最大并行度 放入任务队列，不要放到线程池队列
-     *
-     * @return
      */
     public boolean isTaskLimit() {
         //可能会被apollo等配置中心修改，检测limit的时候进行判断

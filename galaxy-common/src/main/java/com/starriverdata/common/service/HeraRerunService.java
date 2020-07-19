@@ -7,10 +7,6 @@ import com.starriverdata.common.util.Pair;
 
 import java.util.List;
 
-/**
- * @author xiaosuda
- * @date 2018/12/14
- */
 public interface HeraRerunService {
 
     boolean add(HeraRerunVo heraRerun);

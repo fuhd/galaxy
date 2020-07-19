@@ -10,11 +10,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-/**
- * @author: <a href="mailto:lingxiao@2dfire.com">凌霄</a>
- * @time: Created in 上午10:37 2018/5/8
- * @desc
- */
 @Builder
 @Data
 public class HeraGroupBean {

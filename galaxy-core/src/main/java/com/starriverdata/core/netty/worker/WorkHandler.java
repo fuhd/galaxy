@@ -24,12 +24,9 @@ import java.util.List;
 import java.util.concurrent.*;
 
 /**
- * @author: <a href="mailto:lingxiao@2dfire.com">凌霄</a>
- * @time: Created in 1:32 2018/1/4
- * @desc SocketMessage为RPC消息体
+ * SocketMessage为RPC消息体
  */
 public class WorkHandler extends SimpleChannelInboundHandler<SocketMessage> {
-
 
     private WorkHandlerRequest handlerRequest = new WorkHandlerRequest();
 
@@ -80,7 +77,6 @@ public class WorkHandler extends SimpleChannelInboundHandler<SocketMessage> {
                 .setKind(SocketMessage.Kind.RESPONSE)
                 .setBody(response.toByteString()).build();
     }
-
 
     @Override
     protected void channelRead0(ChannelHandlerContext ctx, SocketMessage socketMessage) throws Exception {
@@ -143,7 +139,6 @@ public class WorkHandler extends SimpleChannelInboundHandler<SocketMessage> {
         }
     }
 
-
     private HeraChannel getChannel(Channel channel) {
         if (channelMap.get(channel) == null) {
             channelMap.putIfAbsent(channel, FailBackCluster.wrap(channel));
@@ -165,7 +160,6 @@ public class WorkHandler extends SimpleChannelInboundHandler<SocketMessage> {
         ctx.fireChannelInactive();
         channelMap.remove(ctx.channel());
     }
-
 
     @Override
     public void exceptionCaught(ChannelHandlerContext ctx, Throwable cause) {

@@ -2,9 +2,6 @@ package com.starriverdata.core.job;
 
 import java.io.*;
 
-/**
- * Created by xiaosuda on 2018/7/11.
- */
 public class ProcessJobTest {
 
     public static void main(String[] args) throws IOException, InterruptedException {

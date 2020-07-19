@@ -8,20 +8,13 @@ import io.netty.channel.ChannelFuture;
 
 import java.net.SocketAddress;
 
-
-/**
- * @author xiaosuda
- * @date 2018/11/16
- */
 public class NettyChannel implements HeraChannel {
-
 
     private Channel channel;
 
     public NettyChannel(Channel channel) {
         this.channel = channel;
     }
-
 
     @Override
     public void writeAndFlush(RpcSocketMessage.SocketMessage message) throws RemotingException {

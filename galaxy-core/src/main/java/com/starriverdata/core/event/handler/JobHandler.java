@@ -38,9 +38,7 @@ import java.util.Date;
 import java.util.Objects;
 
 /**
- * @author: <a href="mailto:lingxiao@2dfire.com">凌霄</a>
- * @time: Created in 下午5:24 2018/4/19
- * @desc 每种任务执行状态都对应相应事件，job执行生命周期事件执行逻辑
+ * 每种任务执行状态都对应相应事件，job执行生命周期事件执行逻辑
  */
 
 @Builder

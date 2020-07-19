@@ -13,11 +13,6 @@ import com.starriverdata.protocol.RpcWorkInfo.WorkInfo;
 import com.google.protobuf.InvalidProtocolBufferException;
 import io.netty.channel.Channel;
 
-
-/**
- * @author xiaosuda
- * @date 2018/4/13
- */
 public class MasterHandleRequest {
 
     public static void handleHeartBeat(MasterContext masterContext, Channel channel, Request request) {

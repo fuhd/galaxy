@@ -11,10 +11,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-/**
- * @author xiaosuda
- * @date 2019/2/26
- */
 @Component
 public class ServiceLoader implements ApplicationContextAware {
 
@@ -30,8 +26,6 @@ public class ServiceLoader implements ApplicationContextAware {
 
     /**
      * 通过@Alarms 注解 找到所有需要告警的实现类
-     *
-     * @param applicationContext applicationContext
      */
     private void setAlarms(ApplicationContext applicationContext) {
         Map<String, Object> alarmBeans = applicationContext.getBeansWithAnnotation(Alarm.class);
@@ -45,8 +39,6 @@ public class ServiceLoader implements ApplicationContextAware {
 
     /**
      * 通过@Filter 注解 找到所有需要告警的实现类
-     *
-     * @param applicationContext applicationContext
      */
     private void setFilters(ApplicationContext applicationContext) {
         Map<String, Object> alarmBeans = applicationContext.getBeansWithAnnotation(Filter.class);

@@ -8,9 +8,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * @author: <a href="mailto:lingxiao@2dfire.com">凌霄</a>
- * @time: Created in 17:55 2018/3/26
- * @desc 扫描日志，揪出hadoop任务id，进行kill
+ * 扫描日志，揪出hadoop任务id，进行kill
  */
 public class CancelHadoopJob extends ProcessJob {
 
@@ -25,8 +23,6 @@ public class CancelHadoopJob extends ProcessJob {
 
     /**
      * 解析日志  查找map-reduce 的jobId 根据id进行kill
-     *
-     * @return
      */
     @Override
     public List<String> getCommandList() {
@@ -64,9 +60,7 @@ public class CancelHadoopJob extends ProcessJob {
     }
 
     /**
-     * @param evenMap
-     * @return
-     * @desc 获取系统环境的hadoop命令
+     * 获取系统环境的hadoop命令
      */
     public static String getHadoopCmd(Map<String, String> evenMap) {
         StringBuilder cmd = new StringBuilder(64);

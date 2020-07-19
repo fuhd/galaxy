@@ -8,16 +8,11 @@ import com.starriverdata.core.netty.master.MasterWorkHolder;
 
 /**
  * 负载均衡器
- * @author xiaosuda
  */
 public interface LoadBalance {
 
     /**
      * 选择work
-     * @param jobElement
-     * @param masterContext
-     * @return
      */
     MasterWorkHolder select(JobElement jobElement, MasterContext masterContext) throws HostGroupNotExistsException;
-
 }

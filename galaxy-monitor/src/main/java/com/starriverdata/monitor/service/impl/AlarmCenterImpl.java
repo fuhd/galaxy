@@ -10,16 +10,8 @@ import org.springframework.stereotype.Service;
 
 import javax.mail.MessagingException;
 
-
-/**
- * desc:
- *
- * @author scx
- * @create 2019/04/27
- */
 @Service
 public class AlarmCenterImpl implements AlarmCenter {
-
 
     @Autowired
     private EmailService emailService;

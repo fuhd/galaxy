@@ -7,10 +7,6 @@ import com.starriverdata.config.HeraGlobalEnv;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-/**
- * @author xiaosuda
- * @date 2018/4/16
- */
 public class CommandUtils {
 
     private static final String CHANGE_AUTHORITY = "chmod -R 777 ";

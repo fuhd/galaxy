@@ -5,9 +5,6 @@ import org.junit.Test;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by xiaosuda on 2018/7/13.
- */
 public class CronParseTest {
 
     @Test

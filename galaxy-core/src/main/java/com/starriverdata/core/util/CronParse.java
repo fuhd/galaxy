@@ -11,9 +11,7 @@ import java.util.Date;
 import java.util.List;
 
 /**
- * @author: <a href="mailto:lingxiao@2dfire.com">凌霄</a>
- * @time: Created in 上午10:15 2018/5/10
- * @desc cron表达式解析工具，返回解析result
+ * cron表达式解析工具，返回解析result
  */
 public class CronParse {
 

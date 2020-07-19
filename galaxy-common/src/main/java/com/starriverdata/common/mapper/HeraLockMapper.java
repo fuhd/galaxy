@@ -8,11 +8,6 @@ import org.apache.ibatis.annotations.*;
 
 import java.util.Date;
 
-/**
- * @author: <a href="mailto:lingxiao@2dfire.com">凌霄</a>
- * @time: Created in 14:25 2018/1/12
- * @desc
- */
 public interface HeraLockMapper {
 
     @Select("select * from hera_lock where subgroup = #{subgroup}")
@@ -23,7 +18,6 @@ public interface HeraLockMapper {
     @Lang(HeraInsertLangDriver.class)
     @Options(useGeneratedKeys = true, keyProperty = "id", keyColumn = "id")
     Integer insert(HeraLock heraLock);
-
 
     @Update("update hera_lock (#{heraLock}) where id = #{id}")
     @Lang(HeraUpdateLangDriver.class)

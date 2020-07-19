@@ -11,16 +11,11 @@ import lombok.NoArgsConstructor;
 
 import java.util.concurrent.CountDownLatch;
 
-/**
- * @author xiaosuda
- * @date 2018/7/31
- */
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @EqualsAndHashCode(callSuper = false)
 public class WorkResponseListener extends ResponseListenerAdapter {
-
 
     private RpcWebRequest.WebRequest request;
     private volatile Boolean receiveResult;

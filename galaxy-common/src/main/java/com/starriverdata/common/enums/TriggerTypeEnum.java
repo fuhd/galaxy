@@ -1,9 +1,7 @@
 package com.starriverdata.common.enums;
 
 /**
- * @author: <a href="mailto:lingxiao@2dfire.com">凌霄</a>
- * @time: Created in 23:21 2018/1/12
- * @desc 任务触发类型
+ * 任务触发类型
  */
 public enum TriggerTypeEnum {
 

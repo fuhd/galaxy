@@ -3,8 +3,6 @@ package com.starriverdata.common.exception;
 
 /**
  * 权限异常
- *
- * @author scx
  */
 public class NoPermissionException extends RuntimeException {
 

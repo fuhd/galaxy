@@ -4,15 +4,12 @@ import lombok.extern.slf4j.Slf4j;
 
 /**
  * 任务执行的详细过程
- * @author xiaosuda
- * @date 2018/11/5
  */
 @Slf4j
 public class TaskLog {
     public static void info(String msg) {
         log.info(msg);
     }
-
 
     public static void info(String format, Object... arguments) {
         log.info(format, arguments);
@@ -30,11 +27,9 @@ public class TaskLog {
         log.error(format, arguments);
     }
 
-
     public static void error(String msg, Exception e) {
         log.error(msg, e);
     }
-
 
     public static void warn(String msg) {
         log.warn(msg);

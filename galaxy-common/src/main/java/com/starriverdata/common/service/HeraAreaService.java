@@ -4,10 +4,6 @@ import com.starriverdata.common.entity.HeraArea;
 
 import java.util.List;
 
-/**
- * @author xiaosuda
- * @date 2018/12/14
- */
 public interface HeraAreaService {
 
     Integer add(HeraArea heraArea);
@@ -21,6 +17,4 @@ public interface HeraAreaService {
     Integer deleteById(Integer id);
 
     List<HeraArea> findAll();
-
-
 }

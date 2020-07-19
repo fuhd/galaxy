@@ -2,12 +2,6 @@ package com.starriverdata.common.enums;
 
 import java.util.Arrays;
 
-/**
- * desc:
- *
- * @author scx
- * @create 2019/07/16
- */
 public enum RecordTypeEnum {
 
     /**
@@ -66,7 +60,6 @@ public enum RecordTypeEnum {
         this.type = type;
         this.id = id;
     }
-
 
     public static RecordTypeEnum parseById(Integer id) {
         return Arrays.stream(RecordTypeEnum.values()).filter(record -> record.id.equals(id)).findAny().orElse(null);

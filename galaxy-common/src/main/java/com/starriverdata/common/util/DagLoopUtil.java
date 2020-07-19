@@ -4,10 +4,6 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
-/**
- * @author xiaosuda
- * @date 2018/7/10
- */
 public class DagLoopUtil {
 
 
@@ -18,7 +14,6 @@ public class DagLoopUtil {
     private static final Integer DEFAULT_SIZE = 10000;
 
     private Integer edgeSize;
-
 
     private boolean hasLoop;
     private boolean hasCheck;
@@ -41,7 +36,6 @@ public class DagLoopUtil {
             in[child]++;
         }
     }
-
 
     public boolean isLoop() {
         return topSort();
@@ -88,7 +82,6 @@ public class DagLoopUtil {
 
     /**
      * 列出整个任务链路图
-     * @return
      */
     public String getLoop() {
         //TODO （最高根据topSort的结果 获得成环的那些节点(in[o] > 0的点)  直接返回即可）

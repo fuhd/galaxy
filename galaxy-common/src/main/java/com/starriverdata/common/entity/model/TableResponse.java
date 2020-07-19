@@ -6,10 +6,7 @@ import lombok.Data;
 import java.util.Map;
 
 /**
- * layui table返回专用
- *
- * @author xiaosuda
- * @date 2018/12/5
+ * table返回专用
  */
 @Data
 public class TableResponse {

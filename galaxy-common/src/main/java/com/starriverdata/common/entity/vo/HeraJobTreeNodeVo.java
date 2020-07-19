@@ -5,11 +5,6 @@ import lombok.Data;
 
 import java.util.Objects;
 
-/**
- * @author: <a href="mailto:lingxiao@2dfire.com">凌霄</a>
- * @time: Created in 下午4:40 2018/5/19
- * @desc
- */
 @Data
 @Builder
 public class HeraJobTreeNodeVo {
@@ -24,11 +19,9 @@ public class HeraJobTreeNodeVo {
     public boolean getIsParent() {
         return isParent;
     }
-
     public void setIsParent(boolean isParent) {
         this.isParent = isParent;
     }
-
 
     @Override
     public boolean equals(Object o) {

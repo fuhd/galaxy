@@ -12,10 +12,6 @@ import org.springframework.stereotype.Service;
 import java.util.Arrays;
 import java.util.List;
 
-/**
- * @author xiaosuda
- * @date 2018/8/1
- */
 @Service
 public class HeraJobMonitorServiceImpl implements HeraJobMonitorService {
 

@@ -13,9 +13,6 @@ import java.util.regex.Pattern;
 
 /**
  * 仅仅用于heraAction
- * @author:  火锅
- * @time: Created in 上午11:13 2018/5/17
- * @desc
  */
 public class HeraActionBatchUpdateDriver extends XMLLanguageDriver implements LanguageDriver {
 
@@ -52,6 +49,5 @@ public class HeraActionBatchUpdateDriver extends XMLLanguageDriver implements La
         }
         return super.createSqlSource(configuration, script, parameterType);
     }
-
 
 }

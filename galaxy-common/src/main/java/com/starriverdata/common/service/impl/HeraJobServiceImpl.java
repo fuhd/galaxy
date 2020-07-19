@@ -21,10 +21,6 @@ import java.text.SimpleDateFormat;
 import java.util.*;
 import java.util.stream.Collectors;
 
-/**
- * @author xiaosuda
- * @date 2018/11/7
- */
 @Service("heraJobService")
 public class HeraJobServiceImpl implements HeraJobService {
 
@@ -288,8 +284,6 @@ public class HeraJobServiceImpl implements HeraJobService {
 
 	/**
      * 建立今日任务执行 Map映射 便于获取
-     *
-     * @return Map
      */
     private Map<String, GraphNode> buildHistoryMap() {
         List<HeraJobHistory> actionHistories = heraJobHistoryService.findTodayJobHistory();
@@ -419,8 +413,6 @@ public class HeraJobServiceImpl implements HeraJobService {
 
     /**
      * 定时调用的任务图
-     *
-     * @return DirectionGraph
      */
 
     public DirectionGraph<Integer> buildJobGraph() {
@@ -456,6 +448,4 @@ public class HeraJobServiceImpl implements HeraJobService {
 
         return directionGraph;
     }
-
-
 }

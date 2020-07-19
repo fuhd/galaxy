@@ -7,13 +7,9 @@ import com.starriverdata.protocol.RpcSocketMessage;
 import io.netty.channel.Channel;
 
 /**
- *
- *  快速失败集群容错 比如心跳
- * @author xiaosuda
- * @date 2019/2/23
+ * 快速失败集群容错 比如心跳
  */
 public class FailFastCluster extends AbstractCluster {
-
 
     public static HeraChannel wrap(HeraChannel channel) {
         return new FailFastCluster(channel);

@@ -22,16 +22,8 @@ import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.ScheduledThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
-/**
- * desc:
- *
- * @author scx
- * @create 2019/12/03
- */
-
 //@Filter("yarnMonitorFilter")
 public class YarnMonitorFilter implements ExecuteFilter {
-
 
     private final String APP_ID = "id";
     private final String NAME = "name";
@@ -42,7 +34,6 @@ public class YarnMonitorFilter implements ExecuteFilter {
     private final String MEMORY_SECONDS = "memorySeconds";
     private final String V_CORE_SECONDS = "vcoreSeconds";
 
-
     @Autowired
     private HeraJobHistoryService historyService;
 
@@ -51,7 +42,6 @@ public class YarnMonitorFilter implements ExecuteFilter {
     private LinkedBlockingQueue<Long> jobQueue;
 
     private LinkedList<String> appQueue;
-
 
     @PostConstruct
     public void init() {
@@ -97,13 +87,10 @@ public class YarnMonitorFilter implements ExecuteFilter {
             String appId;
             if ((appId = properties.get(Constants.APP_ID)) != null) {
                 Map<String, String> resMap = parseAppLog(HttpUtils.doGet("http://172.30.68.120:5004/ws/v1/cluster/apps/" + appId, null));
-
-
             }
 
         }
     }
-
 
     public Map<String, String> parseAppLog(String log) {
         if (StringUtils.isBlank(log)) {

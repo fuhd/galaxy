@@ -28,11 +28,8 @@ import java.util.stream.Collectors;
 
 
 /**
- * @author: 凌霄
- * @time: Created in 16:34 2018/1/1
- * @desc 登陆控制器
+ * 登录
  */
-
 @Controller
 public class LoginController extends BaseHeraController {
 

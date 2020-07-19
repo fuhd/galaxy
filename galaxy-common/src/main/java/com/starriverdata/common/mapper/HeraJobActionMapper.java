@@ -14,9 +14,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * @author: <a href="mailto:lingxiao@2dfire.com">凌霄</a>
- * @time: Created in 上午11:03 2018/5/16
- * @desc 版本运行历史查询
+ * 版本运行历史查询
  */
 public interface HeraJobActionMapper {
 
@@ -27,7 +25,6 @@ public interface HeraJobActionMapper {
     @Insert("insert into hera_action (#{list})")
     @Lang(HeraActionBatchInsertDriver.class)
     int batchInsert(@Param("list") List<HeraAction> list);
-
 
     @Insert("update hera_action (#{list})")
     @Lang(HeraActionBatchUpdateDriver.class)
@@ -47,7 +44,6 @@ public interface HeraJobActionMapper {
     @Lang(HeraSelectLangDriver.class)
     HeraAction findById(Long id);
 
-
     @Select("select * from hera_action where job_id = #{jobId} order by id desc limit 1")
     HeraAction findLatestByJobId(Long jobId);
 
@@ -66,9 +62,6 @@ public interface HeraJobActionMapper {
 
     /**
      * 根据JobId 获取版本
-     *
-     * @param jobId
-     * @return
      */
     @Select("select id from hera_action where job_id = #{jobId} order by id desc limit 24")
     List<Long> getActionVersionByJobId(Long jobId);
@@ -79,12 +72,8 @@ public interface HeraJobActionMapper {
     @Select("select id,job_id,owner,auto from hera_action where id <= CURRENT_TIMESTAMP()* 10000 and id >= CURRENT_DATE () * 10000000000  and status = 'failed' and auto = 1 group by job_id")
     List<HeraActionVo> getFailedJob();
 
-
     /**
      * selectList 只能传递一个参数  需要封装为map或者对象
-     *
-     * @param params
-     * @return
      */
     @Select("select id,job_id,status,ready_dependency,dependencies,schedule_type,last_result,name from hera_action where job_id in (#{list}) and id &gt;= #{startDate} * 10000000000 and id &lt;= #{endDate} * 10000000000 " +
             "<if test=\"status != null\" > and status=#{status} </if> " +

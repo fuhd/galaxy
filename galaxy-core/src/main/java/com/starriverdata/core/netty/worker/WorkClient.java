@@ -1,6 +1,5 @@
 package com.starriverdata.core.netty.worker;
 
-
 import com.starriverdata.common.entity.vo.HeraDebugHistoryVo;
 import com.starriverdata.common.entity.vo.HeraJobHistoryVo;
 import com.starriverdata.common.util.ActionUtil;
@@ -50,12 +49,6 @@ import java.util.*;
 import java.util.concurrent.*;
 import java.util.concurrent.atomic.AtomicBoolean;
 
-
-/**
- * @author: <a href="mailto:lingxiao@2dfire.com">凌霄</a>
- * @time: Created in 10:34 2018/1/10
- * @desc
- */
 @Data
 @Component
 public class WorkClient {
@@ -151,8 +144,6 @@ public class WorkClient {
         workSchedule.scheduleWithFixedDelay(new Runnable() {
             /**
              * 处理任务调度的异常日志
-             * @param job
-             * @param e
              */
             private void printScheduleLog(Job job, Exception e) {
                 try {
@@ -173,8 +164,6 @@ public class WorkClient {
 
             /**
              * 处理 开发中心的日志
-             * @param job
-             * @param e
              */
             private void printDebugLog(Job job, Exception e) {
                 try {
@@ -232,9 +221,6 @@ public class WorkClient {
 
     /**
      * 机器启动spring-boot时，worker向主节点发起netty请求连接，成功之后，worker异步获取channel,并设置在work context中
-     *
-     * @param host
-     * @throws Exception
      */
     public synchronized void connect(String host) throws Exception {
         if (workContext.getServerChannel() != null) {
@@ -275,8 +261,6 @@ public class WorkClient {
 
     /**
      * 取消执行开发中心任务
-     *
-     * @param debugId
      */
     public void cancelDebugJob(Long debugId) {
         Job job = workContext.getDebugRunning().remove(debugId);
@@ -286,8 +270,6 @@ public class WorkClient {
 
     /**
      * 取消手动执行的任务
-     *
-     * @param historyPair
      */
     public void cancelManualJob(HistoryPair historyPair) {
         cancelJob(workContext.getManualRunning().remove(historyPair));
@@ -306,8 +288,6 @@ public class WorkClient {
 
     /**
      * 取消自动调度执行的任务
-     *
-     * @param historyPair
      */
     public void cancelScheduleJob(HistoryPair historyPair) {
         cancelJob(workContext.getRunning().remove(historyPair));
@@ -317,11 +297,6 @@ public class WorkClient {
 
     /**
      * 页面开发中心发动执行脚本时，发起请求，
-     *
-     * @param kind
-     * @param id
-     * @throws ExecutionException
-     * @throws InterruptedException
      */
     public void executeJobFromWeb(ExecuteKind kind, Long id) throws ExecutionException, InterruptedException {
         RpcWebResponse.WebResponse response = WorkerHandleWebRequest.handleWebExecute(workContext, kind, id).get();

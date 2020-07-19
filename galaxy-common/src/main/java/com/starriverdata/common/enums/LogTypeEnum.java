@@ -2,14 +2,7 @@ package com.starriverdata.common.enums;
 
 import java.util.Arrays;
 
-/**
- * desc:
- *
- * @author scx
- * @create 2019/07/17
- */
 public enum LogTypeEnum {
-
 
     /**
      * job类型的日志

@@ -2,10 +2,6 @@ package com.starriverdata.common.service;
 
 import javax.mail.MessagingException;
 
-/**
- * @author xiaosuda
- * @date 2018/7/31
- */
 public interface EmailService {
 
     /**

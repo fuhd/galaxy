@@ -2,16 +2,11 @@ package com.starriverdata.logs;
 
 import lombok.extern.slf4j.Slf4j;
 
-/**
- * @author huoguo
- * @date 2018/11/5
- */
 @Slf4j
 public class MasterLog {
     public static void info(String msg) {
         log.info(msg);
     }
-
 
     public static void info(String format, Object... arguments) {
         log.info(format, arguments);
@@ -29,11 +24,9 @@ public class MasterLog {
         log.error(format,throwable);
     }
 
-
     public static void error(String msg, Exception e) {
         log.error(msg, e);
     }
-
 
     public static void warn(String msg) {
         log.warn(msg);

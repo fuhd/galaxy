@@ -13,7 +13,6 @@ import java.util.concurrent.ThreadLocalRandom;
 
 /**
  * 随机算法
- * @author xiaosdua
  */
 public class RandomLoadBalance extends AbstractLoadBalance {
 

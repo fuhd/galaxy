@@ -2,16 +2,11 @@ package com.starriverdata.logs;
 
 import lombok.extern.slf4j.Slf4j;
 
-/**
- * @author xiaosuda
- * @date 2018/11/5
- */
 @Slf4j
 public class DebugLog  {
     public static void info(String msg) {
         log.info(msg);
     }
-
 
     public static void info(String format, Object... arguments) {
         log.info(format, arguments);

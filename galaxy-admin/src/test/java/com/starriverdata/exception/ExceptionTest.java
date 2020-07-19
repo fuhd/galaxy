@@ -1,12 +1,6 @@
 package com.starriverdata.exception;
 
-/**
- * @author: <a href="mailto:lingxiao@2dfire.com">凌霄</a>
- * @time: Created in 下午5:02 2018/6/11
- * @desc
- */
 public class ExceptionTest {
-
 
     boolean testEx() throws Exception {
         boolean ret = true;

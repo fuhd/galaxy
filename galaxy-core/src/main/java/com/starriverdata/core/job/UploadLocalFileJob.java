@@ -7,9 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @author: <a href="mailto:lingxiao@2dfire.com">凌霄</a>
- * @time: Created in 下午5:57 2018/5/1
- * @desc 文件上传，先上传服务器，然后存入hadoop
+ * 文件上传，先上传服务器，然后存入hadoop
  */
 
 public class UploadLocalFileJob extends ProcessJob {

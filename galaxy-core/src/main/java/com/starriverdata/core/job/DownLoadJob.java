@@ -4,11 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-/**
- * @author: <a href="mailto:lingxiao@2dfire.com">凌霄</a>
- * @time: Created in 上午12:25 2018/4/26
- * @desc
- */
 public class DownLoadJob extends AbstractJob {
 
     public DownLoadJob(JobContext jobContext) {

@@ -27,9 +27,7 @@ import java.util.Map;
 import java.util.concurrent.*;
 
 /**
- * @author: <a href="mailto:lingxiao@2dfire.com">凌霄</a>
- * @time: Created in 14:10 2018/1/12
- * @desc hera调度器执行上下文
+ * hera调度器执行上下文
  */
 
 @Data
@@ -42,7 +40,6 @@ public class MasterContext {
     /**
      * todo 参数可配置
      */
-
     protected ScheduledThreadPoolExecutor masterSchedule;
     @Autowired
     private Master master;
@@ -189,6 +186,4 @@ public class MasterContext {
             HeraLog.info("refresh host group error");
         }
     }
-
-
 }

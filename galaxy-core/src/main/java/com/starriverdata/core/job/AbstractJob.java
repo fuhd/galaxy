@@ -17,11 +17,6 @@ import org.apache.commons.lang3.StringUtils;
 import java.io.File;
 import java.util.UUID;
 
-/**
- * @author: <a href="mailto:lingxiao@2dfire.com">凌霄</a>
- * @time: Created in 16:49 2018/1/10
- * @desc
- */
 public abstract class AbstractJob implements Job {
 
     protected JobContext jobContext;
@@ -34,7 +29,6 @@ public abstract class AbstractJob implements Job {
         this.jobContext = jobContext;
         emr = new WrapEmr();
     }
-
 
     @Override
     public boolean isCanceled() {
@@ -95,7 +89,6 @@ public abstract class AbstractJob implements Job {
 
             command.append(generateRunCommandBizCore(runTypeEnum,prefix,runPath));
 
-
             command.append(Constants.NEW_LINE);
             command.append(Constants.SSH_SUFFIX);
         } else {
@@ -108,10 +101,6 @@ public abstract class AbstractJob implements Job {
 
     /**
      * 业务核心代码的脚本内容
-     * @param runTypeEnum
-     * @param prefix
-     * @param runPath
-     * @return
      */
     public static String generateRunCommandBizCore(JobRunTypeEnum runTypeEnum, String prefix, String runPath){
 
@@ -167,7 +156,6 @@ public abstract class AbstractJob implements Job {
 
     }
 
-
     protected String getLoginCmd() {
         if (!HeraGlobalEnv.isEmrJob()) {
             return "localhost";
@@ -197,8 +185,6 @@ public abstract class AbstractJob implements Job {
 
     /**
      * 判断是否为固定集群任务
-     *
-     * @return boolean
      */
     protected boolean isFixedEmrJob() {
         //如果是emr集群的debug任务直接在固定集群执行
@@ -210,8 +196,6 @@ public abstract class AbstractJob implements Job {
 
     /**
      * 获得固定集群的ip
-     *
-     * @return boolean
      */
     protected String getFixedHost() {
         return getProperty(HeraGlobalEnv.getArea() + "." + Constants.HERA_EMR_FIXED_HOST, HeraGlobalEnv.emrFixedHost).trim();
@@ -219,8 +203,6 @@ public abstract class AbstractJob implements Job {
 
     /**
      * 判断是否为动态emr集群任务
-     *
-     * @return boolean
      */
     protected boolean isDynamicEmrJob() {
         return HeraGlobalEnv.isEmrJob() && !isFixedEmrJob();
@@ -238,7 +220,6 @@ public abstract class AbstractJob implements Job {
         }
         return null;
     }
-
 
     protected String dosToUnix(String script) {
         return script.replace("\r\n", "\n");

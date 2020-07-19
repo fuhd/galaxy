@@ -2,14 +2,8 @@ package com.starriverdata.logs;
 
 import lombok.extern.slf4j.Slf4j;
 
-/**
- *
- * @author xiaosuda
- * @date 2018/11/26
- */
 @Slf4j
 public class ErrorLog {
-
 
     public static void error(String msg) {
         log.error(msg);

@@ -6,18 +6,12 @@ import java.net.InetAddress;
 import java.net.NetworkInterface;
 import java.util.Enumeration;
 
-/**
- * @author xiaosuda
- * @date 2018/6/13
- */
 public class NetUtils {
 
     private static final String LOCAL_HOST = "127.0.0.1";
 
     /**
      * 获得局域网IP
-     *
-     * @return
      */
     public static String getLocalAddress() {
         String secondAddress;

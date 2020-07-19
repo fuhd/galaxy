@@ -15,11 +15,7 @@ import org.apache.commons.lang3.StringUtils;
 import java.util.*;
 
 /**
- * desc:
  * 亚马逊emr集群
- *
- * @author scx
- * @create 2019/04/01
  */
 public class AmazonEmr extends AbstractEmr {
 
@@ -173,9 +169,6 @@ public class AmazonEmr extends AbstractEmr {
 
     /**
      * 检测集群是否创建完成逻辑
-     *
-     * @param clusterId 集群ID
-     * @return 创建结果
      */
     @Override
     protected boolean isCompletion(String clusterId) throws HeraException {
@@ -298,9 +291,6 @@ public class AmazonEmr extends AbstractEmr {
 
     /**
      * 新建实例
-     *
-     * @param emrConf EmrConf
-     * @return JobFlowInstancesConfig
      */
     private JobFlowInstancesConfig buildInstances(EmrConf emrConf) {
 
@@ -374,8 +364,6 @@ public class AmazonEmr extends AbstractEmr {
 
     /**
      * emr集群自动扩展策略，可以自己定义
-     *
-     * @return AutoScalingPolicy
      */
     private AutoScalingPolicy buildAutoScalingPolicy() {
 
@@ -483,8 +471,6 @@ public class AmazonEmr extends AbstractEmr {
 
     /**
      * 初始化配置信息
-     *
-     * @return configurations
      */
     private List<Configuration> buildConfigurations() {
 
@@ -540,8 +526,6 @@ public class AmazonEmr extends AbstractEmr {
 
     /**
      * 初始化所有要创建的集群
-     *
-     * @return applications
      */
     private List<Application> getApps() {
         List<Application> apps = new ArrayList<>(APP_NAMES.length);
@@ -553,9 +537,6 @@ public class AmazonEmr extends AbstractEmr {
 
     /**
      * 新建集群
-     *
-     * @param name 集群名称
-     * @return application
      */
     private Application buildApp(String name) {
         return new Application().withName(name);

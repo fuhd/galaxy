@@ -10,11 +10,7 @@ import org.springframework.core.env.ConfigurableEnvironment;
 import java.util.Date;
 
 /**
- * desc:
  * hera启动监听
- *
- * @author scx
- * @create 2019/03/25
  */
 public class HeraRunListener implements SpringApplicationRunListener {
 

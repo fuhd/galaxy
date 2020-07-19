@@ -2,17 +2,11 @@ package com.starriverdata.logs;
 
 import lombok.extern.slf4j.Slf4j;
 
-/**
- *
- * @author xiaosuda
- * @date 2018/12/20
- */
 @Slf4j
 public class MonitorLog {
     public static void info(String msg) {
         log.info(msg);
     }
-
 
     public static void debug(String msg) {
         log.debug(msg);
@@ -33,11 +27,9 @@ public class MonitorLog {
         log.error(format, arguments);
     }
 
-
     public static void error(String msg, Exception e) {
         log.error(msg, e);
     }
-
 
     public static void warn(String msg) {
         log.warn(msg);

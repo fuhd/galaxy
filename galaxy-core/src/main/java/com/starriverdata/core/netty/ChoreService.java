@@ -12,12 +12,6 @@ import java.util.concurrent.ScheduledFuture;
 import java.util.concurrent.ScheduledThreadPoolExecutor;
 import java.util.concurrent.ThreadFactory;
 
-/**
- * desc:
- *
- * @author scx
- * @create 2020/01/06
- */
 public class ChoreService implements ChoreServicer {
 
     private final ScheduledThreadPoolExecutor scheduler;
@@ -104,9 +98,6 @@ public class ChoreService implements ChoreServicer {
 
     /**
      * 以rate方式调度
-     *
-     * @param chore
-     * @return
      */
 
     public boolean scheduledChore(ScheduledChore chore) {
@@ -127,9 +118,6 @@ public class ChoreService implements ChoreServicer {
 
     /**
      * 只调度一次
-     *
-     * @param chore
-     * @return
      */
     public boolean scheduledChoreOnce(ScheduledChore chore) {
         if (chore == null) {

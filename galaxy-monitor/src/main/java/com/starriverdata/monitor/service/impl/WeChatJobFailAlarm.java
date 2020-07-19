@@ -19,15 +19,10 @@ import java.util.Optional;
 import java.util.Set;
 
 /**
- * desc:
  * 企业微信告警
- *
- * @author scx
- * @create 2019/04/26
  */
 @Alarm
 public class WeChatJobFailAlarm extends AbstractJobFailAlarm {
-
 
     @Autowired
     private AlarmCenter alarmCenter;

@@ -2,9 +2,6 @@ package com.starriverdata.threadpool;
 
 import java.io.*;
 
-/**
- * Created by xiaosuda on 2018/12/17.
- */
 public class JvmTest {
 
     private static final int _1MB = 100 * 1024 * 1024;

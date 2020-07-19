@@ -8,21 +8,12 @@ import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ScheduledThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
-/**
- * Created by xiaosuda on 2018/11/8.
- */
 public class SchedulePoolTest {
 
-
     static ScheduledThreadPoolExecutor executor = new ScheduledThreadPoolExecutor(10);
-
     public static void main(String[] args) {
-
         test6();
-
     }
-
-
 
     public static void test6() {
         CompletableFuture<String> one = CompletableFuture.supplyAsync(() -> {

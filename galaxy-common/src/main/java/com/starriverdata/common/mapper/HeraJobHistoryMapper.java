@@ -11,11 +11,6 @@ import org.apache.ibatis.annotations.*;
 import java.util.Date;
 import java.util.List;
 
-/**
- * @author: <a href="mailto:lingxiao@2dfire.com">凌霄</a>
- * @time: Created in 下午5:08 2018/4/23
- * @desc
- */
 public interface HeraJobHistoryMapper {
 
     String SELECT_BY_PAGE_GROUP_WHERE = " where ( b.group_id = #{jobId} )"
@@ -56,59 +51,39 @@ public interface HeraJobHistoryMapper {
 
     /**
      * 更新日志
-     *
-     * @param heraJobHistory
-     * @return
      */
     @Update("update hera_action_history set log = #{log} where id = #{id}")
     int updateHeraJobHistoryLog(HeraJobHistory heraJobHistory);
 
     /**
      * 更新状态
-     *
-     * @param heraJobHistory
-     * @return
      */
     @Update("update hera_action_history set status = #{status} where id = #{id}")
     int updateHeraJobHistoryStatus(HeraJobHistory heraJobHistory);
 
     /**
      * 更新日志和状态
-     *
-     * @param heraJobHistory
-     * @return
      */
     @Update("update hera_action_history set log = #{log},status = #{status},end_time = #{endTime},illustrate=#{illustrate} where id = #{id}")
     Integer updateHeraJobHistoryLogAndStatus(HeraJobHistory heraJobHistory);
 
     /**
      * 根据jobId查询运行历史
-     *
-     * @param jobId
-     * @return
      */
     @Select("select * from hera_action_history where job_id = #{job_id} order by id desc")
     List<HeraJobHistory> findByJobId(@Param("job_id") Long jobId);
 
     /**
      * 根据ID查询日志逆袭
-     *
-     * @param id
-     * @return
      */
     @Select("select log,status from hera_action_history where id = #{id}")
     HeraJobHistory selectLogById(Integer id);
 
-
     @Select("select count(1) from hera_action_history where job_id = #{id}")
     Integer selectCountById(Integer id);
 
-
     /**
      * 获取jobid的时间范围的执行个数
-     *
-     * @param pageHelperTimeRange
-     * @return
      */
     @Select("select count(1) as cnt "
             + "from hera_action_history a "
@@ -119,9 +94,6 @@ public interface HeraJobHistoryMapper {
 
     /**
      * 获取jobid的时间范围的执行历史明细
-     *
-     * @param pageHelperTimeRange
-     * @return
      */
     @Select("select a.id,a.action_id,a.job_id,a.start_time,a.end_time,a.execute_host,a.operator,a.status,a.trigger_type,a.illustrate,a.host_group_id,a.batch_id,a.biz_label"
             + ",b.name as job_name,b.description ,b.group_id,c.name as group_name "
@@ -137,9 +109,6 @@ public interface HeraJobHistoryMapper {
 
     /**
      * 获取groupId下的时间范围的执行历史个数
-     *
-     * @param pageHelperTimeRange
-     * @return
      */
     @Select("select count(1) as cnt "
             + "from hera_action_history a "
@@ -151,9 +120,6 @@ public interface HeraJobHistoryMapper {
     /**
      * 获取groupId下的时间范围的执行历史明细
      * mm子查询(只有1行,范围内的最小开始时间与最大结束时间),240px指在网页全长为240px长度,为dur240px-执行时长,begintime240px-开始时间的位置
-     *
-     * @param pageHelperTimeRange
-     * @return
      */
     @Select("select a.id,a.action_id,a.job_id,a.start_time,a.end_time,a.execute_host,a.operator,a.status,a.trigger_type,a.illustrate,a.host_group_id,a.batch_id,a.biz_label"
             + ",b.name as job_name,b.description ,b.group_id,c.name as group_name "
@@ -182,7 +148,6 @@ public interface HeraJobHistoryMapper {
 
     @Select("select * from hera_action_history where job_id = #{jobId} order by id desc limit 1")
     HeraJobHistory findNewest(Long jobId);
-
 
     @Select("select id,job_id,properties from hera_action_history where id = #{id}")
     HeraJobHistory findPropertiesBy(Long id);

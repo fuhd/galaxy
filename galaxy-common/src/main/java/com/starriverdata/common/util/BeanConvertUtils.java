@@ -18,11 +18,6 @@ import java.text.SimpleDateFormat;
 import java.util.*;
 import java.util.stream.Collectors;
 
-/**
- * @author: <a href="mailto:lingxiao@2dfire.com">凌霄</a>
- * @time: Created in 上午10:52 2018/5/2
- * @desc
- */
 public class BeanConvertUtils {
 
     public static HeraProfileVo convert(HeraProfile heraProfile) {
@@ -139,9 +134,6 @@ public class BeanConvertUtils {
 
     /**
      * job -> jobAction
-     *
-     * @param heraJobVo
-     * @return
      */
     public static HeraAction convert(HeraJobVo heraJobVo) {
         HeraAction heraAction = HeraAction.builder().build();
@@ -156,9 +148,6 @@ public class BeanConvertUtils {
 
     /**
      * job中jobVo为对应的版本id
-     *
-     * @param job
-     * @return
      */
     public static HeraAction convert(Tuple<HeraJobVo, JobStatus> job) {
         if (job == null) {
@@ -185,9 +174,6 @@ public class BeanConvertUtils {
 
     /**
      * action 版本转为job
-     *
-     * @param action
-     * @return
      */
     public static HeraActionVo transform(HeraAction action) {
         Integer auto = 1;
@@ -233,7 +219,6 @@ public class BeanConvertUtils {
         heraAction.setReadyDependency(StringUtil.convertMapToString(jobStatus.getReadyDependency()));
         return heraAction;
     }
-
 
     public static HeraJob convertToHeraJob(HeraJobVo heraJobVo) {
         HeraJob heraJob = new HeraJob();

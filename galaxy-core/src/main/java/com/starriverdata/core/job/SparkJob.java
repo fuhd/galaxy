@@ -16,10 +16,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @Description ： SparkJob
- * @Author ： HeGuoZi
- * @Date ： 15:53 2018/8/20
- * @Modified :
+ * SparkJob
  */
 public class SparkJob extends ProcessJob {
 

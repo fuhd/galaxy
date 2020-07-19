@@ -7,8 +7,6 @@ import com.starriverdata.core.route.loadbalance.impl.RoundRobinLoadBalance;
 
 /**
  * 负载均衡实例工厂
- *
- * @author xiaosuda
  */
 public class LoadBalanceFactory {
 

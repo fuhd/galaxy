@@ -3,9 +3,6 @@ package com.starriverdata.core.event.handler;
 import com.starriverdata.common.util.StringUtil;
 import org.junit.Test;
 
-/**
- * Created by xiaosuda on 2018/7/12.
- */
 public class JobHandlerTest {
 
     @Test

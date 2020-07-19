@@ -9,15 +9,8 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-/**
- * desc:
- *
- * @author scx
- * @create 2019/06/10
- */
 @Service
 public class HeraSsoServiceImpl implements HeraSsoService {
-
 
     @Autowired
     private HeraSsoMapper heraSsoMapper;

@@ -18,12 +18,6 @@ import com.starriverdata.logs.HeraLog;
 import com.starriverdata.monitor.domain.AlarmInfo;
 import com.starriverdata.monitor.service.AlarmCenter;
 
-/**
- * desc:
- *
- * @author scx
- * @create 2019/11/28
- */
 public class HeraJobFinishListener extends AbstractListener {
 
     private HeraRerunService heraRerunService;
@@ -77,7 +71,6 @@ public class HeraJobFinishListener extends AbstractListener {
     public void afterDispatch(MvcEvent mvcEvent) {
 
     }
-
 
     private void doRerunCheck(Integer rerunId, Long actionId, boolean executeSuccess) {
 

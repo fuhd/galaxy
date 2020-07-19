@@ -1,21 +1,15 @@
 package com.starriverdata.api;
 
-import java.net.InetAddress;
-import java.net.UnknownHostException;
-import java.util.Arrays;
-import java.util.List;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import org.junit.Test;
 
+import java.net.InetAddress;
+import java.net.UnknownHostException;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
-
-/**
- * @author: <a href="mailto:lingxiao@2dfire.com">凌霄</a>
- * @time: Created in 19:53 2018/3/28
- * @desc
- */
 public class LombokTest {
 
     @Data
@@ -29,7 +23,6 @@ public class LombokTest {
         private String[] tags;
 
 
-//        @EqualsAndHashCode(callSuper=true)
         @EqualsAndHashCode
         public  class Square {
             private final int width, height;

@@ -2,11 +2,6 @@ package com.starriverdata.common.entity;
 
 import lombok.Data;
 
-/**
- *
- * @author xiaosuda
- * @date 2018/8/1
- */
 @Data
 public class HeraJobMonitor {
 

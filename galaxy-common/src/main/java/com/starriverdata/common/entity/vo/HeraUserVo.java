@@ -5,10 +5,6 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-/**
- * @author xiaosuda
- * @date 2018/12/28
- */
 @Data
 @Builder
 @NoArgsConstructor
@@ -32,5 +28,4 @@ public class HeraUserVo {
     private int isEffective;
 
     private String description;
-
 }

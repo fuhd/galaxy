@@ -11,12 +11,9 @@ import org.apache.ibatis.annotations.*;
 import java.util.List;
 
 /**
- * @author: <a href="mailto:lingxiao@2dfire.com">凌霄</a>
- * @time: Created in 16:54 2018/1/17
- * @desc 开发中心文件管理
+ * 开发中心文件管理
  */
 public interface HeraFileMapper {
-
 
     @Insert("insert into hera_file (#{heraFile})")
     @Lang(HeraInsertLangDriver.class)
@@ -42,7 +39,6 @@ public interface HeraFileMapper {
     @Lang(HeraListInLangDriver.class)
     List<HeraFile> findByIds(@Param("list") List<Integer> list);
 
-
     @Select("select * from hera_file where parent = #{parent}")
     @Lang(HeraSelectLangDriver.class)
     List<HeraFile> findByParent(Integer parent);
@@ -56,7 +52,6 @@ public interface HeraFileMapper {
 
     @Update("update hera_file set name = #{name} where id = #{id}")
     int updateFileName(HeraFile heraFile);
-
 
     @Select("select count(*) count, max(id) maxId, max(gmt_modified) lastModified from hera_file")
     Judge selectTableInfo();

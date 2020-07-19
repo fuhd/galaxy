@@ -2,12 +2,6 @@ package com.starriverdata.form;
 
 import lombok.Data;
 
-/**
- * desc:
- *
- * @author scx
- * @create 2019/07/10
- */
 @Data
 public class JobSearchForm {
 

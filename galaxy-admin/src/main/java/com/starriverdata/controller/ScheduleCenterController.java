@@ -44,9 +44,7 @@ import java.util.concurrent.ExecutionException;
 import java.util.stream.Collectors;
 
 /**
- * @author: <a href="mailto:lingxiao@2dfire.com">凌霄</a>
- * @time: Created in 16:50 2018/1/13
- * @desc 调度中心视图管理器
+ * 调度中心视图管理器
  */
 @Controller
 @RequestMapping("/scheduleCenter")
@@ -174,11 +172,6 @@ public class ScheduleCenterController extends BaseHeraController {
 
     /**
      * 组下搜索任务
-     *
-     * @param groupId  groupId
-     * @param status   all:全部;
-     * @param pageForm layui table分页参数
-     * @return 结果
      */
     @RequestMapping(value = "/getGroupTask", method = RequestMethod.GET)
     @ResponseBody
@@ -302,9 +295,6 @@ public class ScheduleCenterController extends BaseHeraController {
 
     /**
      * 手动执行任务
-     *
-     * @param actionId
-     * @return
      */
     @RequestMapping(value = "/manual", method = RequestMethod.GET)
     @ResponseBody
@@ -686,8 +676,6 @@ public class ScheduleCenterController extends BaseHeraController {
 
     /**
      * 获取任务历史版本
-     *
-     * @return
      */
     @RequestMapping(value = "/getJobHistory", method = RequestMethod.GET)
     @ResponseBody
@@ -703,10 +691,6 @@ public class ScheduleCenterController extends BaseHeraController {
 
     /**
      * 取消正在执行的任务
-     *
-     * @param jobId
-     * @param historyId
-     * @return
      */
     @RequestMapping(value = "/cancelJob", method = RequestMethod.GET)
     @ResponseBody

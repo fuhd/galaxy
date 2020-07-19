@@ -1,24 +1,17 @@
 package com.starriverdata.common.mapper;
 
-
 import com.starriverdata.common.entity.HeraPermission;
 import com.starriverdata.common.mybatis.HeraInsertLangDriver;
 import org.apache.ibatis.annotations.*;
 
 import java.util.List;
 
-/**
- * @author: <a href="mailto:lingxiao@2dfire.com">凌霄</a>
- * @time: Created in 下午3:49 2018/5/15
- * @desc
- */
 public interface HeraPermissionMapper {
 
     @Insert("insert into hera_permission (#{heraPermission})")
     @Lang(HeraInsertLangDriver.class)
     @Options(useGeneratedKeys = true, keyProperty = "id", keyColumn = "id")
     int insert(HeraPermission heraPermission);
-
 
     @Select("select * from hera_permission where target_id =#{targetId} and is_valid = #{isValid} and type = #{type}")
     List<HeraPermission> findByTargetId(@Param("targetId") Integer targetId,

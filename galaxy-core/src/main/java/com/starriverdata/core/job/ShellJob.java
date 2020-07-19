@@ -18,9 +18,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @author: <a href="mailto:lingxiao@2dfire.com">凌霄</a>
- * @time: Created in 上午12:30 2018/4/26
- * @desc shell脚本执行类，拼接shell文件，执行文件执行命令
+ * shell脚本执行类，拼接shell文件，执行文件执行命令
  */
 
 public class ShellJob extends ProcessJob {
@@ -34,8 +32,6 @@ public class ShellJob extends ProcessJob {
     /**
      * 脚本执行命令集合
      * 主要包括：切换用户，修改文件权限，执行制定脚本
-     *
-     * @return 命令集合
      */
     @Override
     public List<String> getCommandList() throws HeraException {

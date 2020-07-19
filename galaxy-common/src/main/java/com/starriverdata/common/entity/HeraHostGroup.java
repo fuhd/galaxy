@@ -7,11 +7,6 @@ import lombok.NoArgsConstructor;
 
 import java.util.Date;
 
-/**
- * @author: <a href="mailto:lingxiao@2dfire.com">凌霄</a>
- * @time: Created in 17:32 2018/1/11
- * @desc
- */
 @Data
 @Builder
 @AllArgsConstructor

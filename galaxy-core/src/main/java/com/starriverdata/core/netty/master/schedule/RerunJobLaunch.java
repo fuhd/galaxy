@@ -19,10 +19,7 @@ import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.TimeUnit;
 
 /**
- * desc:重跑任务的触发
- *
- * @author scx
- * @create 2020/01/06
+ * 重跑任务的触发
  */
 public class RerunJobLaunch extends ScheduledChore {
 
@@ -86,8 +83,5 @@ public class RerunJobLaunch extends ScheduledChore {
                 }
             }
         }
-
     }
-
-
 }

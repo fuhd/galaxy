@@ -14,12 +14,7 @@ import com.starriverdata.protocol.RpcSocketMessage;
 
 import java.util.stream.Collectors;
 
-/**
- * @author xiaosuda
- * @date 2018/4/12
- */
 public class WorkerHandlerHeartBeat {
-
 
     public boolean send(WorkContext context) throws HeraException {
         try {

@@ -1,15 +1,8 @@
 package com.starriverdata.common.entity.vo;
 
 import lombok.Data;
-
 import java.util.List;
 
-/**
- * desc:
- *
- * @author scx
- * @create 2019/06/14
- */
 @Data
 public class HeraJobMonitorVo {
 

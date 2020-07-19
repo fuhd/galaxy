@@ -12,14 +12,7 @@ import java.security.InvalidKeyException;
 import java.security.NoSuchAlgorithmException;
 import java.security.SecureRandom;
 
-/**
- * desc:
- *
- * @author scx
- * @create 2019/04/19
- */
 public class PasswordUtils {
-
 
     private final static String SALT = "www.hera.cn/19960811";
 
@@ -34,7 +27,6 @@ public class PasswordUtils {
         }
         return null;
     }
-
 
     private static SecretKey buildKey() {
         //1.构造密钥生成器，指定为AES算法,不区分大小写
@@ -75,8 +67,5 @@ public class PasswordUtils {
         String secret = aesEncryption(content);
         System.out.println(secret);
 
-
-        // U%2BrVkiAacaEQLm09g%2BmoyQ%3D%3D
-        // System.out.println(aesDecrypt("HTj//o8xi7V4rbatMpyjGw=="));
     }
 }

@@ -1,9 +1,6 @@
 package com.starriverdata.common.exception;
 
 
-/**
- * @author scx
- */
 public class HostGroupNotExistsException extends Exception {
 
     public HostGroupNotExistsException(){

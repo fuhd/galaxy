@@ -23,11 +23,8 @@ import java.util.*;
 
 /**
  * 任务失败的预处理
- *
- * @author xiaosuda
  */
 public class HeraJobFailListener extends AbstractListener {
-
 
     private List<JobFailAlarm> alarms;
 

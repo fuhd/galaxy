@@ -10,11 +10,8 @@ import java.util.List;
 
 /**
  * 轮询
- *
- * @author wyr
  */
 public class RoundRobinLoadBalance extends AbstractLoadBalance {
-
 
     public static final String NAME = "roundrobin";
 
@@ -41,5 +38,4 @@ public class RoundRobinLoadBalance extends AbstractLoadBalance {
         }
         return null;
     }
-
 }

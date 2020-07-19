@@ -15,17 +15,13 @@ import java.security.NoSuchAlgorithmException;
 import java.util.*;
 
 /**
- * @author: <a href="mailto:lingxiao@2dfire.com">凌霄</a>
- * @time: Created in 18:06 2018/1/7
- * @desc 字符串处理工具类
+ * 字符串处理工具类
  */
 
 public class StringUtil {
 
     /**
-     * @param sourceStr
-     * @return
-     * @desc 登陆密码md5加密
+     * 登陆密码md5加密
      */
 
     public static String EncoderByMd5(String sourceStr) {
@@ -54,9 +50,6 @@ public class StringUtil {
 
     /**
      * job中的config解析成map
-     *
-     * @param config
-     * @return
      */
     public static Map<String, String> convertStringToMap(String config) throws RuntimeException {
         if (StringUtils.isBlank(config) || "{}".equals(config)) {
@@ -98,9 +91,6 @@ public class StringUtil {
 
     /**
      * config转成json
-     *
-     * @param config
-     * @return
      */
     public static String convertMapToString(Map<String, String> config) {
         if (config == null) {
@@ -156,9 +146,6 @@ public class StringUtil {
 
     /**
      * job resource转换为List
-     *
-     * @param resource
-     * @return
      */
     public static List<Map<String, String>> convertResources(String resource) {
         List<Map<String, String>> tempRes = new ArrayList<>();

@@ -8,12 +8,6 @@ import com.starriverdata.common.util.Pair;
 import java.util.List;
 import java.util.Map;
 
-/**
- * desc:
- *
- * @author scx
- * @create 2019/07/16
- */
 public interface HeraRecordService {
 
     boolean add(HeraRecord record);

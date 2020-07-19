@@ -6,13 +6,8 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 /**
- * desc:
- * emr 信息
- *
- * @author scx
- * @create 2019/03/18
+ * emr信息
  */
-
 @Data
 @Builder
 @NoArgsConstructor

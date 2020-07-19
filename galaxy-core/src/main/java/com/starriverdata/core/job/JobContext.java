@@ -14,9 +14,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * @author: <a href="mailto:lingxiao@2dfire.com">凌霄</a>
- * @time: Created in 11:36 2018/1/10
- * @desc Job上下文, 当存在多个Job顺序处理时，通过上下文莱传递Job状态与信息
+ * Job上下文, 当存在多个Job顺序处理时，通过上下文莱传递Job状态与信息
  */
 @Builder
 @Data

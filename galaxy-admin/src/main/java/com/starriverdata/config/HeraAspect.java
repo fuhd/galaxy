@@ -29,10 +29,6 @@ import javax.servlet.http.HttpServletRequest;
 import java.lang.reflect.Method;
 import java.util.Arrays;
 
-/**
- * @author xiaosuda
- * @date 2018/8/1
- */
 @Aspect
 @Component
 public class HeraAspect {
@@ -76,12 +72,6 @@ public class HeraAspect {
 
     /**
      * 解析方法上的@RunAuth注解参数
-     *
-     * @param method    包含RunAuth注解的方法
-     * @param request   request
-     * @param joinPoint 切面
-     * @throws NoPermissionException    无权限
-     * @throws IllegalArgumentException 参数错误
      */
     private void checkRunAuth(Method method, HttpServletRequest request, ProceedingJoinPoint joinPoint) throws NoPermissionException, IllegalArgumentException {
         if (!method.isAnnotationPresent(RunAuth.class)) {
@@ -171,8 +161,6 @@ public class HeraAspect {
 
     /**
      * 检测用户是否为超级用户
-     *
-     * @param request request
      */
     private void checkAdmin(HttpServletRequest request) throws NoPermissionException {
         if (!isAdmin(getOwner(request))) {
@@ -191,9 +179,6 @@ public class HeraAspect {
 
     /**
      * 根据切面获得当前执行的方法
-     *
-     * @param jp 切面
-     * @return 方法
      */
     private Method getMethod(JoinPoint jp) {
         Method proxyMethod = ((MethodSignature) jp.getSignature()).getMethod();

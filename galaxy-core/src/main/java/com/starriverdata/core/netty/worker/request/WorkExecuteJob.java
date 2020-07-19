@@ -30,9 +30,7 @@ import java.util.Date;
 import java.util.concurrent.Future;
 
 /**
- * @author: <a href="mailto:lingxiao@2dfire.com">凌霄</a>
- * @time: Created in 下午4:20 2018/4/25
- * @desc worker job 最终执行体，收到master handler执行请求的时候，开始创建Job processor
+ * worker job 最终执行体，收到master handler执行请求的时候，开始创建Job processor
  */
 public class WorkExecuteJob {
 
@@ -54,13 +52,7 @@ public class WorkExecuteJob {
 
     /**
      * worker中，调度中心手动执行任务最终执行位置，JobUtils.createDebugJob创建job文件到服务器，拼接shell，并调用命令执行
-     *
-     * @param workContext
-     * @param request
-     * @return
      */
-
-
     private Future<RpcResponse.Response> manual(WorkContext workContext, RpcRequest.Request request) throws HeraException {
         RpcExecuteMessage.ExecuteMessage message;
         try {
@@ -133,12 +125,7 @@ public class WorkExecuteJob {
 
     /**
      * worker中，调度中心自动调度任务最终执行位置，JobUtils.createDebugJob创建job文件到服务器，拼接shell，并调用命令执行
-     *
-     * @param workContext
-     * @param request
-     * @return
      */
-
     private Future<RpcResponse.Response> schedule(WorkContext workContext, RpcRequest.Request request) throws HeraException {
         RpcExecuteMessage.ExecuteMessage message;
         try {
@@ -212,10 +199,6 @@ public class WorkExecuteJob {
 
     /**
      * worker中，开发中心脚本执行最终执行位置，JobUtils.createDebugJob创建job文件到服务器，拼接shell，并调用命令执行
-     *
-     * @param workContext
-     * @param request
-     * @return
      */
     private Future<RpcResponse.Response> debug(WorkContext workContext, RpcRequest.Request request) throws HeraException {
         RpcDebugMessage.DebugMessage debugMessage;
@@ -277,7 +260,6 @@ public class WorkExecuteJob {
                     .build();
         });
     }
-
 
     private StatusEnum getStatusFromCode(int exitCode) {
         if (exitCode == Constants.SUCCESS_EXIT_CODE) {

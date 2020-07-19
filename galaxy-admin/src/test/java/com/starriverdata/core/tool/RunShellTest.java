@@ -4,9 +4,6 @@ import org.junit.Test;
 
 import java.io.IOException;
 
-/**
- * Created by xiaosuda on 2018/8/6.
- */
 public class RunShellTest {
 
     @Test

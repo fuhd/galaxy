@@ -11,10 +11,6 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import javax.mail.MessagingException;
 
-/**
- * @author <a href="mailto:huoguo@2dfire.com">火锅</a>
- * @time 2018/11/21
- */
 @ComponentScan(basePackages = "com.starriverdata")
 @MapperScan(basePackages = "com.starriverdata.common.mapper")
 @RunWith(SpringJUnit4ClassRunner.class)

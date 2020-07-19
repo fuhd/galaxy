@@ -18,10 +18,6 @@ import java.util.List;
 import java.util.Properties;
 import java.util.stream.Collectors;
 
-/**
- * @author xiaosuda
- * @date 2018/7/31
- */
 @Service("emailServiceImpl")
 public class EmailServiceImpl implements EmailService {
 

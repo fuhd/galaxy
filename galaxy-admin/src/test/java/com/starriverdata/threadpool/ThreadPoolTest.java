@@ -2,13 +2,8 @@ package com.starriverdata.threadpool;
 
 import java.util.concurrent.*;
 
-/**
- * Created by xiaosuda on 2018/11/7.
- */
 public class ThreadPoolTest {
     private static CompletionService<Response> completionService = new ExecutorCompletionService<>(Executors.newCachedThreadPool());
-
-
 
     public static void main(String[] args) {
 

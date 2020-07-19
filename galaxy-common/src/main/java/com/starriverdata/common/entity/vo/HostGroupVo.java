@@ -2,11 +2,6 @@ package com.starriverdata.common.entity.vo;
 
 import lombok.Data;
 
-/**
- *
- * @author xiaosuda
- * @date 2018/4/20
- */
 @Data
 public class HostGroupVo {
 

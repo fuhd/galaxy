@@ -20,11 +20,6 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.*;
 
-/**
- * @author: <a href="mailto:lingxiao@2dfire.com">凌霄</a>
- * @time: Created in 11:30 2018/1/10
- * @desc
- */
 @Data
 @NoArgsConstructor
 @Component

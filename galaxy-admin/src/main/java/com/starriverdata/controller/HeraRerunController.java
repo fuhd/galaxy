@@ -23,16 +23,9 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import java.util.Collections;
 import java.util.List;
 
-/**
- * desc:
- *
- * @author scx
- * @create 2019/11/25
- */
 @RequestMapping("/rerun/")
 @Controller
 public class HeraRerunController extends BaseHeraController {
-
 
     @Autowired
     private HeraRerunService heraRerunService;

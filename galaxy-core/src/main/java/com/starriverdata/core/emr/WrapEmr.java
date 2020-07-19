@@ -2,12 +2,6 @@ package com.starriverdata.core.emr;
 
 import com.starriverdata.config.HeraGlobalEnv;
 
-/**
- * desc:
- *
- * @author scx
- * @create 2019/04/01
- */
 public class WrapEmr implements Emr, EmrJob {
 
     private volatile static AbstractEmr emr;

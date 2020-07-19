@@ -7,11 +7,6 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- * @author: <a href="mailto:lingxiao@2dfire.com">凌霄</a>
- * @time: Created in 上午10:47 2018/5/2
- * @desc
- */
 @Builder
 @Data
 public class HeraProfileVo {

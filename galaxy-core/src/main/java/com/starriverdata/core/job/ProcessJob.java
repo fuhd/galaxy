@@ -16,16 +16,13 @@ import java.util.Map;
 import java.util.concurrent.CountDownLatch;
 
 /**
- * @author: <a href="mailto:lingxiao@2dfire.com">凌霄</a>
- * @time: Created in 11:01 2018/3/23
- * @desc 通过操作系统创建进程Process的Job任务
+ * 通过操作系统创建进程Process的Job任务
  */
 public abstract class ProcessJob extends AbstractJob {
 
     protected volatile Process process;
     protected final Map<String, String> envMap;
     private int exitCode;
-
 
     public ProcessJob(JobContext jobContext) {
         super(jobContext);
@@ -34,9 +31,6 @@ public abstract class ProcessJob extends AbstractJob {
 
     /**
      * 组装命令
-     *
-     * @return cmdList
-     * @throws HeraException 组装异常
      */
     public abstract List<String> getCommandList() throws HeraException;
 
@@ -90,9 +84,7 @@ public abstract class ProcessJob extends AbstractJob {
 
 
     /**
-     * @param command
-     * @return
-     * @desc 对hera中的操作系统命令进行拆分成字符串数组，方便给ProcessBuilder传命令参数，
+     * 对hera中的操作系统命令进行拆分成字符串数组，方便给ProcessBuilder传命令参数，
      * 如："free -m | grep buffers/cache"，成为：{“free”，“-m”，“|”，“grep”，“buffers/cache”}
      */
     public static String[] partitionCommandLine(String command) {
@@ -192,9 +184,7 @@ public abstract class ProcessJob extends AbstractJob {
 
 
     /**
-     * @author: <a href="mailto:lingxiao@2dfire.com">凌霄</a>
-     * @time: Created in 11:01 2018/3/26
-     * @desc job输出流日志接收线程
+     * job输出流日志接收线程
      */
     public class StreamThread extends Thread {
         private InputStream inputStream;

@@ -12,8 +12,7 @@ import java.util.List;
 
 
 /**
- * @author scx
- * @desc 先从hera机器 上传到emr集群 上传到hadoop
+ * 先从hera机器 上传到emr集群 上传到hadoop
  */
 public class UploadEmrFileJob extends ProcessJob {
 

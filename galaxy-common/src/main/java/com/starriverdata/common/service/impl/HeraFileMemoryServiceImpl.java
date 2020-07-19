@@ -8,13 +8,8 @@ import org.springframework.stereotype.Service;
 import java.util.*;
 import java.util.stream.Collectors;
 
-/**
- * @author xiaosuda
- * @date 2018/12/5
- */
 @Service("heraFileMemoryService")
 public class HeraFileMemoryServiceImpl extends HeraFileServiceImpl {
-
 
     private volatile Judge judge;
 

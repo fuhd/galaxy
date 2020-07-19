@@ -1,8 +1,5 @@
 package com.starriverdata.core.emr;
 
-/**
- * @author scx
- */
 public interface EmrJob {
 
     /**

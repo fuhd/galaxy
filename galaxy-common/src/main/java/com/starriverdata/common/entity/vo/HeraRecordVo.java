@@ -2,15 +2,8 @@ package com.starriverdata.common.entity.vo;
 
 import lombok.Data;
 
-/**
- * desc:
- *
- * @author scx
- * @create 2019/07/17
- */
 @Data
 public class HeraRecordVo {
-
 
     private String type;
 

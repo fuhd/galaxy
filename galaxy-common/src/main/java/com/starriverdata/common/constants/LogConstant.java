@@ -1,9 +1,7 @@
 package com.starriverdata.common.constants;
 
 /**
- * @author: <a href="mailto:lingxiao@2dfire.com">凌霄</a>
- * @time: Created in 下午3:02 2018/6/19
- * @desc 某些固定状态下的任务日志内容
+ * 某些固定状态下的任务日志内容
  */
 public class LogConstant {
 

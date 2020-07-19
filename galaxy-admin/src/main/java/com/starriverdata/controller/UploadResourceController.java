@@ -23,11 +23,6 @@ import java.io.File;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- * @author: <a href="mailto:lingxiao@2dfire.com">凌霄</a>
- * @time: Created in 下午1:22 2018/7/21
- * @desc
- */
 @Controller
 @RequestMapping("/uploadResource")
 public class UploadResourceController extends BaseHeraController {

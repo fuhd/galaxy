@@ -26,11 +26,6 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import java.lang.reflect.Field;
 import java.util.*;
 
-/**
- * @author: <a href="mailto:lingxiao@2dfire.com">凌霄</a>
- * @time: Created in 下午5:15 2018/5/14
- * @desc
- */
 @ComponentScan(basePackages = "com.starriverdata")
 @MapperScan(basePackages = "com.starriverdata.common.mapper")
 @RunWith(SpringJUnit4ClassRunner.class)
@@ -128,17 +123,10 @@ public class HeraBaseDaoTest {
 
     @Test
     public void heraActionBatchDaoTest() {
-//        heraJobActionService.delete("1111111111111111111");
-
-//        heraJobActionService.insert(heraAction);
         HeraAction heraAction = heraJobActionService.findById("201806190000000002");
         List<HeraAction> list = Arrays.asList(heraAction);
 
         heraJobActionService.batchInsert(list, Long.parseLong(ActionUtil.getCurrActionVersion()));
-//
-//        HeraAction heraAction = heraJobActionService.findById("201806190000000002");
-//        System.out.println(heraAction.getJobDependencies());
-
     }
 
 
@@ -248,9 +236,6 @@ public class HeraBaseDaoTest {
 
     @Test
     public void jobManageTest() {
-//        JsonResponse jsonResponse = jobManageService.findJobHistoryByStatus("failed");
-//        System.out.println(jsonResponse.getData());
-
         JsonResponse top10 = jobManageService.findJobRunTimeTop10();
         System.out.println(top10.getData());
     }
@@ -264,7 +249,6 @@ public class HeraBaseDaoTest {
     public void generateActionTest() {
 
         try {
-
             Field heraScheduleField = distributeLock.getClass().getDeclaredField("heraSchedule");
             heraScheduleField.setAccessible(true);
             HeraSchedule heraSchedule = (HeraSchedule) heraScheduleField.get(distributeLock);

@@ -5,13 +5,7 @@ import io.netty.channel.Channel;
 
 import java.net.SocketAddress;
 
-/**
- *
- * @author xiaosuda
- * @date 2019/2/23
- */
 public abstract class AbstractCluster implements Cluster {
-
 
     protected HeraChannel channel;
 

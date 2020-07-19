@@ -19,9 +19,6 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * 取消任务统一管理类
- *
- * @author xiaosuda
- * @date 2018/11/9
  */
 public class MasterCancelJob {
 

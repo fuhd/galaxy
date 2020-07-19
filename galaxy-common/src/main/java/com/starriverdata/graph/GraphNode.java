@@ -4,11 +4,6 @@ import lombok.Data;
 
 import java.io.Serializable;
 
-/**
- * @author: <a href="mailto:lingxiao@2dfire.com">凌霄</a>
- * @time: Created in 下午6:43 2018/8/15
- * @desc
- */
 @Data
 public class GraphNode<T> implements Serializable {
 

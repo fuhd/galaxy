@@ -1,7 +1,6 @@
 package com.starriverdata.core.job;
 
 /**
- * Created by shuangbofu on 2019-12-18 16:49
  * 前置空job，设置emr地址
  */
 public class EmptyJob extends AbstractJob {

@@ -8,14 +8,6 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-
-
-/**
- * @author: <a href="mailto:lingxiao@2dfire.com">凌霄</a>
- * @time: Created in 下午12:05 2018/5/16
- * @desc
- */
-
 @Builder
 @Data
 @NoArgsConstructor

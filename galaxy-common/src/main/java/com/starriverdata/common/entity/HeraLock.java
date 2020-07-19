@@ -8,9 +8,7 @@ import lombok.NoArgsConstructor;
 import java.util.Date;
 
 /**
- * @author: <a href="mailto:lingxiao@2dfire.com">凌霄</a>
- * @time: Created in 20:43 2018/1/10
- * @desc hera的分布式锁基于数据库实现
+ * hera的分布式锁基于数据库实现
  */
 @Data
 @Builder

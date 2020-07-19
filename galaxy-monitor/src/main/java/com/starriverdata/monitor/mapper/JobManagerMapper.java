@@ -9,18 +9,10 @@ import org.apache.ibatis.annotations.Select;
 import java.util.List;
 import java.util.Map;
 
-/**
- * @author: <a href="mailto:lingxiao@2dfire.com">凌霄</a>
- * @time: Created in 下午3:05 2018/8/14
- * @desc
- */
 public interface JobManagerMapper {
 
     /**
      * 今日任务详情
-     *
-     * @param status
-     * @return
      */
 
 //    @Select("select " +
@@ -35,10 +27,6 @@ public interface JobManagerMapper {
 
     /**
      * ADDDATE(CAST(#{dt,jdbcType=VARCHAR} AS date) ,1) )
-     * @param status
-     * @param begindt
-     * @param enddt
-     * @return
      */
     @Select(
     		"select his.job_id,job.name as job_name,job.description,his.start_time,his.end_time "
@@ -62,9 +50,6 @@ public interface JobManagerMapper {
 
     /**
      * 任务运行时长top10   
-     *
-     * @param map
-     * @return
      */
 
 
@@ -76,10 +61,6 @@ public interface JobManagerMapper {
 
     /**
      * 任务昨日运行时长
-     *
-     * @param jobId
-     * @param id
-     * @return
      */
     @Select(" select max(timestampdiff(SECOND,start_time,end_time)/60) from hera_action_history" +
             "        WHERE  job_id = #{jobId}" +
@@ -88,8 +69,6 @@ public interface JobManagerMapper {
 
     /**
      * 按照运行状态汇总,初始化首页饼图
-     *
-     * @return
      */
     @Select(" select status,count(1) as num" +
             "        from" +
@@ -105,8 +84,6 @@ public interface JobManagerMapper {
 
     /**
      * 按照日期查询任务明细
-     *
-     * @return
      */
 
     @Select("select status, count(1) as num " +
@@ -117,9 +94,6 @@ public interface JobManagerMapper {
 
     /**
      * 按照status查询任务明细
-     *
-     * @param status
-     * @return
      */
     @Select(" select count(1) num ,status, LEFT(start_time,10) curDate " +
             "        from  hera_action_history " +

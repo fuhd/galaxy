@@ -9,12 +9,6 @@ import org.apache.ibatis.annotations.*;
 
 import java.util.List;
 
-/**
- * desc:
- *
- * @author scx
- * @create 2019/06/10
- */
 public interface HeraSsoMapper {
 
     @Insert("insert into hera_sso (#{heraSso})")

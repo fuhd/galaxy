@@ -2,9 +2,6 @@ package com.starriverdata.exception;
 
 import java.util.concurrent.*;
 
-/**
- * Created by xiaosuda on 2018/7/23.
- */
 public class ThreadPoolExecutorTest {
 
     public static void main(String[] args) {

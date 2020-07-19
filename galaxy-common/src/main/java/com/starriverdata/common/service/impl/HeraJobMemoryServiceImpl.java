@@ -9,9 +9,6 @@ import java.util.*;
 
 /**
  * 内存级别缓存job信息
- *
- * @author xiaosuda
- * @date 2018/12/3
  */
 @Service("heraJobMemoryService")
 public class HeraJobMemoryServiceImpl extends HeraJobServiceImpl {

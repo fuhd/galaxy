@@ -8,12 +8,6 @@ import lombok.Data;
 import java.util.HashSet;
 import java.util.Set;
 
-/**
- * @author: <a href="mailto:lingxiao@2dfire.com">凌霄</a>
- * @time: Created in 16:13 2018/1/12
- * @desc
- */
-
 @Data
 public class MasterWorkHolder {
 

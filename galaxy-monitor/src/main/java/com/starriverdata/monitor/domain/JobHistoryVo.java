@@ -2,12 +2,6 @@ package com.starriverdata.monitor.domain;
 
 import lombok.Data;
 
-
-/**
- * @author: <a href="mailto:lingxiao@2dfire.com">凌霄</a>
- * @time: Created in 下午3:42 2018/8/15
- * @desc
- */
 @Data
 public class JobHistoryVo {
 

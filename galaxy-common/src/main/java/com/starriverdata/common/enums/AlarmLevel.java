@@ -3,12 +3,6 @@ package com.starriverdata.common.enums;
 import java.util.Arrays;
 import java.util.Optional;
 
-/**
- * desc:
- *
- * @author scx
- * @create 2019/06/13
- */
 public enum AlarmLevel {
     /**
      * 发邮件

@@ -6,11 +6,6 @@ import com.starriverdata.common.entity.vo.HeraJobTreeNodeVo;
 import java.util.List;
 import java.util.Map;
 
-/**
- * @author: <a href="mailto:lingxiao@2dfire.com">凌霄</a>
- * @time: Created in 2:08 2018/1/11
- * @desc
- */
 public interface HeraJobService {
 
     int insert(HeraJob heraJob);
@@ -35,26 +30,20 @@ public interface HeraJobService {
 
     /**
      * 构建job树形目录结构
-     *
-     * @return
      */
     Map<String, List<HeraJobTreeNodeVo>> buildJobTree(String owner);
 
     boolean changeSwitch(Integer id, Integer status);
 
-
     Map<String, Object> findCurrentJobGraph(int jobId, Integer type);
 
-
     List<Integer> findJobImpact(int jobId, Integer type);
-
 
     List<HeraJob> findDownStreamJob(Integer jobId);
 
     List<HeraJob> findUpStreamJob(Integer jobId);
 
     List<HeraJob> getAllJobDependencies();
-
 
     boolean changeParent(Integer newId, Integer parentId);
 

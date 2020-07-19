@@ -7,20 +7,11 @@ import java.util.Comparator;
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.PriorityBlockingQueue;
 
-/**
- * desc:
- *
- * @author scx
- * @create 2019/04/15
- */
 public class QueueTest {
 
-
     @Test
-
     public void test() throws InterruptedException {
         BlockingQueue<JobElement> scheduleQueue = new PriorityBlockingQueue<>(10000, Comparator.comparing(JobElement::getPriorityLevel).reversed());
-
         scheduleQueue.put(JobElement.builder().jobId(1L).priorityLevel(1).build());
         scheduleQueue.put(JobElement.builder().jobId(2L).priorityLevel(2).build());
         scheduleQueue.put(JobElement.builder().jobId(3L).priorityLevel(3).build());
@@ -29,7 +20,6 @@ public class QueueTest {
         scheduleQueue.put(JobElement.builder().jobId(6L).priorityLevel(5).build());
         scheduleQueue.put(JobElement.builder().jobId(7L).priorityLevel(5).build());
         scheduleQueue.put(JobElement.builder().jobId(8L).priorityLevel(6).build());
-
 
         while(!scheduleQueue.isEmpty()) {
             Thread.sleep(500);

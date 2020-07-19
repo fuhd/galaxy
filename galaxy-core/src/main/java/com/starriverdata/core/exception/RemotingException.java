@@ -4,10 +4,6 @@ import com.starriverdata.core.netty.HeraChannel;
 
 import java.net.SocketAddress;
 
-/**
- * @author xiaosuda
- * @date 2018/11/16
- */
 public class RemotingException extends Exception {
 
     private SocketAddress localAddress;

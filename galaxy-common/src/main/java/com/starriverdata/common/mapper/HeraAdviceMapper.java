@@ -10,10 +10,6 @@ import org.apache.ibatis.annotations.Select;
 
 import java.util.List;
 
-/**
- * @author xiaosuda
- * @date 2018/12/5
- */
 public interface HeraAdviceMapper {
 
     @Insert("insert into hera_advice (#{heraAdvice})")
@@ -21,9 +17,7 @@ public interface HeraAdviceMapper {
     @Options(useGeneratedKeys = true, keyProperty = "id", keyColumn = "id")
     Integer insert(HeraAdvice heraAdvice);
 
-
     @Select("select * from hera_advice")
     @Lang(HeraSelectLangDriver.class)
     List<HeraAdvice> getAll();
-
 }

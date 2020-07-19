@@ -9,10 +9,6 @@ import com.starriverdata.protocol.RpcRequest.Request;
 import com.starriverdata.protocol.RpcSocketMessage.SocketMessage;
 import com.starriverdata.protocol.RpcWorkInfo.WorkInfo;
 
-/**
- * @author xiaosuda
- * @date 2018/11/20
- */
 public class WorkHandlerRequest {
 
     public void getWorkInfo(HeraChannel channel) {

@@ -2,9 +2,6 @@ package com.starriverdata.core.util;
 
 import org.junit.Test;
 
-/**
- * Created by xiaosuda on 2018/6/13.
- */
 public class NetUtilsTest {
 
     @Test

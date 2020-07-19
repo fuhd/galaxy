@@ -7,9 +7,7 @@ import com.starriverdata.common.vo.JobStatus;
 import lombok.Builder;
 
 /**
- * @author: <a href="mailto:lingxiao@2dfire.com">凌霄</a>
- * @time: Created in 下午10:37 2018/5/6
- * @desc 版本运行状态缓存
+ * 版本运行状态缓存
  */
 @Builder
 public class JobGroupCache {

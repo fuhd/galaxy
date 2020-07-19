@@ -11,10 +11,6 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.TimeZone;
 
-/**
- * @author xiaosuda
- * @date 2018/4/20
- */
 public class ActionUtil {
 
     public static final String DEFAULT_FORMAT = "yyyy-MM-dd HH:mm:ss";
@@ -63,7 +59,6 @@ public class ActionUtil {
      * 生成今天 Action版本的最早时间
      */
     public static final int ACTION_CREATE_MIN_HOUR = 6;
-
 
     public static String getTodayString() {
         return new DateTime().toString(DEFAULT_FORMAT);
@@ -220,8 +215,6 @@ public class ActionUtil {
 
     /**
      * 获取当前时间 的 下一天的版本
-     *
-     * @return Long{201811290000000000}
      */
     public static Long getLongNextDayActionVersion() {
         return Long.parseLong(getNextDayActionVersion());
@@ -229,13 +222,10 @@ public class ActionUtil {
 
     /**
      * 获取当前时间 的 下一天的版本
-     *
-     * @return String{201811290000000000}
      */
     public static String getNextDayActionVersion() {
         return new DateTime().plusDays(1).toString(ACTION_VERSION_INIT);
     }
-
 
     public static Long getMillisByAction(String actionId) {
         return getDateByDateStr(String.valueOf(Long.parseLong(actionId) / 1000000), ACTION_MIN).getTime();

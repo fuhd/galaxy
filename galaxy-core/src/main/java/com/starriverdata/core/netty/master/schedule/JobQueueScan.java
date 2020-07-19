@@ -8,10 +8,7 @@ import com.starriverdata.logs.ScanLog;
 import java.util.concurrent.TimeUnit;
 
 /**
- * desc:任务队列扫描
- *
- * @author scx
- * @create 2020/01/09
+ * 任务队列扫描
  */
 public class JobQueueScan extends ScheduledChore {
 

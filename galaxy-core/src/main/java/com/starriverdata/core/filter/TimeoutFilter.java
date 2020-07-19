@@ -24,12 +24,6 @@ import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.TimeUnit;
 
-/**
- * desc:
- *
- * @author scx
- * @create 2019/05/08
- */
 @Filter("timeoutFilter")
 public class TimeoutFilter implements ExecuteFilter {
 
@@ -38,7 +32,6 @@ public class TimeoutFilter implements ExecuteFilter {
 
     @Autowired
     private HeraSsoService heraSsoService;
-
 
     private volatile Timer timeoutCheck;
 

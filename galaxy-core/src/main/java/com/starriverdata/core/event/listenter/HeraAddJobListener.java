@@ -12,9 +12,7 @@ import com.starriverdata.core.netty.master.MasterContext;
 import com.starriverdata.logs.ScheduleLog;
 
 /**
- * @author: <a href="mailto:lingxiao@2dfire.com">凌霄</a>
- * @time: Created in 下午5:19 2018/4/19
- * @desc 增操作，添加controller
+ * 增操作，添加controller
  */
 public class HeraAddJobListener extends AbstractListener {
 
@@ -50,8 +48,6 @@ public class HeraAddJobListener extends AbstractListener {
                     ScheduleLog.info("schedule add job with actionId:" + actionId);
                 }
             }
-
         }
-
     }
 }

@@ -1,10 +1,5 @@
 package com.starriverdata.common.processor;
 
-/**
- * @author: <a href="mailto:lingxiao@2dfire.com">凌霄</a>
- * @time: Created in 上午11:37 2018/5/2
- * @desc
- */
 public class DownProcessor implements Processor {
 
     @Override

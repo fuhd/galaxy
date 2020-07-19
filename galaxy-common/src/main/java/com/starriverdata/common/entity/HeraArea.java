@@ -4,10 +4,6 @@ import lombok.Data;
 
 import java.util.Date;
 
-/**
- * @author xiaosuda
- * @date 2018/12/14
- */
 @Data
 public class HeraArea {
 

@@ -18,12 +18,6 @@ import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
-/**
- * desc:
- *
- * @author scx
- * @create 2019/11/25
- */
 @Service
 public class HeraRerunServiceImpl implements HeraRerunService {
 

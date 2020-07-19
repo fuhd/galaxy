@@ -6,10 +6,6 @@ import com.starriverdata.logs.ErrorLog;
 
 import java.io.IOException;
 
-/**
- * @author xiaosuda
- * @date 2018/8/6
- */
 public class CpuLoadPerCoreJob extends RunShell {
 
     private float loadPerCore = 1f;

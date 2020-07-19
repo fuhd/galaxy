@@ -25,9 +25,7 @@ import java.util.List;
 import java.util.concurrent.*;
 
 /**
- * @author: <a href="mailto:lingxiao@2dfire.com">凌霄</a>
- * @time: Created in 1:34 2018/1/4
- * @desc SocketMessage为rpc消息体
+ * SocketMessage为rpc消息体
  */
 @ChannelHandler.Sharable
 public class MasterHandler extends ChannelInboundHandlerAdapter {

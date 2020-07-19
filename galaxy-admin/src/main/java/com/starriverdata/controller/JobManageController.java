@@ -25,16 +25,9 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
-/**
- * desc:
- *
- * @author scx
- * @create 2019/07/10
- */
 @Controller
 @RequestMapping("job/")
 public class JobManageController extends BaseHeraController {
-
 
     @Autowired
     private JobManageService jobManageService;
@@ -54,8 +47,6 @@ public class JobManageController extends BaseHeraController {
     	return jobManageService.findJobHistoryByStatus(status, begindt,enddt);
     }
     
-    
-
     @RequestMapping(value = "search", method = RequestMethod.GET)
     @ResponseBody
     public JsonResponse jobSearch(JobSearchForm searchForm) {
@@ -108,7 +99,6 @@ public class JobManageController extends BaseHeraController {
                 .collect(Collectors.toList()));
     }
 
-
     private String mapToString(Map<String, String> map) {
         StringBuilder builder = new StringBuilder();
         map.forEach((key, value) -> {
@@ -134,7 +124,6 @@ public class JobManageController extends BaseHeraController {
         return new MutablePair<>(builder.toString(), line);
     }
 
-
     private String markAsRed(String source, String word) {
         if (StringUtils.isBlank(word)) {
             return source;
@@ -152,13 +141,11 @@ public class JobManageController extends BaseHeraController {
         return builder.toString();
     }
 
-
     private String getLowerCase(String val) {
         if (StringUtils.isBlank(val)) {
             return null;
         }
         return val.toLowerCase();
     }
-
 
 }

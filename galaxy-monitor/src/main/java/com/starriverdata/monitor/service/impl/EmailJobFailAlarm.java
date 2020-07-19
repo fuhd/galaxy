@@ -17,13 +17,8 @@ import javax.mail.MessagingException;
 import java.util.Optional;
 import java.util.Set;
 
-/**
- * @author xiaosuda
- * @date 2019/2/25
- */
 @Alarm("emailJobFailAlarm")
 public class EmailJobFailAlarm extends AbstractJobFailAlarm {
-
 
     @Autowired
     private HeraUserService heraUserService;

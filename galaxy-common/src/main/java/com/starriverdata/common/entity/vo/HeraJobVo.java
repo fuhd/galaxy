@@ -9,11 +9,6 @@ import lombok.NoArgsConstructor;
 
 import java.util.*;
 
-/**
- * @author: <a href="mailto:lingxiao@2dfire.com">凌霄</a>
- * @time: Created in 下午11:38 2018/4/23
- * @desc
- */
 @Builder
 @Data
 @NoArgsConstructor
@@ -119,6 +114,4 @@ public class HeraJobVo {
     private Integer isValid;
 
     private String estimatedEndHour;
-
-
 }

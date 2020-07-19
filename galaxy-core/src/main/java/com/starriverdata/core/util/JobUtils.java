@@ -27,17 +27,13 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
- * @author: <a href="mailto:lingxiao@2dfire.com">凌霄</a>
- * @time: Created in 上午12:13 2018/4/26
- * @desc 任务执行体job的创建工具，创建任务依据任务配置创建任务前置处理，核心执行体，后置处理，以及脚本中的变量替换
+ * 任务执行体job的创建工具，创建任务依据任务配置创建任务前置处理，核心执行体，后置处理，以及脚本中的变量替换
  */
 public class JobUtils {
 
     private static final Pattern downloadPatt = Pattern.compile("download\\[.*://.+]");
 
-
     private static final Pattern valPatt = Pattern.compile("\\$\\{([^}{$])*\\}");
-
 
     public static Job createDebugJob(JobContext jobContext, HeraDebugHistory heraDebugHistory, HeraJobBean heraJobBean,
                                      String workDir, WorkContext workContext) throws HeraException {

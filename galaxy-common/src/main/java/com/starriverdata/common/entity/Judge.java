@@ -1,13 +1,8 @@
 package com.starriverdata.common.entity;
 
 import lombok.Data;
-
 import java.util.Date;
 
-/**
- * @author xiaosuda
- * @date 2018/12/3
- */
 @Data
 public class Judge {
 

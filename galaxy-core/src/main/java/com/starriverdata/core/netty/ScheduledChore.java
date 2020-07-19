@@ -4,12 +4,6 @@ import com.starriverdata.logs.ErrorLog;
 
 import java.util.concurrent.TimeUnit;
 
-/**
- * desc:
- *
- * @author scx
- * @create 2020/01/06
- */
 public abstract class ScheduledChore implements Runnable {
 
     private final Integer MAX_EXCEPTION_TIMES = 99;
@@ -73,6 +67,5 @@ public abstract class ScheduledChore implements Runnable {
     }
 
     protected abstract void chore();
-
 
 }

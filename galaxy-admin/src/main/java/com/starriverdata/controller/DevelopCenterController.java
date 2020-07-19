@@ -21,9 +21,7 @@ import java.util.*;
 import java.util.concurrent.ExecutionException;
 
 /**
- * @author: <a href="mailto:lingxiao@2dfire.com">凌霄</a>
- * @time: Created in 16:34 2018/1/13
- * @desc 开发中心
+ * 开发中心
  */
 @Controller
 @RequestMapping("/developCenter")
@@ -91,12 +89,8 @@ public class DevelopCenterController extends BaseHeraController {
         return new JsonResponse(true, heraFileService.updateFileName(heraFile) > 0 ? "更新成功" : "更新失败");
     }
 
-
     /**
      * 手动执行脚本
-     *
-     * @param heraFile
-     * @return
      */
     @RequestMapping(value = "/debug", method = RequestMethod.POST)
     @ResponseBody
@@ -121,9 +115,6 @@ public class DevelopCenterController extends BaseHeraController {
 
     /**
      * 手动执行选中的代码
-     *
-     * @param heraFile
-     * @return
      */
     @RequestMapping(value = "/debugSelectCode", method = RequestMethod.POST)
     @ResponseBody
@@ -172,9 +163,6 @@ public class DevelopCenterController extends BaseHeraController {
 
     /**
      * 获取脚本执行历史
-     *
-     * @param fileId
-     * @return
      */
     @RequestMapping(value = "findDebugHistory", method = RequestMethod.GET)
     @ResponseBody
@@ -184,9 +172,6 @@ public class DevelopCenterController extends BaseHeraController {
 
     /**
      * 取消执行脚本
-     *
-     * @param id
-     * @return
      */
     @RequestMapping(value = "/cancelJob", method = RequestMethod.GET)
     @ResponseBody

@@ -5,20 +5,12 @@ import com.starriverdata.common.entity.model.HeraJobBean;
 
 import java.util.List;
 
-/**
- * @author: <a href="mailto:lingxiao@2dfire.com">凌霄</a>
- * @time: Created in 下午5:01 2018/4/17
- * @desc
- */
 public interface HeraGroupService {
 
     HeraGroup getRootGroup();
 
     /**
      * 获取上游任务以及组
-     *
-     * @param jobId
-     * @return
      */
     HeraJobBean getUpstreamJobBean(Integer jobId);
 

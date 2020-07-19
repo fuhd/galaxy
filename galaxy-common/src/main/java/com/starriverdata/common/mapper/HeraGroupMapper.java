@@ -10,11 +10,6 @@ import org.apache.ibatis.annotations.*;
 
 import java.util.List;
 
-/**
- * @author: <a href="mailto:lingxiao@2dfire.com">凌霄</a>
- * @time: Created in 下午4:59 2018/4/17
- * @desc
- */
 public interface HeraGroupMapper {
 
     @Insert("insert into hera_group (#{heraGroup})")
@@ -40,7 +35,6 @@ public interface HeraGroupMapper {
     @Select("select * from hera_group where id in (#{list}) and existed = 1")
     @Lang(HeraListInLangDriver.class)
     List<HeraGroup> findByIds(@Param("list") List<Integer> list);
-
 
     @Select("select * from hera_group where parent = #{parent} and existed = 1")
     @Lang(HeraSelectLangDriver.class)

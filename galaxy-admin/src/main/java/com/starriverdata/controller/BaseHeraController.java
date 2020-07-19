@@ -16,10 +16,6 @@ import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
-/**
- * @author xiaosuda
- * @date 2018/7/19
- */
 public abstract class BaseHeraController {
 
 

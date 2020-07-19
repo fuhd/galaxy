@@ -2,10 +2,6 @@ package com.starriverdata.logs;
 
 import lombok.extern.slf4j.Slf4j;
 
-/**
- * @author xiaosuda
- * @date 2018/11/5
- */
 @Slf4j
 public class HeartLog {
     public static void info(String msg) {
@@ -33,11 +29,9 @@ public class HeartLog {
         log.error(format, arguments);
     }
 
-
     public static void error(String msg, Exception e) {
         log.error(msg, e);
     }
-
 
     public static void warn(String msg) {
         log.warn(msg);

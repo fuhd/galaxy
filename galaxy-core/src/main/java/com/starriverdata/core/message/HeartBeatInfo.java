@@ -8,11 +8,8 @@ import lombok.NoArgsConstructor;
 import java.util.List;
 
 /**
- * @author: <a href="mailto:lingxiao@2dfire.com">凌霄</a>
- * @time: Created in 16:17 2018/1/12
- * @desc 心跳中传递的机器信息
+ * 心跳中传递的机器信息
  */
-
 @Data
 @Builder
 @AllArgsConstructor

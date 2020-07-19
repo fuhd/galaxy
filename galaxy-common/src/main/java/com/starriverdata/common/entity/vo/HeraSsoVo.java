@@ -2,10 +2,6 @@ package com.starriverdata.common.entity.vo;
 
 import lombok.Data;
 
-/**
- * @author xiaosuda
- * @date 2018/12/28
- */
 @Data
 public class HeraSsoVo {
 

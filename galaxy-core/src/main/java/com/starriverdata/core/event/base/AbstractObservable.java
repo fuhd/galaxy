@@ -10,11 +10,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-/**
- * @author: <a href="mailto:lingxiao@2dfire.com">凌霄</a>
- * @time: Created in 下午2:44 2018/4/23
- * @desc
- */
 public class AbstractObservable implements Observable {
 
     private boolean fireEvents = true;

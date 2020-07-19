@@ -14,15 +14,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-/**
- * desc:
- *
- * @author scx
- * @create 2019/07/16
- */
 @Service
 public class HeraRecordServiceImpl implements HeraRecordService {
-
 
     @Autowired
     private HeraRecordMapper recordMapper;

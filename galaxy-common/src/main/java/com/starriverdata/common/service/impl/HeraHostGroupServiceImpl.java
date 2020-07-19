@@ -14,14 +14,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-/**
- * @author: <a href="mailto:lingxiao@2dfire.com">凌霄</a>
- * @time: Created in 22:26 2018/1/10
- * @desc
- */
 @Service("heraHostGroupService")
 public class HeraHostGroupServiceImpl implements HeraHostGroupService {
-
 
     @Autowired
     private HeraHostGroupMapper heraHostGroupMapper;

@@ -1,10 +1,5 @@
 package com.starriverdata.event;
 
-/**
- * @author: <a href="mailto:lingxiao@2dfire.com">凌霄</a>
- * @time: Created in 下午3:39 2018/4/19
- * @desc
- */
 public class Events {
 
     public static final EventType Initialize = new EventType();

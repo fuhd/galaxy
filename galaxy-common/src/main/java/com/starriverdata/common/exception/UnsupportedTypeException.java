@@ -1,10 +1,5 @@
 package com.starriverdata.common.exception;
 
-
-
-/**
- * @author scx
- */
 public class UnsupportedTypeException extends RuntimeException {
 
     public UnsupportedTypeException(){

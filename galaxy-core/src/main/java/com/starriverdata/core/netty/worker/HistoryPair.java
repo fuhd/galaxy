@@ -3,12 +3,6 @@ package com.starriverdata.core.netty.worker;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
-/**
- * desc:
- *
- * @author scx
- * @create 2019/12/02
- */
 @Data
 @AllArgsConstructor
 public class HistoryPair {

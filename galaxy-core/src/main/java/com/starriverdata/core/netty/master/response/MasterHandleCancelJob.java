@@ -15,9 +15,7 @@ import java.util.concurrent.Future;
 import java.util.concurrent.TimeUnit;
 
 /**
- * @author: <a href="mailto:lingxiao@2dfire.com">凌霄</a>
- * @time: Created in 下午3:42 2018/5/11
- * @desc master接收到worker端取消任务执行请求时，处理逻辑
+ * master接收到worker端取消任务执行请求时，处理逻辑
  */
 public class MasterHandleCancelJob {
 

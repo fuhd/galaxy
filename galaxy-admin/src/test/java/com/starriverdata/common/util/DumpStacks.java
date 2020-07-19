@@ -2,9 +2,6 @@ package com.starriverdata.common.util;
 
 import java.lang.management.*;
 
-/**
- * Created by xiaosuda on 2019/1/14.
- */
 public class DumpStacks {
 
     public static void main(String[] args) {

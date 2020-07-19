@@ -3,7 +3,6 @@ package com.starriverdata.core.quartz;
 import com.starriverdata.common.constants.Constants;
 import com.starriverdata.logs.ErrorLog;
 import com.starriverdata.logs.HeraLog;
-//import jdk.nashorn.internal.objects.annotations.Constructor;
 import org.quartz.*;
 import org.quartz.impl.StdSchedulerFactory;
 import org.springframework.context.annotation.Configuration;
@@ -12,9 +11,7 @@ import org.springframework.stereotype.Service;
 import java.util.Properties;
 
 /**
- * @author: <a href="mailto:lingxiao@2dfire.com">凌霄</a>
- * @time: Created in 1:19 2018/1/14
- * @desc quartz调度器初始化
+ * quartz调度器初始化
  */
 @Configuration
 @Service("quartzSchedulerService")
@@ -54,7 +51,6 @@ public class QuartzSchedulerService {
         }
     }
 
-
     public void shutdown() {
         if (scheduler != null) {
             try {
@@ -81,8 +77,5 @@ public class QuartzSchedulerService {
         } catch (SchedulerException e) {
             ErrorLog.error("remove quartz schedule error : " + actionId, e);
         }
-
     }
-
-
 }

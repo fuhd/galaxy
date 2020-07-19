@@ -11,17 +11,11 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * @author xiaosuda
- * @date 2018/11/12
- */
 public class OsProcessJob extends RunShell {
-
 
     private OSInfo osInfo;
 
     private List<ProcessMonitor> processMonitors;
-
 
     private final String KB = "K";
     private final String MB = "M";
@@ -29,7 +23,6 @@ public class OsProcessJob extends RunShell {
     private final String numRegex = "[^.&&\\D]";
 
     private float zero = 0.0f;
-
 
     private final String command;
 
@@ -140,11 +133,7 @@ public class OsProcessJob extends RunShell {
 
     /**
      * used 数字必须连续
-     *
-     * @param used
-     * @return
      */
-
     private float parseFloat(String used) {
         try {
             return Float.parseFloat(used.replaceAll(numRegex, ""));
@@ -152,7 +141,6 @@ public class OsProcessJob extends RunShell {
             return 0f;
         }
     }
-
 
     private Integer runLinux() {
         Integer exitCode = -1;

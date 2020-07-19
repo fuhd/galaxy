@@ -10,13 +10,9 @@ import java.sql.Statement;
 import java.util.List;
 
 /**
- * @Description : Thrift spark job
- * @Author ： HeGuoZi
- * @Date ： 14:02 2018/8/22
- * @Modified :
+ * Thrift spark job
  */
 public class Spark2Job extends ProcessJob {
-
 
     private static JdbcDataSourcePool jdbcDataSourcePool;
 

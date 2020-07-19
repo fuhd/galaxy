@@ -4,12 +4,6 @@ import com.starriverdata.common.exception.HeraException;
 
 import java.util.List;
 
-/**
- * desc:
- *
- * @author scx
- * @create 2020/02/18
- */
 public class FixedEmr extends AbstractEmr {
 
     public final static String NAME = "fixed";

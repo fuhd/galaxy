@@ -8,11 +8,6 @@ import lombok.EqualsAndHashCode;
 
 import java.util.Objects;
 
-/**
- * @author: <a href="mailto:lingxiao@2dfire.com">凌霄</a>
- * @time: Created in 下午4:11 2018/4/19
- * @desc
- */
 @Data
 @EqualsAndHashCode(callSuper=true)
 public class HeraJobFailedEvent extends ApplicationEvent {
@@ -37,6 +32,4 @@ public class HeraJobFailedEvent extends ApplicationEvent {
             this.rollBackTime = value;
         }
     }
-
-
 }

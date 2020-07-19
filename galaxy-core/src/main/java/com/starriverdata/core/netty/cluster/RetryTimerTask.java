@@ -9,12 +9,7 @@ import io.netty.util.TimerTask;
 
 import java.util.concurrent.TimeUnit;
 
-/**
- * @author xiaosuda
- * @date 2019/2/23
- */
 public class RetryTimerTask implements TimerTask {
-
 
     private int maxRetryTimes;
 

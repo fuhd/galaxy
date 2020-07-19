@@ -15,19 +15,12 @@ import java.util.function.Function;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
-/**
- * @author: <a href="mailto:lingxiao@2dfire.com">凌霄</a>
- * @time: Created in 下午4:13 2018/8/14
- * @desc
- */
 @Service("jobManageService")
 public class JobManageServiceImpl implements JobManageService {
 
     @Autowired
     JobManagerMapper jobManagerMapper;
 
-    
-    
     @Override
     public JsonResponse findJobHistoryByStatus(String status,String begindt,String enddt) {
         List<JobHistoryVo> failedJobs = jobManagerMapper.findAllJobHistoryByStatus(status,begindt,enddt);
@@ -37,14 +30,9 @@ public class JobManageServiceImpl implements JobManageService {
         List<JobHistoryVo> result = failedJobs.stream().filter(distinctByKey(JobHistoryVo::getJobId)).collect(Collectors.toList());
         return new JsonResponse("查询成功", true, result);
     }
-    
 
     /**
      * 去除jobId相同的记录
-     *
-     * @param keyExtractor
-     * @param <T>
-     * @return
      */
     public static <T> Predicate<T> distinctByKey(Function<? super T, Object> keyExtractor) {
         Map<Object, Boolean> map = new HashMap<>(1024);
@@ -53,8 +41,6 @@ public class JobManageServiceImpl implements JobManageService {
 
     /**
      * 任务top10
-     *
-     * @return
      */
     @Override
     public JsonResponse findJobRunTimeTop10() {
@@ -79,8 +65,6 @@ public class JobManageServiceImpl implements JobManageService {
 
     /**
      * 首页饼图
-     *
-     * @return
      */
     @Override
     public JsonResponse findAllJobStatus() {
@@ -93,8 +77,6 @@ public class JobManageServiceImpl implements JobManageService {
 
     /**
      * 任务执行状态
-     *
-     * @return
      */
     @Override
     public JsonResponse findAllJobStatusDetail() {
@@ -122,6 +104,4 @@ public class JobManageServiceImpl implements JobManageService {
         res.put("xAxis", xAxis);
         return new JsonResponse("查询成功", true, res);
     }
-
-
 }

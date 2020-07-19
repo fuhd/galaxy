@@ -9,9 +9,7 @@ import java.util.Map;
 import java.util.stream.Collectors;
 
 /**
- * @author: <a href="mailto:lingxiao@2dfire.com">凌霄</a>
- * @time: Created in 17:45 2018/1/11
- * @desc 可以将其他Job作为一个Processor处理单元，嵌入到当前Job中
+ * 可以将其他Job作为一个Processor处理单元，嵌入到当前Job中
  */
 @Builder
 @Data

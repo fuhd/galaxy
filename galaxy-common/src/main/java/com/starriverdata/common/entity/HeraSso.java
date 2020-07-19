@@ -2,12 +2,6 @@ package com.starriverdata.common.entity;
 
 import lombok.Data;
 
-/**
- * desc:
- *
- * @author scx
- * @create 2019/06/10
- */
 @Data
 public class HeraSso {
 

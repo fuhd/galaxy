@@ -3,14 +3,7 @@ package com.starriverdata.common.util;
 import com.starriverdata.common.constants.Constants;
 import com.starriverdata.config.HeraGlobalEnv;
 
-/**
- * desc:
- *
- * @author scx
- * @create 2019/05/29
- */
 public class EnvUtils {
-
 
     private static String env = HeraGlobalEnv.getEnv() == null ? "pre" : HeraGlobalEnv.getEnv();
     private static String area = HeraGlobalEnv.getArea();

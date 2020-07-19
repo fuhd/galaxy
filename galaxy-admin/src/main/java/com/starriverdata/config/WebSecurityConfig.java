@@ -16,11 +16,6 @@ import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-/**
- * @author: <a href="mailto:lingxiao@2dfire.com">凌霄</a>
- * @time: Created in 上午11:09 2018/5/22
- * @desc
- */
 @Configuration
 public class WebSecurityConfig extends WebMvcConfigurerAdapter {
 

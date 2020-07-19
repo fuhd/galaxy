@@ -1,10 +1,5 @@
 package com.starriverdata.common.enums;
 
-/**
- * @author: <a href="mailto:lingxiao@2dfire.com">凌霄</a>
- * @time: Created in 下午11:43 2018/4/23
- * @desc
- */
 public enum JobScheduleTypeEnum {
     /**
      * 定时任务

@@ -7,11 +7,6 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- * @author: <a href="mailto:lingxiao@2dfire.com">凌霄</a>
- * @time: Created in 下午6:44 2018/8/15
- * @desc
- */
 @Data
 public class DirectionGraph<T> implements Serializable {
 

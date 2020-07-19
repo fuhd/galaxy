@@ -36,9 +36,6 @@ import java.util.stream.Collectors;
 
 /**
  * master处理work发起的web请求
- *
- * @author xiaosuda
- * @date 2018/11/9
  */
 public class MasterHandlerWebResponse {
 
@@ -47,10 +44,6 @@ public class MasterHandlerWebResponse {
 
     /**
      * 处理work发起的调度中心任务执行 操作
-     *
-     * @param context MasterContext
-     * @param request WebRequest
-     * @return WebResponse
      */
     public static WebResponse handleWebExecute(MasterContext context, WebRequest request) {
         if (request.getEk() == ExecuteKind.ManualKind || request.getEk() == ExecuteKind.ScheduleKind) {
@@ -89,10 +82,6 @@ public class MasterHandlerWebResponse {
 
     /**
      * 处理work发起的开发中心任务执行 操作
-     *
-     * @param context MasterContext
-     * @param request WebRequest
-     * @return WebResponse
      */
     public static WebResponse handleWebDebug(MasterContext context, WebRequest request) {
         Long debugId = Long.parseLong(request.getId());
@@ -120,10 +109,6 @@ public class MasterHandlerWebResponse {
 
     /**
      * 处理work发起的任务更新 操作
-     *
-     * @param context MasterContext
-     * @param request WebRequest
-     * @return WebResponse
      */
     public static WebResponse handleWebUpdate(MasterContext context, WebRequest request) {
         Long id = Long.parseLong(request.getId());
@@ -139,10 +124,6 @@ public class MasterHandlerWebResponse {
 
     /**
      * 处理work发起的生成版本 操作
-     *
-     * @param context MasterContext
-     * @param request WebRequest
-     * @return WebResponse
      */
     public static WebResponse generateActionByJobId(MasterContext context, WebRequest request) {
         boolean result = String.valueOf(Constants.ALL_JOB_ID).equals(request.getId()) ? context.getMaster().generateBatchAction(true) : context.getMaster().generateSingleAction(Integer.parseInt(request.getId()));
@@ -156,10 +137,6 @@ public class MasterHandlerWebResponse {
 
     /**
      * 处理work发起的任务取消操作
-     *
-     * @param context MasterContext
-     * @param request WebRequest
-     * @return WebResponse
      */
     public static WebResponse handleWebCancel(MasterContext context, WebRequest request) {
         switch (request.getEk()) {
@@ -179,10 +156,6 @@ public class MasterHandlerWebResponse {
 
     /**
      * 处理work发起的任务执行 操作
-     *
-     * @param context MasterContext
-     * @param request WebRequest
-     * @return WebResponse
      */
     public static WebResponse buildJobQueueInfo(MasterContext context, WebRequest request) {
         //输出线程池信息

@@ -9,11 +9,6 @@ import lombok.Data;
 import java.util.Date;
 import java.util.Map;
 
-/**
- * @author: <a href="mailto:lingxiao@2dfire.com">凌霄</a>
- * @time: Created in 上午7:21 2018/5/12
- * @desc
- */
 @Builder
 @Data
 public class HeraJobHistoryVo {
@@ -52,9 +47,5 @@ public class HeraJobHistoryVo {
     
     private String batchId;
     private String bizLabel;
-
-
-
-
 
 }

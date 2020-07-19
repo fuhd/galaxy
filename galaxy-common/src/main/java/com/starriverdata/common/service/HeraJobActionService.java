@@ -9,21 +9,12 @@ import com.starriverdata.common.vo.JobStatus;
 
 import java.util.List;
 
-/**
- * @author: <a href="mailto:lingxiao@2dfire.com">凌霄</a>
- * @time: Created in 下午3:41 2018/5/16
- * @desc
- */
 public interface HeraJobActionService {
-
 
     int insert(HeraAction heraAction, Long nowAction);
 
     /**
      * 批量插入
-     *
-     * @param heraActionList
-     * @return
      */
     List<HeraAction> batchInsert(List<HeraAction> heraActionList, Long nowAction);
 
@@ -47,28 +38,19 @@ public interface HeraJobActionService {
 
     /**
      * 查找当前版本的运行状态
-     *
-     * @param actionId
-     * @return
      */
     JobStatus findJobStatus(Long actionId);
 
-
     JobStatus findJobStatusByJobId(Long jobId);
-
 
     Integer updateStatus(Long id, String status);
 
     Integer updateStatusAndReadDependency(HeraAction heraAction);
 
-
     List<HeraAction> getAfterAction(Long action);
 
     /**
      * 根据jobId 获取所有的版本
-     *
-     * @param jobId
-     * @return
      */
     List<Long> getActionVersionByJobId(Long jobId);
 

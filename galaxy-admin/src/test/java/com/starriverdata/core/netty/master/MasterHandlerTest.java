@@ -4,9 +4,6 @@ import org.junit.Test;
 
 import java.util.concurrent.*;
 
-/**
- * Created by xiaosuda on 2018/6/20.
- */
 public class MasterHandlerTest {
 
 
@@ -18,7 +15,5 @@ public class MasterHandlerTest {
         Future<String> take = x.take();
 
         System.out.println(take.get());
-
-
     }
 }
