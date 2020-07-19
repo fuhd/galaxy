@@ -76,24 +76,24 @@ public class Master {
         }
         //关于为什么异步 因为版本过多时会导致启动时长较长，导致master断线，重新选举出新的work，然后周而复始，进入死循环
         masterContext.getThreadPool().execute(() -> {
-            HeraLog.info("-----------------------------init action,time: {}-----------------------------", System.currentTimeMillis());
+            GalaxyLog.info("-----------------------------init action,time: {}-----------------------------", System.currentTimeMillis());
             masterContext.getDispatcher().addDispatcherListener(new HeraAddJobListener(this, masterContext));
             masterContext.getDispatcher().addDispatcherListener(new HeraJobFailListener(masterContext));
             masterContext.getDispatcher().addDispatcherListener(new HeraDebugListener(masterContext));
             masterContext.getDispatcher().addDispatcherListener(new HeraJobSuccessListener(masterContext));
             masterContext.getDispatcher().addDispatcherListener(new HeraJobFinishListener(masterContext));
             List<HeraAction> allJobList = masterContext.getHeraJobActionService().getAfterAction(getBeforeDayAction());
-            HeraLog.info("-----------------------------action size:{}, time {}-----------------------------", allJobList.size(), System.currentTimeMillis());
+            GalaxyLog.info("-----------------------------action size:{}, time {}-----------------------------", allJobList.size(), System.currentTimeMillis());
             allJobList.forEach(heraAction -> {
                 masterContext.getDispatcher().
                         addJobHandler(new JobHandler(heraAction.getId(), this, masterContext));
                 heraActionMap.put(heraAction.getId(), heraAction);
             });
-            HeraLog.info("-----------------------------add actions to handler success, time:{}-----------------------------", System.currentTimeMillis());
+            GalaxyLog.info("-----------------------------add actions to handler success, time:{}-----------------------------", System.currentTimeMillis());
             masterContext.getDispatcher().forwardEvent(Events.Initialize);
-            HeraLog.info("-----------------------------dispatcher actions success, time{}-----------------------------", System.currentTimeMillis());
+            GalaxyLog.info("-----------------------------dispatcher actions success, time{}-----------------------------", System.currentTimeMillis());
             masterContext.refreshHostGroupCache();
-            HeraLog.info("refresh hostGroup cache");
+            GalaxyLog.info("refresh hostGroup cache");
         });
     }
     public boolean isTaskLimit() {
@@ -275,7 +275,7 @@ public class Master {
                     if (StringUtils.isNotBlank(cron)) {
                         boolean isCronExp = CronParse.Parser(cron, cronDate, list);
                         if (!isCronExp) {
-                            HeraLog.warn("cron parse error,jobId={},cron = {}", heraJob.getId(), cron);
+                            GalaxyLog.warn("cron parse error,jobId={},cron = {}", heraJob.getId(), cron);
                             continue;
                         }
                         List<HeraAction> heraAction = createHeraAction(list, heraJob);
@@ -419,7 +419,7 @@ public class Master {
                 List<HeraAction> dpActions = idMap.get(dpId);
                 dependenciesMap.put(dependentId, dpActions);
                 if (dpActions == null || dpActions.size() == 0) {
-                    HeraLog.info("{}今天找不到版本，无法为任务{}生成版本", dependentId, heraJob.getId());
+                    GalaxyLog.info("{}今天找不到版本，无法为任务{}生成版本", dependentId, heraJob.getId());
                     noAction = true;
                     break;
                 }

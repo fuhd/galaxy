@@ -8,7 +8,7 @@ import com.starriverdata.core.netty.worker.WorkClient;
 import com.starriverdata.core.netty.worker.WorkContext;
 import com.starriverdata.core.schedule.HeraSchedule;
 import com.starriverdata.logs.ErrorLog;
-import com.starriverdata.logs.HeraLog;
+import com.starriverdata.logs.GalaxyLog;
 import lombok.Getter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -64,7 +64,7 @@ public class DistributeLock {
             if (isMaster = WorkContext.host.equals(heraLock.getHost().trim())) {
                 heraLock.setServerUpdate(new Date());
                 heraLockService.update(heraLock);
-                HeraLog.info("hold lock and update time");
+                GalaxyLog.info("hold lock and update time");
                 heraSchedule.startup();
             } else {
                 long currentTime = System.currentTimeMillis();
@@ -79,7 +79,7 @@ public class DistributeLock {
                         heraLock.setHost(WorkContext.host);
                         //TODO  接入master切换通知
                     } else {
-                        HeraLog.info("master抢占失败，由其它worker抢占成功");
+                        GalaxyLog.info("master抢占失败，由其它worker抢占成功");
                     }
                 } else {
                     //非主节点，调度器不执行
@@ -102,7 +102,7 @@ public class DistributeLock {
         if (preemptionHostList.contains(WorkContext.host)) {
             return true;
         } else {
-            HeraLog.info(WorkContext.host + " is not in master group " + preemptionHostList.toString());
+            GalaxyLog.info(WorkContext.host + " is not in master group " + preemptionHostList.toString());
             return false;
         }
     }

@@ -5,7 +5,7 @@ import com.starriverdata.common.constants.Constants;
 import com.starriverdata.common.exception.HeraCaughtExceptionHandler;
 import com.starriverdata.common.exception.HeraException;
 import com.starriverdata.config.HeraGlobalEnv;
-import com.starriverdata.logs.HeraLog;
+import com.starriverdata.logs.GalaxyLog;
 import com.starriverdata.logs.TaskLog;
 
 import java.io.*;
@@ -206,7 +206,7 @@ public abstract class ProcessJob extends AbstractJob {
                 }
             } catch (Exception e) {
                 exitCode = Constants.LOG_EXIT_CODE;
-                HeraLog.error("接受日志异常:{}", e);
+                GalaxyLog.error("接受日志异常:{}", e);
                 log(threadName + ": 接收日志出错，退出日志接收");
             } finally {
                 latch.countDown();

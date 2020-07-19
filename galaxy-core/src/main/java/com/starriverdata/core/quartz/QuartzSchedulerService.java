@@ -2,7 +2,7 @@ package com.starriverdata.core.quartz;
 
 import com.starriverdata.common.constants.Constants;
 import com.starriverdata.logs.ErrorLog;
-import com.starriverdata.logs.HeraLog;
+import com.starriverdata.logs.GalaxyLog;
 import org.quartz.*;
 import org.quartz.impl.StdSchedulerFactory;
 import org.springframework.context.annotation.Configuration;
@@ -24,7 +24,7 @@ public class QuartzSchedulerService {
      */
     //@Constructor
     public Properties setQuartzProperties() {
-        HeraLog.info("start init quartz properties");
+        GalaxyLog.info("start init quartz properties");
         Properties prop = new Properties();
         prop.put("org.quartz.scheduler.instanceName", "heraQuartzSchedulerPool");
         prop.put("org.quartz.scheduler.rmi.export", "false");
@@ -40,12 +40,12 @@ public class QuartzSchedulerService {
     }
 
     public void start() {
-        HeraLog.info("start init quartz schedule");
+        GalaxyLog.info("start init quartz schedule");
         try {
             SchedulerFactory schedulerFactory = new StdSchedulerFactory(setQuartzProperties());
             scheduler = schedulerFactory.getScheduler();
             scheduler.start();
-            HeraLog.info("start init quartz scheduler");
+            GalaxyLog.info("start init quartz scheduler");
         } catch (SchedulerException e) {
             ErrorLog.error("failed init quartz scheduler", e);
         }
@@ -55,7 +55,7 @@ public class QuartzSchedulerService {
         if (scheduler != null) {
             try {
                 scheduler.shutdown();
-                HeraLog.info("worker shutdown quartz service");
+                GalaxyLog.info("worker shutdown quartz service");
             } catch (SchedulerException e) {
                 ErrorLog.error("failed shutdown quartz scheduler", e);
             }
@@ -72,7 +72,7 @@ public class QuartzSchedulerService {
             JobDetail jobDetail = scheduler.getJobDetail(jobKey);
             if (jobDetail != null) {
                 scheduler.deleteJob(jobKey);
-                HeraLog.warn("remove action {} from quartz", actionId);
+                GalaxyLog.warn("remove action {} from quartz", actionId);
             }
         } catch (SchedulerException e) {
             ErrorLog.error("remove quartz schedule error : " + actionId, e);

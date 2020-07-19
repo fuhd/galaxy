@@ -13,7 +13,7 @@ import com.starriverdata.common.service.HeraJobService;
 import com.starriverdata.common.service.HeraPermissionService;
 import com.starriverdata.common.util.StringUtil;
 import com.starriverdata.core.util.JwtUtils;
-import com.starriverdata.logs.HeraLog;
+import com.starriverdata.logs.GalaxyLog;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
@@ -65,7 +65,7 @@ public class HeraAspect {
         res = joinPoint.proceed();
         Long end = System.currentTimeMillis();
         if (start - end >= 10 * 1000L) {
-            HeraLog.warn("方法名:{},参数:{},耗时:{}ms", joinPoint.getSignature().getName(), Arrays.asList(joinPoint.getArgs()), end - start);
+            GalaxyLog.warn("方法名:{},参数:{},耗时:{}ms", joinPoint.getSignature().getName(), Arrays.asList(joinPoint.getArgs()), end - start);
         }
         return res;
     }

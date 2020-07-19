@@ -8,7 +8,7 @@ import com.starriverdata.core.netty.HeraChannel;
 import com.starriverdata.core.tool.RunShell;
 import com.starriverdata.core.util.NetUtils;
 import com.starriverdata.logs.ErrorLog;
-import com.starriverdata.logs.HeraLog;
+import com.starriverdata.logs.GalaxyLog;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -33,7 +33,7 @@ public class WorkContext {
 
     static {
         host = NetUtils.getLocalAddress();
-        HeraLog.info("-----------------------------当前机器的IP为:{}-----------------------------", host);
+        GalaxyLog.info("-----------------------------当前机器的IP为:{}-----------------------------", host);
         if (HeraGlobalEnv.isLinuxSystem()) {
             RunShell shell = new RunShell(loadStr);
             Integer exitCode = shell.run();

@@ -2,7 +2,7 @@ package com.starriverdata.config;
 
 import com.starriverdata.common.constants.Constants;
 import com.starriverdata.common.enums.OperatorSystemEnum;
-import com.starriverdata.logs.HeraLog;
+import com.starriverdata.logs.GalaxyLog;
 import lombok.Getter;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Value;
@@ -166,7 +166,7 @@ public class HeraGlobalEnv {
             HeraGlobalEnv.emrGroups = new HashSet<>(0);
         }
         if (HeraGlobalEnv.emrGroups.size() == 0) {
-            HeraLog.warn("the hera.emr.groups is null, all user will use same emr cluster");
+            GalaxyLog.warn("the hera.emr.groups is null, all user will use same emr cluster");
         }
     }
 
@@ -269,7 +269,7 @@ public class HeraGlobalEnv {
         File file = new File(workDir);
         if (!file.exists()) {
             HeraGlobalEnv.workDir = System.getProperty("user.dir");
-            HeraLog.warn("配置的工作路径" + workDir + "不存在，将使用默认路径:" + HeraGlobalEnv.workDir);
+            GalaxyLog.warn("配置的工作路径" + workDir + "不存在，将使用默认路径:" + HeraGlobalEnv.workDir);
         } else {
             HeraGlobalEnv.workDir = workDir;
         }

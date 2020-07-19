@@ -1,7 +1,7 @@
 package com.starriverdata.core.schedule;
 
 import com.starriverdata.core.netty.master.MasterContext;
-import com.starriverdata.logs.HeraLog;
+import com.starriverdata.logs.GalaxyLog;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -19,7 +19,7 @@ public class HeraSchedule {
         if (!running.compareAndSet(false, true)) {
             return;
         }
-        HeraLog.info("begin to start master context");
+        GalaxyLog.info("begin to start master context");
         masterContext.init();
     }
 

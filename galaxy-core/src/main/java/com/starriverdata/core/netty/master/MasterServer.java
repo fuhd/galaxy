@@ -1,7 +1,7 @@
 package com.starriverdata.core.netty.master;
 
 import com.starriverdata.logs.ErrorLog;
-import com.starriverdata.logs.HeraLog;
+import com.starriverdata.logs.GalaxyLog;
 import com.starriverdata.protocol.RpcSocketMessage;
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelFuture;
@@ -62,7 +62,7 @@ public class MasterServer {
             ErrorLog.error("InterruptedException", e);
         }
         if (channelFuture != null && channelFuture.isSuccess()) {
-            HeraLog.info("start master server success");
+            GalaxyLog.info("start master server success");
         } else {
             ErrorLog.error("start master server failed");
         }
@@ -74,7 +74,7 @@ public class MasterServer {
         bossGroup.shutdownGracefully();
         workGroup.shutdownGracefully();
         handler.shutdown();
-        HeraLog.info("stop master server gracefully");
+        GalaxyLog.info("stop master server gracefully");
         return true;
     }
 

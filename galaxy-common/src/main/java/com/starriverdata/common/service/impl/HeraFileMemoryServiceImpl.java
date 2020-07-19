@@ -2,7 +2,7 @@ package com.starriverdata.common.service.impl;
 
 import com.starriverdata.common.entity.HeraFile;
 import com.starriverdata.common.entity.Judge;
-import com.starriverdata.logs.HeraLog;
+import com.starriverdata.logs.GalaxyLog;
 import org.springframework.stereotype.Service;
 
 import java.util.*;
@@ -23,7 +23,7 @@ public class HeraFileMemoryServiceImpl extends HeraFileServiceImpl {
         if (judge == null || !newJudge.getCount().equals(judge.getCount()) || !newJudge.getLastModified().equals(judge.getLastModified()) || !newJudge.getMaxId().equals(judge.getMaxId())) {
             synchronized (this) {
                 if (judge == null || !newJudge.getCount().equals(judge.getCount()) || !newJudge.getLastModified().equals(judge.getLastModified()) || !newJudge.getMaxId().equals(judge.getMaxId())) {
-                    HeraLog.info("刷新hera_file库");
+                    GalaxyLog.info("刷新hera_file库");
                     judge = newJudge;
                     List<HeraFile> all = heraFileMapper.getAll();
                     Map<Integer, HeraFile> jobMap = new HashMap<>(all.size());

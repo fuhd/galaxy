@@ -15,7 +15,7 @@ import com.starriverdata.common.util.RenderHierarchyProperties;
 import com.starriverdata.config.HeraGlobalEnv;
 import com.starriverdata.core.job.*;
 import com.starriverdata.core.netty.worker.WorkContext;
-import com.starriverdata.logs.HeraLog;
+import com.starriverdata.logs.GalaxyLog;
 import com.google.common.collect.Lists;
 import org.apache.commons.lang3.StringUtils;
 
@@ -175,7 +175,7 @@ public class JobUtils {
             String name = null;
             if (url.length == 1) {
                 uri = url[0];
-                HeraLog.warn("can not found download name,will use default name,{}", group);
+                GalaxyLog.warn("can not found download name,will use default name,{}", group);
             } else if (url.length == 2) {
                 uri = url[0];
                 name = url[1];

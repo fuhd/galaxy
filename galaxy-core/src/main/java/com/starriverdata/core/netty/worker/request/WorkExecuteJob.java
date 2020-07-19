@@ -18,7 +18,7 @@ import com.starriverdata.core.netty.worker.HistoryPair;
 import com.starriverdata.core.netty.worker.WorkContext;
 import com.starriverdata.core.util.JobUtils;
 import com.starriverdata.logs.ErrorLog;
-import com.starriverdata.logs.HeraLog;
+import com.starriverdata.logs.GalaxyLog;
 import com.starriverdata.logs.ScheduleLog;
 import com.starriverdata.logs.SocketLog;
 import com.starriverdata.protocol.*;
@@ -74,7 +74,7 @@ public class WorkExecuteJob {
                     + File.separator + date + File.separator + "manual-" + history.getId());
             if (!directory.exists()) {
                 if (!directory.mkdirs()) {
-                    HeraLog.error("创建文件失败:" + directory.getAbsolutePath());
+                    GalaxyLog.error("创建文件失败:" + directory.getAbsolutePath());
                 }
             }
             int exitCode = -1;
@@ -149,7 +149,7 @@ public class WorkExecuteJob {
                     + File.separator + date + File.separator + history.getId());
             if (!directory.exists()) {
                 if (!directory.mkdirs()) {
-                    HeraLog.error("创建文件失败:" + directory.getAbsolutePath());
+                    GalaxyLog.error("创建文件失败:" + directory.getAbsolutePath());
                 }
             }
 
@@ -220,7 +220,7 @@ public class WorkExecuteJob {
                 File directory = new File(HeraGlobalEnv.getWorkDir() + File.separator + date + File.separator + "debug-" + debugId);
                 if (!directory.exists()) {
                     if (!directory.mkdirs()) {
-                        HeraLog.error("创建文件失败:" + directory.getAbsolutePath());
+                        GalaxyLog.error("创建文件失败:" + directory.getAbsolutePath());
                     }
                 }
                 HeraJobBean jobBean = workContext.getHeraGroupService().getUpstreamJobBean(history.getJobId());

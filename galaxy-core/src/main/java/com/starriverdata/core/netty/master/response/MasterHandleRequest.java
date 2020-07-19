@@ -6,7 +6,7 @@ import com.starriverdata.core.netty.master.MasterContext;
 import com.starriverdata.core.netty.master.MasterWorkHolder;
 import com.starriverdata.logs.ErrorLog;
 import com.starriverdata.logs.HeartLog;
-import com.starriverdata.logs.HeraLog;
+import com.starriverdata.logs.GalaxyLog;
 import com.starriverdata.protocol.RpcHeartBeatMessage.HeartBeatMessage;
 import com.starriverdata.protocol.RpcRequest.Request;
 import com.starriverdata.protocol.RpcWorkInfo.WorkInfo;
@@ -42,7 +42,7 @@ public class MasterHandleRequest {
         try {
             WorkInfo workInfo = WorkInfo.parseFrom(request.getBody());
             workHolder.setWorkInfo(workInfo);
-            HeraLog.info("set workInfo success,{}", channel.remoteAddress());
+            GalaxyLog.info("set workInfo success,{}", channel.remoteAddress());
         } catch (InvalidProtocolBufferException e) {
             ErrorLog.error("解析消息异常", e);
         }

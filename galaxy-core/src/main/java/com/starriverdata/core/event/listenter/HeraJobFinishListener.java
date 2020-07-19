@@ -14,7 +14,7 @@ import com.starriverdata.core.netty.master.MasterContext;
 import com.starriverdata.event.HeraJobFailedEvent;
 import com.starriverdata.event.HeraJobSuccessEvent;
 import com.starriverdata.logs.ErrorLog;
-import com.starriverdata.logs.HeraLog;
+import com.starriverdata.logs.GalaxyLog;
 import com.starriverdata.monitor.domain.AlarmInfo;
 import com.starriverdata.monitor.service.AlarmCenter;
 
@@ -103,7 +103,7 @@ public class HeraJobFinishListener extends AbstractListener {
                             alarmCenter.sendToWeChat(AlarmInfo.builder().userId(sso.getJobNumber()).message(noticeMsg).build());
                             emailService.sendEmail("hera重跑任务执行完成", noticeMsg, sso.getEmail());
                         } else {
-                            HeraLog.info(noticeMsg);
+                            GalaxyLog.info(noticeMsg);
                         }
                     }
                 } catch (Exception e) {

@@ -14,7 +14,7 @@ import com.starriverdata.common.util.ActionUtil;
 import com.starriverdata.common.util.BeanConvertUtils;
 import com.starriverdata.common.vo.GroupTaskVo;
 import com.starriverdata.common.vo.JobStatus;
-import com.starriverdata.logs.HeraLog;
+import com.starriverdata.logs.GalaxyLog;
 import com.starriverdata.logs.ScheduleLog;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.BeanUtils;
@@ -79,7 +79,7 @@ public class HeraJobActionServiceImpl implements HeraJobActionService {
             if (heraAction.getId() < nowAction) {
                 heraAction.setStatus(StatusEnum.FAILED.toString());
                 heraAction.setLastResult("生成action时，任务过时，直接设置为失败");
-                HeraLog.info("生成action时，任务过时，直接设置为失败:" + heraAction.getId());
+                GalaxyLog.info("生成action时，任务过时，直接设置为失败:" + heraAction.getId());
             }
         }
         return false;

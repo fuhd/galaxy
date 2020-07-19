@@ -3,7 +3,7 @@ package com.starriverdata.logs;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
-public class HeraLog {
+public class GalaxyLog {
     public static void info(String msg) {
         log.info(msg);
     }

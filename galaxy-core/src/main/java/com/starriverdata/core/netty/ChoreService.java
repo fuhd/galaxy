@@ -2,7 +2,7 @@ package com.starriverdata.core.netty;
 
 import com.starriverdata.common.util.NamedThreadFactory;
 import com.starriverdata.logs.ErrorLog;
-import com.starriverdata.logs.HeraLog;
+import com.starriverdata.logs.GalaxyLog;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -50,7 +50,7 @@ public class ChoreService implements ChoreServicer {
         if (chore != null && (future = scheduledChores.get(chore)) != null) {
             future.cancel(mayInterruptIfRunning);
             scheduledChores.remove(chore);
-            HeraLog.info("cancel {} chore schedule success", chore.getName());
+            GalaxyLog.info("cancel {} chore schedule success", chore.getName());
 
         }
     }
@@ -71,7 +71,7 @@ public class ChoreService implements ChoreServicer {
 
     @Override
     public void shutDown() {
-        HeraLog.info("shutdown chore service");
+        GalaxyLog.info("shutdown chore service");
         scheduler.shutdownNow();
         cancelAllChores(true);
         scheduledChores.clear();
@@ -108,7 +108,7 @@ public class ChoreService implements ChoreServicer {
             chore.setChoreService(this);
             ScheduledFuture<?> future = scheduler.scheduleAtFixedRate(chore, chore.getInitialDelay(), chore.getPeriod(), chore.getUnit());
             scheduledChores.put(chore, future);
-            HeraLog.info("start {} chore schedule success", chore.getName());
+            GalaxyLog.info("start {} chore schedule success", chore.getName());
             return true;
         } catch (Exception e) {
             ErrorLog.error("Could not successfully schedule chore ", e);

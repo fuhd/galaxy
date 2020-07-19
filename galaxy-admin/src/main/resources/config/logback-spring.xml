@@ -43,8 +43,8 @@
             <immediateFlush>${immediateFlush}</immediateFlush>
         </encoder>
     </appender>
-    <appender name="heraLog" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <file>${logPath}/hera.log</file>
+    <appender name="galaxyLog" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${logPath}/galaxy.log</file>
         <Append>true</Append>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
             <fileNamePattern>${logPath}/bak/hera.%d{yyyy-MM-dd}.log.zip</fileNamePattern>
@@ -220,9 +220,9 @@
         <level value="INFO"/>
         <appender-ref ref="socketLog"/>
     </logger>
-    <logger name="com.starriverdata.logs.HeraLog" additivity="true">
+    <logger name="com.starriverdata.logs.GalaxyLog" additivity="true">
         <level value="INFO"/>
-        <appender-ref ref="heraLog"/>
+        <appender-ref ref="galaxyLog"/>
     </logger>
     <logger name="com.starriverdata.logs.DebugLog" additivity="true">
         <level value="INFO"/>

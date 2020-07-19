@@ -8,7 +8,7 @@ import com.auth0.jwt.interfaces.DecodedJWT;
 import com.starriverdata.common.constants.Constants;
 import com.starriverdata.config.HeraGlobalEnv;
 import com.starriverdata.logs.ErrorLog;
-import com.starriverdata.logs.HeraLog;
+import com.starriverdata.logs.GalaxyLog;
 
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
@@ -62,7 +62,7 @@ public class JwtUtils {
         try {
             jwt = verifier.verify(token);
         } catch (Exception e) {
-            HeraLog.info("token 过期");
+            GalaxyLog.info("token 过期");
             return null;
         }
         return jwt.getClaims();

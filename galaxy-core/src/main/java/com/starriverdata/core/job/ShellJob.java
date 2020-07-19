@@ -6,7 +6,7 @@ import com.starriverdata.common.enums.JobRunTypeEnum;
 import com.starriverdata.common.exception.HeraException;
 import com.starriverdata.core.util.CommandUtils;
 import com.starriverdata.logs.ErrorLog;
-import com.starriverdata.logs.HeraLog;
+import com.starriverdata.logs.GalaxyLog;
 import com.starriverdata.logs.TaskLog;
 
 import java.io.File;
@@ -47,7 +47,7 @@ public class ShellJob extends ProcessJob {
             if (!f.exists()) {
                 if (!f.createNewFile()) {
                     log("ERROR:创建文件失败 " + f.getAbsolutePath());
-                    HeraLog.error("创建文件失败:" + f.getAbsolutePath());
+                    GalaxyLog.error("创建文件失败:" + f.getAbsolutePath());
                 }
             }
             outputStreamWriter = new OutputStreamWriter(new FileOutputStream(f), Charset.forName("utf-8"));
@@ -84,7 +84,7 @@ public class ShellJob extends ProcessJob {
             try {
                 if (!tmpFile.createNewFile()) {
                     log("ERROR:创建文件失败," + tmpFilePath);
-                    HeraLog.error("创建文件失败", tmpFile);
+                    GalaxyLog.error("创建文件失败", tmpFile);
                 }
                 tmpWriter = new OutputStreamWriter(new FileOutputStream(tmpFile),
                         Charset.forName(jobContext.getProperties().getProperty("hera.fs.encode", "utf-8")));

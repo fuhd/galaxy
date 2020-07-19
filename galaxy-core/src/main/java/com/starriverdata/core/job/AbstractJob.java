@@ -10,7 +10,7 @@ import com.starriverdata.config.HeraGlobalEnv;
 import com.starriverdata.core.emr.Emr;
 import com.starriverdata.core.emr.WrapEmr;
 import com.starriverdata.core.util.CommandUtils;
-import com.starriverdata.logs.HeraLog;
+import com.starriverdata.logs.GalaxyLog;
 import org.apache.commons.lang3.ArrayUtils;
 import org.apache.commons.lang3.StringUtils;
 
@@ -247,7 +247,7 @@ public abstract class AbstractJob implements Job {
         } else if (jobContext.getDebugHistory() != null) {
             jobContext.getDebugHistory().getLog().appendConsole(log);
         } else {
-            HeraLog.info(log);
+            GalaxyLog.info(log);
         }
     }
 
@@ -257,7 +257,7 @@ public abstract class AbstractJob implements Job {
         } else if (jobContext.getDebugHistory() != null) {
             jobContext.getDebugHistory().getLog().appendHera(log);
         } else {
-            HeraLog.warn(log);
+            GalaxyLog.warn(log);
         }
     }
 
@@ -267,7 +267,7 @@ public abstract class AbstractJob implements Job {
         } else if (jobContext.getDebugHistory() != null) {
             jobContext.getDebugHistory().getLog().appendHeraException(e);
         } else {
-            HeraLog.error(e.getMessage(), e);
+            GalaxyLog.error(e.getMessage(), e);
         }
     }
 }

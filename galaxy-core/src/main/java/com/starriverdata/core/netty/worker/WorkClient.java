@@ -17,7 +17,7 @@ import com.starriverdata.core.netty.worker.request.WorkerHandleWebRequest;
 import com.starriverdata.core.netty.worker.request.WorkerHandlerHeartBeat;
 import com.starriverdata.logs.ErrorLog;
 import com.starriverdata.logs.HeartLog;
-import com.starriverdata.logs.HeraLog;
+import com.starriverdata.logs.GalaxyLog;
 import com.starriverdata.logs.SocketLog;
 import com.starriverdata.protocol.JobExecuteKind.ExecuteKind;
 import com.starriverdata.protocol.ResponseStatus;
@@ -108,7 +108,7 @@ public class WorkClient {
                                 .addLast(new WorkHandler(workContext));
                     }
                 });
-        HeraLog.info("init work client success ");
+        GalaxyLog.info("init work client success ");
 
         workSchedule.schedule(new Runnable() {
 

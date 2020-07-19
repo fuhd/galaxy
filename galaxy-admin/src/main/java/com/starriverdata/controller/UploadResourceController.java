@@ -10,7 +10,7 @@ import com.starriverdata.core.job.ProcessJob;
 import com.starriverdata.core.job.UploadEmrFileJob;
 import com.starriverdata.core.job.UploadLocalFileJob;
 import com.starriverdata.logs.ErrorLog;
-import com.starriverdata.logs.HeraLog;
+import com.starriverdata.logs.GalaxyLog;
 import org.springframework.stereotype.Controller;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -62,7 +62,7 @@ public class UploadResourceController extends BaseHeraController {
                     uploadJob = new UploadLocalFileJob(jobContext, file.getAbsolutePath(), HeraGlobalEnv.getHdfsUploadPath());
                     exitCode = uploadJob.run();
                 }
-                HeraLog.info("controller upload file command {}", uploadJob.getCommandList().toString());
+                GalaxyLog.info("controller upload file command {}", uploadJob.getCommandList().toString());
                 if (exitCode == 0) {
                     addRecord(LogTypeEnum.UPLOAD, 1, fileName, RecordTypeEnum.UPLOAD, getSsoName(), getOwnerId());
                     resMsg.append(fileName).append("[上传成功]: ").append(HeraGlobalEnv.getHdfsUploadPath()).append(fileName).append("<br>");

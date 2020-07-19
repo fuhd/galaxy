@@ -10,7 +10,7 @@ import com.starriverdata.core.netty.ChoreService;
 import com.starriverdata.core.netty.master.schedule.*;
 import com.starriverdata.core.quartz.QuartzSchedulerService;
 import com.starriverdata.logs.ErrorLog;
-import com.starriverdata.logs.HeraLog;
+import com.starriverdata.logs.GalaxyLog;
 import com.starriverdata.monitor.service.AlarmCenter;
 import io.netty.channel.Channel;
 import lombok.AllArgsConstructor;
@@ -139,14 +139,14 @@ public class MasterContext {
         choreService.scheduledChore(finishCheck);
         queueScan = new JobQueueScan(master);
         choreService.scheduledChoreOnce(queueScan);
-        HeraLog.info("init master content success ");
+        GalaxyLog.info("init master content success ");
     }
 
     public void destroy() {
         threadPool.shutdownNow();
-        HeraLog.info("shutdown master-wait-response pool success");
+        GalaxyLog.info("shutdown master-wait-response pool success");
         masterSchedule.shutdownNow();
-        HeraLog.info("shutdown master-schedule pool success");
+        GalaxyLog.info("shutdown master-schedule pool success");
 
         if (choreService != null) {
             choreService.cancelChore(rerunJobInit);
@@ -157,21 +157,21 @@ public class MasterContext {
             choreService.cancelChore(finishCheck);
             choreService.cancelChore(queueScan);
             choreService.shutDown();
-            HeraLog.info("shutdown chore-service pool success");
+            GalaxyLog.info("shutdown chore-service pool success");
         }
         if (masterServer != null) {
             masterServer.shutdown();
-            HeraLog.info("shutdown master-server success");
+            GalaxyLog.info("shutdown master-server success");
         }
         if (quartzSchedulerService != null) {
             try {
                 quartzSchedulerService.shutdown();
-                HeraLog.info("shutdown quartz schedule  success");
+                GalaxyLog.info("shutdown quartz schedule  success");
             } catch (Exception e) {
                 ErrorLog.error("shutdown quartz schedule error", e);
             }
         }
-        HeraLog.info("destroy master context success");
+        GalaxyLog.info("destroy master context success");
     }
 
     public synchronized Map<Integer, HeraHostGroupVo> getHostGroupCache() {
@@ -183,7 +183,7 @@ public class MasterContext {
         try {
             hostGroupCache = getHeraHostGroupService().getAllHostGroupInfo();
         } catch (Exception e) {
-            HeraLog.info("refresh host group error");
+            GalaxyLog.info("refresh host group error");
         }
     }
 }

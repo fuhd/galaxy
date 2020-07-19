@@ -18,7 +18,7 @@ import com.starriverdata.core.tool.MemUseRateJob;
 import com.starriverdata.event.Events;
 import com.starriverdata.event.HeraJobMaintenanceEvent;
 import com.starriverdata.logs.ErrorLog;
-import com.starriverdata.logs.HeraLog;
+import com.starriverdata.logs.GalaxyLog;
 import com.starriverdata.logs.TaskLog;
 import com.starriverdata.protocol.*;
 import com.starriverdata.protocol.JobExecuteKind.ExecuteKind;
@@ -226,7 +226,7 @@ public class MasterHandlerWebResponse {
 
     public static synchronized WebResponse buildAllWorkInfo(MasterContext context, WebRequest request) {
         if (!workReady) {
-            HeraLog.info("workInfo未准备，准备请求work组装workInfo");
+            GalaxyLog.info("workInfo未准备，准备请求work组装workInfo");
             //发送workInfo build 请求
             context.getThreadPool().submit(() -> context.getWorkMap().values().parallelStream().forEach(workHolder -> {
                 try {
@@ -252,7 +252,7 @@ public class MasterHandlerWebResponse {
                             }
                         }
                         if (canExit) {
-                            HeraLog.info("所有workInfo已准备完毕");
+                            GalaxyLog.info("所有workInfo已准备完毕");
                             workReady = true;
                             break;
                         }
@@ -271,12 +271,12 @@ public class MasterHandlerWebResponse {
             }
 
             context.getMasterSchedule().schedule(() -> {
-                HeraLog.info("开始清理workInfo");
+                GalaxyLog.info("开始清理workInfo");
                 workReady = false;
                 context.getWorkMap().values().forEach(workHolder -> workHolder.setWorkInfo(null));
             }, 30, TimeUnit.SECONDS);
         }
-        HeraLog.info("开始组装workInfo");
+        GalaxyLog.info("开始组装workInfo");
 
         Map<String, RpcWorkInfo.WorkInfo> workInfoMap = new HashMap<>(context.getWorkMap().size());
         context.getWorkMap().values().forEach(workHolder -> {

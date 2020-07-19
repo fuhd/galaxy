@@ -243,10 +243,9 @@
 
 <#macro commonFooter >
     <footer class="main-footer">
-        Powered by <b>hera</b> 2.4.2
+        Powered by <b>galaxy</b> 1.0.1
         <div class="pull-right hidden-xs">
-            <strong>Copyright &copy; 2018-${.now?string('yyyy')} &nbsp;
-                <a href="https://github.com/scxwhite/hera" target="_blank">github/scx_white</a>
+            <strong>Copyright &copy; 2019-${.now?string('yyyy')} &nbsp;
                 &nbsp;
                 <a href="" target="_blank"></a>
             </strong><!-- All rights reserved. -->
